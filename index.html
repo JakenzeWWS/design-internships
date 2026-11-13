@@ -51,7 +51,7 @@
 
   .controls {
     position: sticky; top: 0; z-index: 2; background: var(--bg);
-    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;
+    display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px;
     padding: 20px 0 14px; margin-top: 12px; border-bottom: 1px solid var(--line);
   }
   input[type=search], select {
@@ -106,6 +106,7 @@
   @media (max-width: 600px) {
     .wrap { padding-top: 28px; }
     .controls { grid-template-columns: 1fr 1fr; position: static; }
+    .controls #role { grid-column: 1 / -1; }
     .controls input[type=search] { grid-column: 1 / -1; }
     .card { grid-template-columns: 40px 1fr; }
     .logo { width: 40px; height: 40px; }
@@ -123,6 +124,10 @@
 
   <div class="controls">
     <input type="search" id="q" placeholder="Search company or role…" aria-label="Search">
+    <select id="role" aria-label="Role">
+      <option value="ux">UX/UI & product</option>
+      <option value="">All design jobs</option>
+    </select>
     <select id="where" aria-label="Where">
       <option value="">All locations</option>
       <option value="Kazakhstan">Kazakhstan only</option>
@@ -168,7 +173,9 @@
 
 <script>
 const $ = (s) => document.querySelector(s);
-const state = { all: [], q: "", where: "", city: "", source: "", sort: "new", f: new Set() };
+const state = { all: [], q: "", role: "ux", where: "", city: "", source: "", sort: "new", f: new Set() };
+// "UX/UI & product design" = job title mentions UX, UI, product design, interfaces or UX research/writing.
+const UX_RE = /\bux\b|\bui\b|ux\/ui|ui\/ux|product design|продукт\S* дизайн|интерфейс|interface|ux[- ]?research|ux[- ]?writ/i;
 const DAY = 864e5;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -197,6 +204,7 @@ function render() {
   const q = state.q.toLowerCase();
   let list = state.all.filter((v) => {
     if (q && !`${v.title} ${v.company} ${v.city}`.toLowerCase().includes(q)) return false;
+    if (state.role === "ux" && !UX_RE.test(v.title)) return false;
     if (state.city && v.city !== state.city) return false;
     if (state.where && v.region !== state.where) return false;
     if (state.source && v.source !== state.source) return false;
@@ -213,7 +221,7 @@ function render() {
 
   $("#count").textContent = `${list.length} of ${state.all.length} vacancies`;
   if (!list.length) {
-    $("#list").innerHTML = `<div class="empty">${state.all.length ? "No vacancies match these filters. Try clearing some." : "No vacancies yet. The list fills in automatically once the hourly update runs."}</div>`;
+    $("#list").innerHTML = `<div class="empty">${state.all.length ? `No vacancies match these filters.${state.role === "ux" ? " Try “All design jobs”." : " Try clearing some."}` : "No vacancies yet. The list fills in automatically once the hourly update runs."}</div>`;
     return;
   }
   $("#list").innerHTML = list.map((v) => {
@@ -252,12 +260,13 @@ async function load() {
     const sources = [...new Set(state.all.map((v) => v.source))].sort();
     $("#source").innerHTML = `<option value="">All sources</option>` + sources.map((c) => `<option>${esc(c)}</option>`).join("");
     $("#source").value = state.source;
-    const kz = state.all.filter((v) => v.region === "Kazakhstan").length;
+    const ux = state.all.filter((v) => UX_RE.test(v.title));
+    const kz = ux.filter((v) => v.region === "Kazakhstan").length;
     const fresh = state.all.filter((v) => Date.now() - Date.parse(v.published_at) < DAY).length;
     $("#status").innerHTML =
       `<span><span class="dot ${data.live ? "" : "off"}"></span>Live from <b>${sources.length}</b> sources</span>` +
       `<span>Updated <b>${ago(data.updated_at)}</b></span>` +
-      `<span><b>${kz}</b> in Kazakhstan · <b>${state.all.length - kz}</b> remote</span>` +
+      `<span><b>${ux.length}</b> UX/UI & product jobs (<b>${kz}</b> in Kazakhstan) · <b>${state.all.length}</b> design jobs in total</span>` +
       (fresh ? `<span><b>${fresh}</b> new today</span>` : "");
     render();
   } catch (e) {
@@ -267,6 +276,7 @@ async function load() {
 
 $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
 $("#city").addEventListener("change", (e) => { state.city = e.target.value; render(); });
+$("#role").addEventListener("change", (e) => { state.role = e.target.value; render(); });
 $("#where").addEventListener("change", (e) => { state.where = e.target.value; render(); });
 $("#source").addEventListener("change", (e) => { state.source = e.target.value; render(); });
 $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });

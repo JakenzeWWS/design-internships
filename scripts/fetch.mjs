@@ -128,17 +128,28 @@ async function hh() {
 
 // 2. Telegram — public channel previews (t.me/s/…), newest ~20 posts per channel.
 // Kazakhstan job channels: keep posts about design.
-const TG_KZ = ["itcom_kz", "workitkz", "itvacancykz", "itworkkz", "it_jobs_kz", "jobkz_1", "vakankz"];
+const TG_KZ = ["designkziskra", "itcom_kz", "workitkz", "itvacancykz", "itworkkz", "it_jobs_kz", "jobkz_1", "vakankz"];
+// Searches run inside each Kazakhstan channel (t.me/s/<channel>?q=…), so older matching posts are found too.
+const TG_SEARCHES = ["дизайнер", "#UX", "#design", "UX/UI"];
 // Design job channels (mostly Russia): keep design posts that are remote, in KZ, or entry-level.
 const TG_DESIGN = ["designer_ru", "designhunters", "designwork_vacansii", "designbirzha", "forproducts", "digital_hr"];
 
 async function telegramChannel(ch, kz) {
-  const html = await get(`https://t.me/s/${ch}`);
-  const channelTitle = stripTags((html.match(/tgme_channel_info_header_title[^>]*>([\s\S]*?)<\/div>/) || [])[1] || ch);
-  const posts = html.split('class="tgme_widget_message_wrap').slice(1);
+  const pages = [await get(`https://t.me/s/${ch}`)];
+  if (kz) {
+    for (const q of TG_SEARCHES) {
+      await sleep(400);
+      pages.push(await get(`https://t.me/s/${ch}?q=${encodeURIComponent(q)}`).catch(() => ""));
+    }
+  }
+  const channelTitle = stripTags((pages[0].match(/tgme_channel_info_header_title[^>]*>([\s\S]*?)<\/div>/) || [])[1] || ch);
+  const posts = pages.flatMap((html) => html.split('class="tgme_widget_message_wrap').slice(1));
   const out = [];
+  const seenPosts = new Set();
   for (const p of posts) {
     const post = (p.match(/data-post="([^"]+)"/) || [])[1];
+    if (!post || seenPosts.has(post)) continue;
+    seenPosts.add(post);
     const date = (p.match(/datetime="([^"]+)"/) || [])[1];
     const textHtml = (p.match(/tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/) || [])[1];
     if (!post || !date || !textHtml) continue;
@@ -155,7 +166,7 @@ async function telegramChannel(ch, kz) {
     const remote = REMOTE_RE.test(text);
     const tags = tagsOf(text);
     if (!kz && !(remote || kzMention || tags.length)) continue;
-    const title = (position || lines.find((l) => isDesign(l)) || lines[0]).replace(/^(ищем|требуется|вакансия|hiring)\s*[:\-–]?\s*/i, "").split(/\s+\|\s+/)[0].split(/(?<=[.!?])\s|:\s/)[0];
+    const title = (position || lines.find((l) => isDesign(l)) || lines[0]).replace(/^(вакансия|hiring)\s*[:\-–]\s*/i, "").split(/\s+\|\s+/)[0].split(/(?<=[.!?])\s|:\s/)[0];
     const shortTitle = title.length > 90 ? title.slice(0, 87).replace(/\s+\S*$/, "") + "…" : title;
     const company = (text.match(/(?:компания|company|работодатель)\s*[:\-–]\s*([^\n]{2,60})/i) || [])[1]?.trim();
     out.push({
@@ -290,7 +301,8 @@ async function company(c) {
 
 // 11. designjobs.kz — Kazakhstan design job board. Reads the job lists' structured data
 // (schema.org), then each new job page once; known jobs are reused from the last run.
-const DESIGNJOBS_LISTS = ["https://designjobs.kz/", "https://designjobs.kz/jobs/junior"];
+const DESIGNJOBS_LISTS = ["https://designjobs.kz/", "https://designjobs.kz/jobs/junior", "https://designjobs.kz/jobs/ux-ui",
+  "https://designjobs.kz/jobs/product-designer", "https://designjobs.kz/jobs/ui-designer", "https://designjobs.kz/jobs/ux-research"];
 
 function ldJson(html) {
   return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]

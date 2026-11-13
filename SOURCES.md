@@ -9,6 +9,7 @@ to read. No login, no faking a browser.
 | # | Source | What it gives | How | Notes |
 |---|---|---|---|---|
 | 1 | **hh.kz** | The biggest KZ job board. Internships, junior and no-experience design roles across all of Kazakhstan | Official API | **Waiting on your free API key** from dev.hh.ru. Expected to be the largest KZ source |
+| 2a | **Telegram @designkziskra** (Дизайн вакансии Казахстан) | KZ design jobs, often for students | Public channel page + search | All design posts are kept |
 | 2 | **Telegram @itcom_kz** (ITvacancy KZ & UZ) | KZ IT vacancies, often design | Public channel page | Only posts about design are kept |
 | 3 | **Telegram @workitkz** (IT Вакансии Казахстан) | KZ IT jobs | Public channel page | |
 | 4 | **Telegram @itvacancykz** | KZ IT jobs | Public channel page | |
@@ -31,11 +32,11 @@ to read. No login, no faking a browser.
 | 21 | **Remotive** | Remote jobs | Public API | Their free feed is small now |
 | 22 | **inDrive careers** (careers.indrive.com) | inDrive's own job site. Almaty HQ, often hires designers | Public site data (WordPress API, robots.txt allows) | Only Kazakhstan design roles. Shown for as long as inDrive lists them |
 | 23 | **Wolt careers** | Wolt's jobs in Almaty and Astana | Greenhouse public API | Only Kazakhstan design roles (none right now) |
-| 24 | **designjobs.kz** | Kazakhstan's design-only job board: about 50 current design jobs, including junior and intern roles, across many KZ cities | Structured job data on its public pages (robots.txt allows) | **Biggest KZ source right now.** Expired jobs are dropped automatically |
+| 24 | **designjobs.kz** | Kazakhstan's design-only job board. Reads the home page plus the Junior, UX/UI, Product designer, UI designer and UX research pages: including junior and intern roles, across many KZ cities | Structured job data on its public pages (robots.txt allows) | **Biggest KZ source right now.** Expired jobs are dropped automatically |
 | 25 | **hackathon.kz/internships** | Student internship programs (e.g. Halyk Start, which has a UX/UI track) | The site's public internships data | Only internships that include design. Links go to the hackathon.kz page |
 | 26 | **Your own list** (`data/manual.json`) | Anything you find yourself | File you edit | Shows on the site within a minute |
 
-Telegram previews show only each channel's ~20 newest posts. The updater remembers older posts, so
+In every Kazakhstan Telegram channel the updater also runs the channel's own search for `дизайнер`, `#UX`, `#design` and `UX/UI`, so older matching posts are found too. Telegram previews show only each channel's ~20 newest posts. The updater remembers older posts, so
 nothing gets lost between runs. Listings older than 60 days are removed.
 
 ## 🔗 Linked on the site ("More places to look"), not collected
