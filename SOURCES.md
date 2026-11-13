@@ -29,7 +29,9 @@ to read. No login, no faking a browser.
 | 19 | **RemoteOK** | Remote jobs | Public API | Few real design jobs; kept for coverage |
 | 20 | **Working Nomads** | Remote jobs | Public API | Design category only |
 | 21 | **Remotive** | Remote jobs | Public API | Their free feed is small now |
-| 22 | **Your own list** (`data/manual.json`) | Anything you find yourself | File you edit | Shows on the site within a minute |
+| 22 | **inDrive careers** (careers.indrive.com) | inDrive's own job site. Almaty HQ, often hires designers | Public site data (WordPress API, robots.txt allows) | Only Kazakhstan design roles. Shown for as long as inDrive lists them |
+| 23 | **Wolt careers** | Wolt's jobs in Almaty and Astana | Greenhouse public API | Only Kazakhstan design roles (none right now) |
+| 24 | **Your own list** (`data/manual.json`) | Anything you find yourself | File you edit | Shows on the site within a minute |
 
 Telegram previews show only each channel's ~20 newest posts. The updater remembers older posts, so
 nothing gets lost between runs. Listings older than 60 days are removed.
@@ -54,10 +56,28 @@ nothing gets lost between runs. Listings older than 60 days are removed.
 | designer.ru | Its robots.txt forbids bots on search pages |
 | Telegram @designer_jobs, @uiux_jobs, @uxuidesign_jobs, KZ design channels | Channel doesn't exist or has no public preview |
 
+## 🏢 Company career pages: what I checked
+
+I tested about 50 companies with offices in Kazakhstan (KZ tech, banks, telecoms, and international
+companies with Almaty/Astana offices) against the main hiring systems with open feeds
+(Greenhouse, Lever, Ashby, Workable, SmartRecruiters) and their own career sites.
+
+| Company | Result |
+|---|---|
+| **inDrive** | ✅ Connected (its own careers site has open data) |
+| **Wolt** | ✅ Connected (Greenhouse, 8 KZ jobs, none in design right now) |
+| **Andersen** | 🔗 Linked. Runs UI/UX design internships in KZ, but its site has no feed. Also posts on hh.kz |
+| **Kaspi, Kolesa Group, Halyk, Chocofamily, Jusan, Beeline KZ, Kcell, Freedom, BTS Digital, Technodom, Air Astana** | No open feed; their careers pages are built with JavaScript or send you to hh.kz. **They post their vacancies on hh.kz**, so they'll show up automatically once the hh key works |
+| JetBrains, Figma, GitLab, Miro, Canva, Xsolla, Careem, Toptal and others | Have open feeds, but no Kazakhstan jobs |
+
+**Bottom line:** in Kazakhstan, almost every company hires through hh.kz. The hh API key is still
+the single biggest improvement.
+
+To add another company that uses Greenhouse, Lever or Ashby, add one line to `COMPANIES` in
+`scripts/fetch.mjs`, e.g. `{ name: "Company", type: "lever", slug: "company" }`.
+
 ## Ideas for more KZ coverage
 
-- **Company career pages.** Large KZ tech companies (Kaspi, Kolesa Group, Chocofamily, inDrive, Halyk,
-  Beeline KZ, Freedom) often post design internships on their own sites. Many use hiring systems with
-  open feeds (Greenhouse, Lever, Huntflow). Send me a list of companies and I can check and connect them.
+- **More companies.** If you know a company that hires designers, send me its careers page and I'll check for a feed.
 - **More Telegram channels.** If students or colleagues know KZ design channels, send me the @names.
   If the channel has a public preview, adding one takes a minute.

@@ -241,7 +241,52 @@ async function remotive() {
     date: j.publication_date, url: j.url, source: "Remotive", location: j.candidate_required_location || "" }));
 }
 
-// 10. Teacher-added vacancies (data/manual.json)
+// 10. Company career pages with open job feeds. Company jobs stay on the site for as
+// long as the company still lists them (no 60-day limit).
+// To add a company, add one line. Types: "greenhouse", "lever", "ashby", "wordpress".
+const KZ_RE = /kazakh|казахстан|almaty|алматы|astana|астана|nur-sultan|shymkent|шымкент/i;
+const COMPANIES = [
+  { name: "inDrive", type: "wordpress", url: "https://careers.indrive.com" },
+  { name: "Wolt", type: "greenhouse", slug: "wolt" },
+];
+
+function companyJob(c, { id, title, location, date, url }) {
+  if (!isDesign(title) || !KZ_RE.test(`${title} ${location}`)) return [];
+  return [{ id: `co-${c.name}-${id}`, title: title.replace(/\s+[–-]\s+Kazakhstan$/i, ""), company: c.name, logo: null,
+    city: cityOf(`${title} ${location}`), region: "Kazakhstan", published_at: iso(date), salary: null,
+    format: REMOTE_RE.test(location) ? "Remote" : "Office", tags: tagsOf(title), url, source: `${c.name} careers`, evergreen: true }];
+}
+
+async function company(c) {
+  if (c.type === "greenhouse") {
+    const d = await get(`https://boards-api.greenhouse.io/v1/boards/${c.slug}/jobs`, { json: true });
+    return d.jobs.flatMap((j) => companyJob(c, { id: j.id, title: j.title, location: j.location?.name || "", date: j.updated_at, url: j.absolute_url }));
+  }
+  if (c.type === "lever") {
+    const d = await get(`https://api.lever.co/v0/postings/${c.slug}?mode=json`, { json: true });
+    return d.flatMap((j) => companyJob(c, { id: j.id, title: j.text, location: j.categories?.location || "", date: j.createdAt, url: j.hostedUrl }));
+  }
+  if (c.type === "ashby") {
+    const d = await get(`https://api.ashbyhq.com/posting-api/job-board/${c.slug}`, { json: true });
+    return d.jobs.flatMap((j) => companyJob(c, { id: j.id, title: j.title,
+      location: [j.location, ...(j.secondaryLocations || []).map((x) => x.location)].join(", "), date: j.publishedAt, url: j.jobUrl }));
+  }
+  if (c.type === "wordpress") {
+    const out = [];
+    for (let page = 1; page <= 10; page++) {
+      const res = await fetch(`${c.url}/wp-json/wp/v2/open_position?per_page=100&page=${page}&_fields=id,date_gmt,link,title`, { headers: { "User-Agent": UA } });
+      if (!res.ok) break;
+      const list = await res.json();
+      for (const j of list) out.push(...companyJob(c, { id: j.id, title: decode(j.title.rendered), location: "", date: `${j.date_gmt}Z`, url: j.link }));
+      if (page >= Number(res.headers.get("x-wp-totalpages") || 1)) break;
+      await sleep(300);
+    }
+    return out;
+  }
+  throw new Error(`unknown company type ${c.type}`);
+}
+
+// 11. Teacher-added vacancies (data/manual.json)
 async function manual() {
   try {
     const list = JSON.parse(await readFile(MANUAL, "utf8"));
@@ -263,6 +308,7 @@ const SOURCES = [
   { name: "We Work Remotely", run: weworkremotely },
   { name: "Working Nomads", run: workingnomads },
   { name: "Remotive", run: remotive },
+  ...COMPANIES.map((c) => ({ name: `${c.name} careers`, run: () => company(c) })),
   { name: "Added by teacher", run: manual },
 ];
 
@@ -296,7 +342,7 @@ async function main() {
       items = old;
     }
     for (const v of items) {
-      if (!v.url || !(Date.parse(v.published_at) >= cutoff)) continue;
+      if (!v.url || !(v.evergreen || Date.parse(v.published_at) >= cutoff)) continue;
       delete v.accumulate;
       all.set(v.id, v);
     }

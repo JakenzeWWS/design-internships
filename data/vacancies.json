@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-13T11:16:21.247Z",
+  "updated_at": "2026-11-13T12:41:04.823Z",
   "live": true,
-  "count": 46,
+  "count": 49,
   "sources": [
     {
       "name": "hh.kz",
@@ -106,6 +106,16 @@
     },
     {
       "name": "Remotive",
+      "ok": true,
+      "count": 0
+    },
+    {
+      "name": "inDrive careers",
+      "ok": true,
+      "count": 3
+    },
+    {
+      "name": "Wolt careers",
       "ok": true,
       "count": 0
     },
@@ -768,6 +778,51 @@
       "tags": [],
       "url": "https://t.me/itvacancykz/2032",
       "source": "Telegram @itvacancykz"
+    },
+    {
+      "id": "co-inDrive-7328",
+      "title": "Senior Brand & Product Communication Designer",
+      "company": "inDrive",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-08-26T08:38:08.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://careers.indrive.com/vacancies/dbe74ba8f743aa4bdd17a3acebe6c371/",
+      "source": "inDrive careers",
+      "evergreen": true
+    },
+    {
+      "id": "co-inDrive-6869",
+      "title": "Designer",
+      "company": "inDrive",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-05-28T09:58:09.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://careers.indrive.com/vacancies/490d12d8f9e2428ce2c050273c0d24d2/",
+      "source": "inDrive careers",
+      "evergreen": true
+    },
+    {
+      "id": "co-inDrive-6554",
+      "title": "Communications Designer in Product and Web",
+      "company": "inDrive",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-03-16T14:32:37.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://careers.indrive.com/vacancies/c5108ad2baf127362cc7e24b372d6e50/",
+      "source": "inDrive careers",
+      "evergreen": true
     }
   ]
 }
