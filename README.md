@@ -1,12 +1,13 @@
 # Design Internships KZ
 
-A one-page site with UX/UI, product and web design internships and junior/no-experience vacancies
-in Kazakhstan. The data comes from hh.kz and refreshes every hour.
+A one-page site with UX/UI, product and web design vacancies for students in Kazakhstan. It collects
+from 20+ sources every hour: hh.kz, 13 Telegram channels, Habr Career and 7 remote-job boards.
+See [SOURCES.md](SOURCES.md) for the full list and why some sites are only linked.
 
 - `index.html`: the page students open
 - `data/vacancies.json`: the vacancy list (generated, don't edit)
 - `data/manual.json`: vacancies **you** add by hand (from Telegram, Instagram, LinkedIn...)
-- `scripts/fetch.mjs`: downloads vacancies from the official hh.ru API
+- `scripts/fetch.mjs`: collects vacancies from all sources (add Telegram channels at `TG_KZ` / `TG_DESIGN`)
 - `.github/workflows/update.yml`: runs the script every hour on GitHub
 
 ## Setup (one time)

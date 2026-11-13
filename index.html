@@ -51,13 +51,14 @@
 
   .controls {
     position: sticky; top: 0; z-index: 2; background: var(--bg);
-    display: grid; grid-template-columns: 1fr auto auto; gap: 8px;
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;
     padding: 20px 0 14px; margin-top: 12px; border-bottom: 1px solid var(--line);
   }
   input[type=search], select {
     font: inherit; color: var(--text); background: var(--surface);
     border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0;
   }
+  .controls input[type=search] { grid-column: 1 / -1; }
   input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
   .toggles { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
   .toggle {
@@ -84,18 +85,27 @@
   .chip { background: var(--chip); border-radius: 6px; padding: 2px 8px; color: var(--text); }
   .chip.intern { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
   .chip.new { background: var(--new-soft); color: var(--new); font-weight: 600; }
+  .src { font-weight: 500; color: var(--text); }
   .btn {
     display: inline-block; text-decoration: none; white-space: nowrap; font-weight: 600; font-size: 14px;
     background: var(--accent); color: var(--accent-text); padding: 10px 14px; border-radius: 10px;
   }
   .btn:hover { filter: brightness(1.08); }
   .empty { text-align: center; color: var(--muted); padding: 48px 16px; border: 1px dashed var(--line); border-radius: 14px; }
+  .more { margin-top: 40px; }
+  .more h2 { font-size: 20px; margin: 0 0 4px; letter-spacing: -.01em; }
+  .more > p { margin: 0 0 14px; color: var(--muted); font-size: 14px; }
+  .links { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }
+  .links a { display: block; text-decoration: none; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  .links a:hover { border-color: var(--accent); }
+  .links b { display: block; font-size: 14px; }
+  .links span { font-size: 12.5px; color: var(--muted); }
   footer { margin-top: 32px; font-size: 12.5px; color: var(--muted); text-align: center; }
   footer a { color: inherit; }
 
   @media (max-width: 600px) {
     .wrap { padding-top: 28px; }
-    .controls { grid-template-columns: 1fr 1fr; }
+    .controls { grid-template-columns: 1fr 1fr; position: static; }
     .controls input[type=search] { grid-column: 1 / -1; }
     .card { grid-template-columns: 40px 1fr; }
     .logo { width: 40px; height: 40px; }
@@ -107,13 +117,19 @@
 <div class="wrap">
   <header>
     <h1>Design internships in Kazakhstan</h1>
-    <p>UX/UI, product and web design roles for students: internships, junior and no-experience positions. Updated automatically every hour.</p>
+    <p>UX/UI, product and web design roles from job boards, Telegram channels and remote-work sites, collected in one place. Updated automatically every hour.</p>
     <div class="status" id="status">Loading…</div>
   </header>
 
   <div class="controls">
     <input type="search" id="q" placeholder="Search company or role…" aria-label="Search">
+    <select id="where" aria-label="Where">
+      <option value="">All locations</option>
+      <option value="Kazakhstan">Kazakhstan only</option>
+      <option value="Remote">Remote only</option>
+    </select>
     <select id="city" aria-label="City"><option value="">All cities</option></select>
+    <select id="source" aria-label="Source"><option value="">All sources</option></select>
     <select id="sort" aria-label="Sort">
       <option value="new">Newest first</option>
       <option value="old">Oldest first</option>
@@ -130,12 +146,27 @@
   <div class="count" id="count"></div>
   <div class="list" id="list"></div>
 
-  <footer>Vacancies from <a href="https://hh.kz" target="_blank" rel="noopener">hh.kz</a> and teacher-added listings. Always check details on the original page before applying.</footer>
+  <section class="more">
+    <h2>More places to look</h2>
+    <p>These sites don't allow automatic collection, so check them yourself every few days.</p>
+    <div class="links">
+      <a href="https://hh.kz/search/vacancy?text=UX%2FUI+%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80&area=40&experience=noExperience" target="_blank" rel="noopener"><b>hh.kz</b><span>Biggest job board in KZ: no-experience design roles</span></a>
+      <a href="https://www.enbek.kz/ru/search/vacancy?prof=%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80" target="_blank" rel="noopener"><b>Enbek.kz</b><span>Official state labor exchange</span></a>
+      <a href="https://astanahub.com/ru/vacancy/" target="_blank" rel="noopener"><b>Astana Hub</b><span>IT park startups and tech companies</span></a>
+      <a href="https://www.linkedin.com/jobs/search/?keywords=UX%20UI%20designer&location=Kazakhstan&f_E=1%2C2" target="_blank" rel="noopener"><b>LinkedIn Jobs</b><span>Internship + entry level in Kazakhstan</span></a>
+      <a href="https://www.olx.kz/rabota/q-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80/" target="_blank" rel="noopener"><b>OLX.kz</b><span>Local small businesses looking for designers</span></a>
+      <a href="https://career.habr.com/vacancies?q=%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80&qualification=1&type=all" target="_blank" rel="noopener"><b>Habr Career</b><span>Intern-level design roles</span></a>
+      <a href="https://www.behance.net/joblist" target="_blank" rel="noopener"><b>Behance Jobs</b><span>Design jobs from Adobe's portfolio site</span></a>
+      <a href="https://dribbble.com/jobs?location=Anywhere" target="_blank" rel="noopener"><b>Dribbble Jobs</b><span>Remote design jobs worldwide</span></a>
+    </div>
+  </section>
+
+  <footer>Collected from hh.kz, Telegram channels, Habr Career, Jobicy, Himalayas, We Work Remotely, RemoteOK, Working Nomads and Remotive. Remote listings link back to their original boards. Always check details on the original page before applying.</footer>
 </div>
 
 <script>
 const $ = (s) => document.querySelector(s);
-const state = { all: [], q: "", city: "", sort: "new", f: new Set() };
+const state = { all: [], q: "", where: "", city: "", source: "", sort: "new", f: new Set() };
 const DAY = 864e5;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -165,6 +196,8 @@ function render() {
   let list = state.all.filter((v) => {
     if (q && !`${v.title} ${v.company} ${v.city}`.toLowerCase().includes(q)) return false;
     if (state.city && v.city !== state.city) return false;
+    if (state.where && v.region !== state.where) return false;
+    if (state.source && v.source !== state.source) return false;
     if (state.f.has("week") && Date.now() - Date.parse(v.published_at) > 7 * DAY) return false;
     if (state.f.has("Internship") && !v.tags.includes("Internship")) return false;
     if (state.f.has("entry") && !v.tags.some((t) => t === "Junior" || t === "No experience" || t === "Internship")) return false;
@@ -186,9 +219,10 @@ function render() {
     const chips = [
       isNew ? `<span class="chip new">New</span>` : "",
       ...v.tags.map((t) => `<span class="chip ${t === "Internship" ? "intern" : ""}">${esc(t)}</span>`),
-      v.format && v.format !== "Office" ? `<span class="chip">${esc(v.format)}</span>` : "",
+      v.format && v.format !== "Office" && v.region !== "Remote" ? `<span class="chip">${esc(v.format)}</span>` : "",
       fmtSalary(v.salary) ? `<span class="chip">${esc(fmtSalary(v.salary))}</span>` : "",
     ].join("");
+    const place = v.region === "Remote" ? "Remote" : (v.city || "Kazakhstan");
     const logo = v.logo ? `<img src="${esc(v.logo)}" alt="" loading="lazy">` : esc(v.company.trim()[0] || "?");
     return `<article class="card">
       <div class="logo">${logo}</div>
@@ -196,11 +230,11 @@ function render() {
         <div class="company">${esc(v.company)}</div>
         <div class="title">${esc(v.title)}</div>
         <div class="meta">
-          <span title="${esc(fmtDate(v.published_at))}">${esc(v.city)}${v.city ? " · " : ""}Posted ${ago(v.published_at)} · ${esc(fmtDate(v.published_at))}</span>
+          <span>${esc(place)} · Posted ${ago(v.published_at)} · ${esc(fmtDate(v.published_at))} · via <b class="src">${esc(v.source)}</b></span>
           ${chips}
         </div>
       </div>
-      <a class="btn" href="${esc(v.url)}" target="_blank" rel="noopener">Open vacancy →</a>
+      <a class="btn" href="${esc(v.url)}" target="_blank" rel="noopener">${v.source.startsWith("Telegram") ? "Open post →" : "Open vacancy →"}</a>
     </article>`;
   }).join("");
 }
@@ -213,11 +247,15 @@ async function load() {
     const cities = [...new Set(state.all.map((v) => v.city).filter(Boolean))].sort();
     $("#city").innerHTML = `<option value="">All cities</option>` + cities.map((c) => `<option>${esc(c)}</option>`).join("");
     $("#city").value = state.city;
+    const sources = [...new Set(state.all.map((v) => v.source))].sort();
+    $("#source").innerHTML = `<option value="">All sources</option>` + sources.map((c) => `<option>${esc(c)}</option>`).join("");
+    $("#source").value = state.source;
+    const kz = state.all.filter((v) => v.region === "Kazakhstan").length;
     const fresh = state.all.filter((v) => Date.now() - Date.parse(v.published_at) < DAY).length;
     $("#status").innerHTML =
-      `<span><span class="dot ${data.live ? "" : "off"}"></span>${data.live ? "Live from hh.kz" : "hh.kz connection not set up yet"}</span>` +
+      `<span><span class="dot ${data.live ? "" : "off"}"></span>Live from <b>${sources.length}</b> sources</span>` +
       `<span>Updated <b>${ago(data.updated_at)}</b></span>` +
-      `<span><b>${state.all.length}</b> vacancies</span>` +
+      `<span><b>${kz}</b> in Kazakhstan · <b>${state.all.length - kz}</b> remote</span>` +
       (fresh ? `<span><b>${fresh}</b> new today</span>` : "");
     render();
   } catch (e) {
@@ -227,6 +265,8 @@ async function load() {
 
 $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
 $("#city").addEventListener("change", (e) => { state.city = e.target.value; render(); });
+$("#where").addEventListener("change", (e) => { state.where = e.target.value; render(); });
+$("#source").addEventListener("change", (e) => { state.source = e.target.value; render(); });
 $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
 document.querySelectorAll(".toggle").forEach((b) => b.addEventListener("click", () => {
   const on = b.getAttribute("aria-pressed") !== "true";

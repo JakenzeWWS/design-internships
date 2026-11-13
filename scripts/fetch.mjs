@@ -1,14 +1,13 @@
-// Fetches design internships / entry-level vacancies in Kazakhstan from the
-// official HeadHunter API and writes data/vacancies.json for the website.
+// Collects UX/UI, product and web design vacancies for students in Kazakhstan
+// from many sources and writes data/vacancies.json for the website.
 //
-// HeadHunter requires an application token for vacancy search.
-// Provide ONE of these as environment variables (GitHub Secrets in production):
-//   HH_APP_TOKEN                       – an application token you already have, or
-//   HH_CLIENT_ID + HH_CLIENT_SECRET    – the script exchanges them for a token.
-// Optional: HH_USER_AGENT, e.g. "DesignInternships/1.0 (you@yourmail.com)".
+// Every source runs independently: if one fails, the others still update and the
+// failed source keeps its previous results. Only official APIs, RSS feeds and
+// public pages that allow automated access are used, with an honest User-Agent.
 //
-// Manually added vacancies (from Telegram, Instagram, LinkedIn...) can be put in
-// data/manual.json and are merged into the output.
+// Optional secrets (GitHub → Settings → Secrets → Actions):
+//   HH_APP_TOKEN, or HH_CLIENT_ID + HH_CLIENT_SECRET  – enables hh.kz
+//   HH_USER_AGENT – e.g. "DesignInternships/1.0 (you@mail.com)"
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -17,145 +16,310 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "vacancies.json");
 const MANUAL = path.join(ROOT, "data", "manual.json");
-
-const API = "https://api.hh.ru";
-const AREA_KAZAKHSTAN = "40";
 const MAX_AGE_DAYS = 60;
-const USER_AGENT = process.env.HH_USER_AGENT || "DesignInternshipsKZ/1.0";
+const UA = "DesignInternshipsKZ/1.0 (+https://jakenzewws.github.io/design-internships/)";
 
-// Job-title search terms (searched in the vacancy title only, to avoid noise).
-const TERMS = [
-  "UX", "UI", "UX/UI", "UI/UX",
-  "product designer", "продуктовый дизайнер",
-  "web designer", "веб-дизайнер", "веб дизайнер",
-  "дизайнер интерфейсов", "digital designer", "digital-дизайнер",
-  "figma",
+// ---------------------------------------------------------------- filters ---
+
+// Job is about digital design?
+const DESIGN_RE = /\bux\b|\bui\b|ux\/ui|ui\/ux|дизайн|design|figma|interface|интерфейс/i;
+// ...but not these kinds of design.
+const EXCLUDE_RE = /interior|интерьер|ландшафт|landscape|fashion|одежд|мебел|furniture|level design|game design|геймдиз|instructional|ювелир|jewel|маникюр|ногт|парикмах|\bhair|engineer|инженер|architect|архитект|конструкт|\bcad\b|швея|флорист|полиграф|упаковк|packaging|print|developer|разработчик|программист|frontend|front-end|automobil|automotive|автомоб/i;
+const INTERN_RE = /стаж[её]р|стажир|intern\b|internship|trainee|практикант|практика/i;
+const JUNIOR_RE = /junior|младш|джун|entry[- ]level|начинающ/i;
+const NOEXP_RE = /без опыта|no experience|опыт не (требуется|обязателен)/i;
+const REMOTE_RE = /remote|удал[её]н|удаленка|дистанц/i;
+// Remote jobs that people in Kazakhstan can actually take.
+const OPEN_TO_KZ_RE = /^$|worldwide|anywhere|global|kazakhstan|казахстан|central asia|asia|\bcis\b|снг|emea/i;
+const KZ_CITIES = [
+  ["Almaty", /алмат|almaty/i], ["Astana", /астан|astana|нур-султан/i], ["Shymkent", /шымкент|shymkent/i],
+  ["Karaganda", /караганд|karaganda/i], ["Aktobe", /актоб|aktobe/i], ["Atyrau", /атырау|atyrau/i],
+  ["Pavlodar", /павлодар|pavlodar/i], ["Ust-Kamenogorsk", /усть-каменогорск|oskemen/i], ["Kostanay", /костанай|kostanay/i],
 ];
-const ENTRY_WORDS = "стажер OR стажёр OR стажировка OR intern OR internship OR trainee OR junior OR младший OR практикант";
+
+const isDesign = (t) => DESIGN_RE.test(t) && !EXCLUDE_RE.test(t);
+const cityOf = (t) => (KZ_CITIES.find(([, re]) => re.test(t)) || [""])[0];
+function tagsOf(text) {
+  const tags = [];
+  if (INTERN_RE.test(text)) tags.push("Internship");
+  if (JUNIOR_RE.test(text)) tags.push("Junior");
+  if (NOEXP_RE.test(text)) tags.push("No experience");
+  return tags;
+}
+
+// ---------------------------------------------------------------- helpers ---
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function getToken() {
-  if (process.env.HH_APP_TOKEN) return process.env.HH_APP_TOKEN;
-  const { HH_CLIENT_ID: id, HH_CLIENT_SECRET: secret } = process.env;
-  if (!id || !secret) return null;
-  const res = await fetch("https://api.hh.ru/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded", "HH-User-Agent": USER_AGENT },
-    body: new URLSearchParams({ grant_type: "client_credentials", client_id: id, client_secret: secret }),
+async function get(url, { json = false, headers = {} } = {}) {
+  const res = await fetch(url, { headers: { "User-Agent": UA, ...headers } });
+  if (!res.ok) throw new Error(`${res.status} ${url}`);
+  return json ? res.json() : res.text();
+}
+
+const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", "#39": "'" };
+function decode(s = "") {
+  return s
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&([a-z#0-9]+);/gi, (m, e) => ENTITIES[e] ?? m);
+}
+const stripTags = (s = "") => decode(s.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, " ")).replace(/[ \t]+/g, " ").trim();
+
+function rssItems(xml) {
+  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, body]) => {
+    const tag = (name) => decode((body.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)</${name}>`)) || [])[1] || "").trim();
+    return { title: tag("title"), link: tag("link"), pubDate: tag("pubDate"), description: tag("description"), author: tag("author"), region: tag("region"), image: tag("image") };
   });
-  const body = await res.json().catch(() => ({}));
-  if (!res.ok || !body.access_token) {
-    throw new Error(`Could not get app token (${res.status}): ${JSON.stringify(body)}`);
-  }
-  return body.access_token;
 }
 
-async function search(token, params) {
-  const url = new URL(`${API}/vacancies`);
-  const all = { area: AREA_KAZAKHSTAN, per_page: "100", order_by: "publication_time", period: String(MAX_AGE_DAYS), ...params };
-  for (const [k, v] of Object.entries(all)) url.searchParams.set(k, v);
-  const items = [];
-  for (let page = 0; page < 5; page++) {
-    url.searchParams.set("page", String(page));
-    const res = await fetch(url, {
-      headers: { "HH-User-Agent": USER_AGENT, Authorization: `Bearer ${token}` },
+const iso = (d) => new Date(d).toISOString();
+
+// ---------------------------------------------------------------- sources ---
+// Each source returns an array of vacancies in this shape:
+// { id, title, company, logo, city, region: "Kazakhstan"|"Remote", published_at,
+//   salary, format, tags, url, source }
+
+// 1. hh.kz — official API (needs a free app token from dev.hh.ru)
+async function hh() {
+  let token = process.env.HH_APP_TOKEN;
+  if (!token && process.env.HH_CLIENT_ID && process.env.HH_CLIENT_SECRET) {
+    const res = await fetch("https://api.hh.ru/token", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded", "HH-User-Agent": process.env.HH_USER_AGENT || UA },
+      body: new URLSearchParams({ grant_type: "client_credentials", client_id: process.env.HH_CLIENT_ID, client_secret: process.env.HH_CLIENT_SECRET }),
     });
-    if (!res.ok) {
-      const text = await res.text();
-      throw new Error(`hh.ru ${res.status} for ${url.search}: ${text.slice(0, 300)}`);
-    }
-    const body = await res.json();
-    items.push(...body.items);
-    if (page + 1 >= body.pages) break;
-    await sleep(300);
+    const body = await res.json().catch(() => ({}));
+    if (!body.access_token) throw new Error(`hh token error ${res.status}: ${JSON.stringify(body)}`);
+    token = body.access_token;
   }
-  return items;
+  if (!token) return { skipped: "no API key yet (see README)" };
+
+  const terms = ["UX", "UI", "UX/UI", "UI/UX", "product designer", "продуктовый дизайнер", "web designer", "веб-дизайнер",
+    "веб дизайнер", "дизайнер интерфейсов", "digital designer", "digital-дизайнер", "figma", "графический дизайнер"];
+  const entry = "стажер OR стажёр OR стажировка OR intern OR internship OR trainee OR junior OR младший OR практикант";
+  const byId = new Map();
+  for (const term of terms) {
+    for (const extra of [{ text: term, experience: "noExperience" }, { text: `(${term}) AND (${entry})` }]) {
+      const url = new URL("https://api.hh.ru/vacancies");
+      Object.entries({ area: "40", per_page: "100", order_by: "publication_time", period: String(MAX_AGE_DAYS), search_field: "name", ...extra })
+        .forEach(([k, v]) => url.searchParams.set(k, v));
+      const body = await get(url, { json: true, headers: { "HH-User-Agent": process.env.HH_USER_AGENT || UA, Authorization: `Bearer ${token}` } });
+      for (const v of body.items) if (!v.archived) byId.set(v.id, v);
+      await sleep(300);
+    }
+  }
+  return [...byId.values()].filter((v) => !EXCLUDE_RE.test(v.name)).map((v) => {
+    const fmt = (v.work_format || []).map((f) => f.id);
+    const tags = tagsOf(v.name);
+    if (v.experience?.id === "noExperience" && !tags.includes("No experience")) tags.push("No experience");
+    return {
+      id: `hh-${v.id}`, title: v.name, company: v.employer?.name || "", logo: v.employer?.logo_urls?.["90"] || null,
+      city: v.area?.name || "", region: "Kazakhstan", published_at: v.published_at,
+      salary: v.salary ? { from: v.salary.from, to: v.salary.to, currency: v.salary.currency } : null,
+      format: fmt.includes("REMOTE") || v.schedule?.id === "remote" ? "Remote" : fmt.includes("HYBRID") ? "Hybrid" : "Office",
+      tags, url: v.alternate_url, source: "hh.kz",
+    };
+  });
 }
 
-const INTERN_RE = /стаж[её]р|стажир|intern|trainee|практикант/i;
-const JUNIOR_RE = /junior|младш|джуниор/i;
+// 2. Telegram — public channel previews (t.me/s/…), newest ~20 posts per channel.
+// Kazakhstan job channels: keep posts about design.
+const TG_KZ = ["itcom_kz", "workitkz", "itvacancykz", "itworkkz", "it_jobs_kz", "jobkz_1", "vakankz"];
+// Design job channels (mostly Russia): keep design posts that are remote, in KZ, or entry-level.
+const TG_DESIGN = ["designer_ru", "designhunters", "designwork_vacansii", "designbirzha", "forproducts", "digital_hr"];
 
-function workFormat(v) {
-  const ids = (v.work_format || []).map((f) => f.id);
-  if (ids.includes("REMOTE") || v.schedule?.id === "remote") return "Remote";
-  if (ids.includes("HYBRID")) return "Hybrid";
-  return "Office";
+async function telegramChannel(ch, kz) {
+  const html = await get(`https://t.me/s/${ch}`);
+  const channelTitle = stripTags((html.match(/tgme_channel_info_header_title[^>]*>([\s\S]*?)<\/div>/) || [])[1] || ch);
+  const posts = html.split('class="tgme_widget_message_wrap').slice(1);
+  const out = [];
+  for (const p of posts) {
+    const post = (p.match(/data-post="([^"]+)"/) || [])[1];
+    const date = (p.match(/datetime="([^"]+)"/) || [])[1];
+    const textHtml = (p.match(/tgme_widget_message_text[^>]*>([\s\S]*?)<\/div>/) || [])[1];
+    if (!post || !date || !textHtml) continue;
+    const text = stripTags(textHtml);
+    const lines = text.split("\n")
+      .map((l) => l.replace(/[\u200b\u200c\u200d]/g, "").trim())
+      .filter((l) => !l.startsWith("#"))
+      .map((l) => l.replace(/^[\s\p{Extended_Pictographic}\u{FE0F}•\-–—:|*]+/u, "").trim())
+      .filter((l) => l.length > 2);
+    const position = (text.match(/(?:должность|позиция|position|role|вакансия)\s*[:\-–]\s*([^\n]{3,100})/i) || [])[1]?.trim();
+    const head = position || lines.slice(0, 3).join(" ");
+    if (!isDesign(head)) continue;
+    const kzMention = /казахстан|kazakhstan|алмат|almaty|астан|astana|шымкент/i.test(text);
+    const remote = REMOTE_RE.test(text);
+    const tags = tagsOf(text);
+    if (!kz && !(remote || kzMention || tags.length)) continue;
+    const title = (position || lines.find((l) => isDesign(l)) || lines[0]).replace(/^(ищем|требуется|вакансия|hiring)\s*[:\-–]?\s*/i, "").split(/\s+\|\s+/)[0].split(/(?<=[.!?])\s|:\s/)[0];
+    const shortTitle = title.length > 90 ? title.slice(0, 87).replace(/\s+\S*$/, "") + "…" : title;
+    const company = (text.match(/(?:компания|company|работодатель)\s*[:\-–]\s*([^\n]{2,60})/i) || [])[1]?.trim();
+    out.push({
+      id: `tg-${post.replace("/", "-")}`, title: shortTitle, company: company || channelTitle, logo: null,
+      city: cityOf(text), region: kz || kzMention ? "Kazakhstan" : "Remote", published_at: iso(date), salary: null,
+      format: remote ? "Remote" : "Office", tags, url: `https://t.me/${post}`, source: `Telegram @${ch}`, accumulate: true,
+    });
+  }
+  return out;
 }
 
-function normalize(v) {
-  const tags = [];
-  if (INTERN_RE.test(v.name)) tags.push("Internship");
-  if (JUNIOR_RE.test(v.name)) tags.push("Junior");
-  if (v.experience?.id === "noExperience") tags.push("No experience");
-  return {
-    id: `hh-${v.id}`,
-    title: v.name,
-    company: v.employer?.name || "Company not specified",
-    logo: v.employer?.logo_urls?.["90"] || null,
-    city: v.area?.name || "",
-    published_at: v.published_at,
-    salary: v.salary ? { from: v.salary.from, to: v.salary.to, currency: v.salary.currency } : null,
-    format: workFormat(v),
-    tags,
-    url: v.alternate_url,
-    source: "hh.kz",
-  };
+// 3. Habr Career — official RSS. Keep jobs in Kazakhstan or remote.
+async function habr() {
+  const queries = ["UX", "UI дизайнер", "product designer", "продуктовый дизайнер", "веб-дизайнер", "дизайнер интерфейсов", "web designer"];
+  const byUrl = new Map();
+  for (const q of queries) {
+    const xml = await get(`https://career.habr.com/vacancies/rss?type=all&q=${encodeURIComponent(q)}`);
+    for (const it of rssItems(xml)) byUrl.set(it.link, it);
+    await sleep(500);
+  }
+  return [...byUrl.values()].flatMap((it) => {
+    const role = (it.title.match(/«(.+)»/) || [, it.title])[1];
+    const kz = /казахстан/i.test(it.description);
+    const remote = /можно удал/i.test(it.description);
+    if (!isDesign(role) || !(kz || remote)) return [];
+    return [{
+      id: `habr-${it.link.split("/").pop()}`, title: role, company: it.author, logo: it.image || null,
+      city: kz ? cityOf(it.description) : "", region: kz ? "Kazakhstan" : "Remote", published_at: iso(it.pubDate),
+      salary: null, format: remote ? "Remote" : "Office", tags: tagsOf(role), url: it.link, source: "Habr Career",
+    }];
+  });
 }
 
-async function readManual() {
+// 4–9. International remote boards (public APIs / RSS). Keep design jobs open worldwide / Asia / CIS.
+function remoteJob({ id, title, company, logo, date, url, source, location = "" }) {
+  if (!isDesign(title) || !OPEN_TO_KZ_RE.test(location.trim())) return [];
+  return [{ id, title, company, logo: logo || null, city: "", region: "Remote", published_at: iso(date), salary: null,
+    format: "Remote", tags: tagsOf(title), url, source }];
+}
+
+async function remoteok() {
+  const data = await get("https://remoteok.com/api?tag=design", { json: true });
+  return data.filter((j) => j.id).flatMap((j) => remoteJob({ id: `rok-${j.id}`, title: j.position, company: j.company,
+    logo: j.company_logo, date: j.date, url: j.url, source: "RemoteOK", location: j.location || "" }));
+}
+
+async function jobicy() {
+  const data = await get("https://jobicy.com/api/v2/remote-jobs?count=100&industry=design-multimedia", { json: true });
+  return (data.jobs || []).flatMap((j) => remoteJob({ id: `jcy-${j.id}`, title: j.jobTitle, company: j.companyName,
+    logo: j.companyLogo, date: j.pubDate, url: j.url, source: "Jobicy", location: j.jobGeo === "Anywhere" ? "" : j.jobGeo || "" }));
+}
+
+async function himalayas() {
+  const out = [];
+  for (const q of ["product designer", "ux designer", "ui designer", "web designer"]) {
+    const data = await get(`https://himalayas.app/jobs/api/search?q=${encodeURIComponent(q)}&worldwide=true`, { json: true });
+    for (const j of data.jobs || []) {
+      out.push(...remoteJob({ id: `him-${j.guid}`, title: j.title, company: j.companyName, logo: j.companyLogo,
+        date: j.pubDate * 1000, url: j.applicationLink, source: "Himalayas", location: (j.locationRestrictions || []).join(", ") }));
+    }
+    await sleep(500);
+  }
+  return out;
+}
+
+async function weworkremotely() {
+  const xml = await get("https://weworkremotely.com/categories/remote-design-jobs.rss");
+  return rssItems(xml).flatMap((it) => {
+    const [company, ...rest] = it.title.split(":");
+    const location = /anywhere/i.test(it.region) ? "" : it.region;
+    return remoteJob({ id: `wwr-${it.link.split("/").pop()}`, title: rest.join(":").trim() || it.title, company: company.trim(),
+      date: it.pubDate, url: it.link, source: "We Work Remotely", location });
+  });
+}
+
+async function workingnomads() {
+  const data = await get("https://www.workingnomads.com/api/exposed_jobs/", { json: true });
+  return data.filter((j) => /design/i.test(j.category_name)).flatMap((j) => remoteJob({ id: `wn-${j.url.split("/").filter(Boolean).pop()}`,
+    title: j.title, company: j.company_name, date: j.pub_date, url: j.url, source: "Working Nomads", location: j.location || "" }));
+}
+
+async function remotive() {
+  const data = await get("https://remotive.com/api/remote-jobs?category=design", { json: true });
+  return (data.jobs || []).flatMap((j) => remoteJob({ id: `rmt-${j.id}`, title: j.title, company: j.company_name, logo: j.company_logo,
+    date: j.publication_date, url: j.url, source: "Remotive", location: j.candidate_required_location || "" }));
+}
+
+// 10. Teacher-added vacancies (data/manual.json)
+async function manual() {
   try {
     const list = JSON.parse(await readFile(MANUAL, "utf8"));
-    return list.map((v, i) => ({ id: `manual-${i}`, tags: [], format: "Office", source: "Added by teacher", ...v }));
+    return list.map((v, i) => ({ id: `manual-${i}`, tags: [], format: "Office", region: "Kazakhstan", city: "", logo: null,
+      salary: null, ...v, source: "Added by teacher" }));
   } catch {
     return [];
   }
 }
 
-async function main() {
-  const token = await getToken();
-  const manual = await readManual();
-  const byId = new Map();
-  let hhOk = false;
+const SOURCES = [
+  { name: "hh.kz", run: hh },
+  ...TG_KZ.map((ch) => ({ name: `Telegram @${ch}`, run: () => telegramChannel(ch, true) })),
+  ...TG_DESIGN.map((ch) => ({ name: `Telegram @${ch}`, run: () => telegramChannel(ch, false) })),
+  { name: "Habr Career", run: habr },
+  { name: "RemoteOK", run: remoteok },
+  { name: "Jobicy", run: jobicy },
+  { name: "Himalayas", run: himalayas },
+  { name: "We Work Remotely", run: weworkremotely },
+  { name: "Working Nomads", run: workingnomads },
+  { name: "Remotive", run: remotive },
+  { name: "Added by teacher", run: manual },
+];
 
-  if (!token) {
-    console.warn("No HeadHunter credentials set (HH_APP_TOKEN or HH_CLIENT_ID/HH_CLIENT_SECRET). Only manual vacancies will be published.");
-  } else {
-    for (const term of TERMS) {
-      const runs = [
-        { text: term, search_field: "name", experience: "noExperience" },
-        { text: `(${term}) AND (${ENTRY_WORDS})`, search_field: "name" },
-      ];
-      for (const params of runs) {
-        const items = await search(token, params);
-        for (const v of items) if (!v.archived) byId.set(v.id, v);
-        await sleep(300);
-      }
-    }
-    hhOk = true;
-  }
+// ------------------------------------------------------------------- main ---
+
+async function main() {
+  let previous = [];
+  try { previous = JSON.parse(await readFile(OUT, "utf8")).vacancies || []; } catch {}
+  const prevBySource = Map.groupBy ? Map.groupBy(previous, (v) => v.source) : new Map();
 
   const cutoff = Date.now() - MAX_AGE_DAYS * 864e5;
-  const vacancies = [...[...byId.values()].map(normalize), ...manual]
-    .filter((v) => v.url && Date.parse(v.published_at) >= cutoff)
-    .sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));
+  const all = new Map();
+  const status = [];
 
-  // If hh.ru failed or isn't configured, keep the previous hh data instead of wiping the page.
-  if (!hhOk) {
+  for (const src of SOURCES) {
+    const old = prevBySource.get(src.name) || [];
+    let items;
     try {
-      const prev = JSON.parse(await readFile(OUT, "utf8"));
-      const prevHh = (prev.vacancies || []).filter((v) => v.source === "hh.kz" && Date.parse(v.published_at) >= cutoff);
-      vacancies.push(...prevHh);
-      vacancies.sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));
-    } catch {}
+      const result = await src.run();
+      if (result?.skipped) {
+        status.push({ name: src.name, ok: false, note: result.skipped, count: old.length });
+        items = old;
+      } else {
+        // Telegram previews only show the latest posts, so keep older ones we saw before.
+        items = src.name.startsWith("Telegram") ? [...old, ...result] : result;
+        status.push({ name: src.name, ok: true, count: result.length });
+      }
+    } catch (err) {
+      console.warn(`! ${src.name}: ${err.message}`);
+      status.push({ name: src.name, ok: false, note: "temporarily unavailable", count: old.length });
+      items = old;
+    }
+    for (const v of items) {
+      if (!v.url || !(Date.parse(v.published_at) >= cutoff)) continue;
+      delete v.accumulate;
+      all.set(v.id, v);
+    }
+    console.log(`${status.at(-1).ok ? "✓" : "–"} ${src.name}: ${status.at(-1).count}${status.at(-1).note ? ` (${status.at(-1).note})` : ""}`);
   }
 
-  const out = { updated_at: new Date().toISOString(), live: hhOk, count: vacancies.length, vacancies };
+  // Same job posted on several boards → keep the first (sources are ordered by priority).
+  const seen = new Set();
+  const vacancies = [...all.values()]
+    .sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at))
+    .filter((v) => {
+      const key = `${v.title}|${v.company}`.toLowerCase().replace(/[^\p{L}\p{N}|]/gu, "");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
+  const out = { updated_at: new Date().toISOString(), live: status.some((s) => s.ok && s.count), count: vacancies.length, sources: status, vacancies };
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n");
-  console.log(`Saved ${vacancies.length} vacancies (${byId.size} from hh.kz, ${manual.length} manual).`);
+  console.log(`Saved ${vacancies.length} vacancies from ${status.filter((s) => s.count).length} sources.`);
 }
 
 main().catch((err) => {
-  console.error(err.message);
+  console.error(err);
   process.exit(1);
 });
