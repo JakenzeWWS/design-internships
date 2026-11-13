@@ -31,7 +31,9 @@ to read. No login, no faking a browser.
 | 21 | **Remotive** | Remote jobs | Public API | Their free feed is small now |
 | 22 | **inDrive careers** (careers.indrive.com) | inDrive's own job site. Almaty HQ, often hires designers | Public site data (WordPress API, robots.txt allows) | Only Kazakhstan design roles. Shown for as long as inDrive lists them |
 | 23 | **Wolt careers** | Wolt's jobs in Almaty and Astana | Greenhouse public API | Only Kazakhstan design roles (none right now) |
-| 24 | **Your own list** (`data/manual.json`) | Anything you find yourself | File you edit | Shows on the site within a minute |
+| 24 | **designjobs.kz** | Kazakhstan's design-only job board: about 50 current design jobs, including junior and intern roles, across many KZ cities | Structured job data on its public pages (robots.txt allows) | **Biggest KZ source right now.** Expired jobs are dropped automatically |
+| 25 | **hackathon.kz/internships** | Student internship programs (e.g. Halyk Start, which has a UX/UI track) | The site's public internships data | Only internships that include design. Links go to the hackathon.kz page |
+| 26 | **Your own list** (`data/manual.json`) | Anything you find yourself | File you edit | Shows on the site within a minute |
 
 Telegram previews show only each channel's ~20 newest posts. The updater remembers older posts, so
 nothing gets lost between runs. Listings older than 60 days are removed.
@@ -45,6 +47,7 @@ nothing gets lost between runs. Listings older than 60 days are removed.
 | **LinkedIn Jobs** | Its terms forbid automated collection, and there's no public jobs API |
 | **OLX.kz** | Its API is only for partners |
 | **Behance Jobs** | Loaded by JavaScript; no feed |
+| **Qyzmet.kz** | Its robots.txt forbids bots on vacancy search and on its links out to jobs. It mostly re-lists jobs from other KZ sites |
 | **Dribbble Jobs** | Has an RSS feed, but it's almost all US on-site jobs. A link works better |
 
 ## ❌ Tested and left out

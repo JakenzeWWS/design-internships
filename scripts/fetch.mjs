@@ -24,7 +24,7 @@ const UA = "DesignInternshipsKZ/1.0 (+https://jakenzewws.github.io/design-intern
 // Job is about digital design?
 const DESIGN_RE = /\bux\b|\bui\b|ux\/ui|ui\/ux|дизайн|design|figma|interface|интерфейс/i;
 // ...but not these kinds of design.
-const EXCLUDE_RE = /interior|интерьер|ландшафт|landscape|fashion|одежд|мебел|furniture|level design|game design|геймдиз|instructional|ювелир|jewel|маникюр|ногт|парикмах|\bhair|engineer|инженер|architect|архитект|конструкт|\bcad\b|швея|флорист|полиграф|упаковк|packaging|print|developer|разработчик|программист|frontend|front-end|automobil|automotive|автомоб/i;
+const EXCLUDE_RE = /interior|интерьер|ландшафт|landscape|fashion|одежд|мебел|furniture|level design|game design|геймдиз|instructional|ювелир|jewel|маникюр|ногт|парикмах|\bhair|engineer|инженер|architect|архитект|конструкт|\bcad\b|швея|флорист|полиграф|упаковк|packaging|print|developer|разработчик|программист|frontend|front-end|automobil|automotive|автомоб|трубопровод|pipeline|монтаж|сварщ|электр/i;
 const INTERN_RE = /стаж[её]р|стажир|intern\b|internship|trainee|практикант|практика/i;
 const JUNIOR_RE = /junior|младш|джун|entry[- ]level|начинающ/i;
 const NOEXP_RE = /без опыта|no experience|опыт не (требуется|обязателен)/i;
@@ -35,6 +35,8 @@ const KZ_CITIES = [
   ["Almaty", /алмат|almaty/i], ["Astana", /астан|astana|нур-султан/i], ["Shymkent", /шымкент|shymkent/i],
   ["Karaganda", /караганд|karaganda/i], ["Aktobe", /актоб|aktobe/i], ["Atyrau", /атырау|atyrau/i],
   ["Pavlodar", /павлодар|pavlodar/i], ["Ust-Kamenogorsk", /усть-каменогорск|oskemen/i], ["Kostanay", /костанай|kostanay/i],
+  ["Taraz", /тараз|taraz/i], ["Konaev", /конаев|konaev|kunaev/i], ["Petropavl", /петропавл|petropavl/i], ["Turkistan", /т[уү]ркістан|туркестан|turkistan/i],
+  ["Kyzylorda", /кызылорд|qyzylorda|kyzylorda/i], ["Semey", /семей|semey/i], ["Oral", /уральск|орал|oral\b/i], ["Aktau", /актау|aktau/i],
 ];
 
 const isDesign = (t) => DESIGN_RE.test(t) && !EXCLUDE_RE.test(t);
@@ -286,7 +288,71 @@ async function company(c) {
   throw new Error(`unknown company type ${c.type}`);
 }
 
-// 11. Teacher-added vacancies (data/manual.json)
+// 11. designjobs.kz — Kazakhstan design job board. Reads the job lists' structured data
+// (schema.org), then each new job page once; known jobs are reused from the last run.
+const DESIGNJOBS_LISTS = ["https://designjobs.kz/", "https://designjobs.kz/jobs/junior"];
+
+function ldJson(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .flatMap(([, j]) => { try { const d = JSON.parse(j); return Array.isArray(d) ? d : [d]; } catch { return []; } });
+}
+
+async function designjobs(old) {
+  const urls = new Set();
+  for (const list of DESIGNJOBS_LISTS) {
+    for (const block of ldJson(await get(list))) {
+      if (block["@type"] === "ItemList") for (const it of block.itemListElement || []) if (it.url) urls.add(it.url);
+    }
+    await sleep(500);
+  }
+  const known = new Map(old.map((v) => [v.url, v]));
+  const out = [];
+  for (const url of urls) {
+    let v = known.get(url);
+    if (!v) {
+      const job = ldJson(await get(url)).find((b) => b["@type"] === "JobPosting");
+      await sleep(400);
+      if (!job) continue;
+      const addr = job.jobLocation?.address || {};
+      const sal = job.baseSalary?.value;
+      const tags = tagsOf(job.title);
+      if (job.employmentType === "INTERN" && !tags.includes("Internship")) tags.push("Internship");
+      v = {
+        id: `dj-${url.split("/").pop()}`, title: job.title, company: job.hiringOrganization?.name || "",
+        logo: job.hiringOrganization?.logo || null, city: cityOf(addr.addressLocality || "") || addr.addressLocality || "",
+        region: !addr.addressCountry || addr.addressCountry === "KZ" ? "Kazakhstan" : "Remote", published_at: iso(job.datePosted),
+        valid_through: job.validThrough || null,
+        salary: sal && (sal.minValue || sal.maxValue) ? { from: sal.minValue || null, to: sal.maxValue || null, currency: job.baseSalary.currency } : null,
+        format: job.jobLocationType === "TELECOMMUTE" ? "Remote" : "Office", tags, url, source: "designjobs.kz", evergreen: true,
+      };
+    }
+    if (EXCLUDE_RE.test(v.title)) continue;
+    if (v.valid_through && Date.parse(v.valid_through) < Date.now() - 864e5) continue;
+    out.push(v);
+  }
+  return out;
+}
+
+// 12. hackathon.kz — internships board. Keeps internships that include design;
+// the date is the first time we saw the listing (the board doesn't publish one).
+async function hackathonkz(old) {
+  const items = await get("https://api.hackathon.kz/api/internships", { json: true });
+  const firstSeen = new Map(old.map((v) => [v.id, v.published_at]));
+  return (Array.isArray(items) ? items : []).flatMap((x) => {
+    const text = `${x.title} ${(x.stack || []).join(" ")} ${x.summary || ""}`;
+    if (!isDesign(`${x.title} ${(x.stack || []).join(" ")}`) && !/ux\/ui|ui\/ux|дизайн/i.test(text)) return [];
+    const id = `hk-${x.slug}`;
+    const tags = ["Internship"];
+    if (x.paid) tags.push("Paid");
+    return [{
+      id, title: x.title, company: x.company || "", logo: null, city: cityOf(x.city || "") || x.city || "", region: "Kazakhstan",
+      published_at: firstSeen.get(id) || new Date().toISOString(), salary: null, format: x.remote ? "Remote" : "Office",
+      tags, url: `https://hackathon.kz/internship?slug=${encodeURIComponent(x.slug)}`, source: "hackathon.kz", evergreen: true,
+    }];
+  });
+}
+
+// 13. Teacher-added vacancies (data/manual.json)
 async function manual() {
   try {
     const list = JSON.parse(await readFile(MANUAL, "utf8"));
@@ -309,6 +375,8 @@ const SOURCES = [
   { name: "Working Nomads", run: workingnomads },
   { name: "Remotive", run: remotive },
   ...COMPANIES.map((c) => ({ name: `${c.name} careers`, run: () => company(c) })),
+  { name: "designjobs.kz", run: designjobs },
+  { name: "hackathon.kz", run: hackathonkz },
   { name: "Added by teacher", run: manual },
 ];
 
@@ -327,7 +395,7 @@ async function main() {
     const old = prevBySource.get(src.name) || [];
     let items;
     try {
-      const result = await src.run();
+      const result = await src.run(old);
       if (result?.skipped) {
         status.push({ name: src.name, ok: false, note: result.skipped, count: old.length });
         items = old;

@@ -1,7 +1,7 @@
 # Design Internships KZ
 
 A one-page site with UX/UI, product and web design vacancies for students in Kazakhstan. It collects
-from 20+ sources every hour: hh.kz, 13 Telegram channels, inDrive and Wolt careers, Habr Career and 6 remote-job boards.
+from 25+ sources every hour: designjobs.kz, hackathon.kz, hh.kz, 13 Telegram channels, inDrive and Wolt careers, Habr Career and 6 remote-job boards.
 See [SOURCES.md](SOURCES.md) for the full list and why some sites are only linked.
 
 - `index.html`: the page students open
