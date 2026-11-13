@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-13T13:00:56.577Z",
+  "updated_at": "2026-11-13T18:32:36.027Z",
   "live": true,
-  "count": 96,
+  "count": 95,
   "sources": [
     {
       "name": "hh.kz",
@@ -57,7 +57,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 8
+      "count": 7
     },
     {
       "name": "Telegram @designbirzha",
@@ -87,7 +87,7 @@
     {
       "name": "Jobicy",
       "ok": true,
-      "count": 5
+      "count": 4
     },
     {
       "name": "Himalayas",
@@ -788,20 +788,6 @@
       "url": "https://designjobs.kz/jobs/3d-dizainer-1a4oltr",
       "source": "designjobs.kz",
       "evergreen": true
-    },
-    {
-      "id": "jcy-159436",
-      "title": "Senior Design Researcher - User Science",
-      "company": "Canonical",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-06T17:57:35.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/159436-senior-design-researcher-user-science",
-      "source": "Jobicy"
     },
     {
       "id": "dj-motion-dizainer-ao-agentstvo-habar-08b14lh",
