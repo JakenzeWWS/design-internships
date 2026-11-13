@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Internships KZ</title>
+<meta name="description" content="Live UX/UI, product and web design internships and entry-level vacancies in Kazakhstan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f6f3;
+    --surface: #ffffff;
+    --text: #17171a;
+    --muted: #6b6b73;
+    --line: #e4e4de;
+    --accent: #4b3cfa;
+    --accent-text: #ffffff;
+    --accent-soft: #eceaff;
+    --new: #0f8a4f;
+    --new-soft: #e2f5ea;
+    --chip: #f0f0ec;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111114; --surface: #1b1b20; --text: #f1f1f3; --muted: #9a9aa5; --line: #2c2c33;
+      --accent: #8f84ff; --accent-text: #111114; --accent-soft: #26234a;
+      --new: #4fd18b; --new-soft: #17301f; --chip: #25252b; --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111114; --surface: #1b1b20; --text: #f1f1f3; --muted: #9a9aa5; --line: #2c2c33;
+    --accent: #8f84ff; --accent-text: #111114; --accent-soft: #26234a;
+    --new: #4fd18b; --new-soft: #17301f; --chip: #25252b; --shadow: none;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 Inter, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+  header h1 { font-size: clamp(26px, 5vw, 38px); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 8px; }
+  header p { margin: 0; color: var(--muted); }
+  .status { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .status b { color: var(--text); font-weight: 600; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--new); margin-right: 6px; vertical-align: 1px; }
+  .dot.off { background: #c9a227; }
+
+  .controls {
+    position: sticky; top: 0; z-index: 2; background: var(--bg);
+    display: grid; grid-template-columns: 1fr auto auto; gap: 8px;
+    padding: 20px 0 14px; margin-top: 12px; border-bottom: 1px solid var(--line);
+  }
+  input[type=search], select {
+    font: inherit; color: var(--text); background: var(--surface);
+    border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0;
+  }
+  input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .toggles { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+  .toggle {
+    font: inherit; font-size: 13px; cursor: pointer; border: 1px solid var(--line);
+    background: var(--surface); color: var(--text); border-radius: 999px; padding: 6px 12px;
+  }
+  .toggle[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+
+  .count { font-size: 13px; color: var(--muted); margin: 16px 0 10px; }
+  .list { display: grid; gap: 10px; }
+  .card {
+    display: grid; grid-template-columns: 48px 1fr auto; gap: 14px; align-items: center;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 16px; box-shadow: var(--shadow);
+  }
+  .logo {
+    width: 48px; height: 48px; border-radius: 10px; background: var(--chip);
+    display: grid; place-items: center; overflow: hidden; font-weight: 700; color: var(--muted);
+  }
+  .logo img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+  .company { font-weight: 600; font-size: 13px; color: var(--muted); }
+  .title { font-weight: 600; font-size: 16px; margin: 1px 0 6px; overflow-wrap: anywhere; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: 12.5px; color: var(--muted); align-items: center; }
+  .chip { background: var(--chip); border-radius: 6px; padding: 2px 8px; color: var(--text); }
+  .chip.intern { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+  .chip.new { background: var(--new-soft); color: var(--new); font-weight: 600; }
+  .btn {
+    display: inline-block; text-decoration: none; white-space: nowrap; font-weight: 600; font-size: 14px;
+    background: var(--accent); color: var(--accent-text); padding: 10px 14px; border-radius: 10px;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 16px; border: 1px dashed var(--line); border-radius: 14px; }
+  footer { margin-top: 32px; font-size: 12.5px; color: var(--muted); text-align: center; }
+  footer a { color: inherit; }
+
+  @media (max-width: 600px) {
+    .wrap { padding-top: 28px; }
+    .controls { grid-template-columns: 1fr 1fr; }
+    .controls input[type=search] { grid-column: 1 / -1; }
+    .card { grid-template-columns: 40px 1fr; }
+    .logo { width: 40px; height: 40px; }
+    .card .btn { grid-column: 1 / -1; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Design internships in Kazakhstan</h1>
+    <p>UX/UI, product and web design roles for students: internships, junior and no-experience positions. Updated automatically every hour.</p>
+    <div class="status" id="status">Loading…</div>
+  </header>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search company or role…" aria-label="Search">
+    <select id="city" aria-label="City"><option value="">All cities</option></select>
+    <select id="sort" aria-label="Sort">
+      <option value="new">Newest first</option>
+      <option value="old">Oldest first</option>
+      <option value="company">Company A–Z</option>
+    </select>
+    <div class="toggles">
+      <button class="toggle" data-f="week" aria-pressed="false">Last 7 days</button>
+      <button class="toggle" data-f="Internship" aria-pressed="false">Internships only</button>
+      <button class="toggle" data-f="entry" aria-pressed="false">Junior / no experience</button>
+      <button class="toggle" data-f="Remote" aria-pressed="false">Remote</button>
+    </div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="list" id="list"></div>
+
+  <footer>Vacancies from <a href="https://hh.kz" target="_blank" rel="noopener">hh.kz</a> and teacher-added listings. Always check details on the original page before applying.</footer>
+</div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const state = { all: [], q: "", city: "", sort: "new", f: new Set() };
+const DAY = 864e5;
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function ago(iso) {
+  const diff = Date.now() - Date.parse(iso);
+  const m = Math.round(diff / 6e4);
+  if (m < 1) return "just now";
+  if (m < 60) return `${m} min ago`;
+  const h = Math.round(m / 60);
+  if (h < 24) return `${h} h ago`;
+  const d = Math.round(h / 24);
+  return d === 1 ? "yesterday" : `${d} days ago`;
+}
+const fmtDate = (iso) => new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+function fmtSalary(s) {
+  if (!s || (!s.from && !s.to)) return "";
+  const n = (x) => Number(x).toLocaleString("en-US").replace(/,/g, " ");
+  const cur = s.currency === "KZT" ? "₸" : (s.currency || "");
+  if (s.from && s.to) return `${n(s.from)}–${n(s.to)} ${cur}`;
+  return s.from ? `from ${n(s.from)} ${cur}` : `up to ${n(s.to)} ${cur}`;
+}
+
+function render() {
+  const q = state.q.toLowerCase();
+  let list = state.all.filter((v) => {
+    if (q && !`${v.title} ${v.company} ${v.city}`.toLowerCase().includes(q)) return false;
+    if (state.city && v.city !== state.city) return false;
+    if (state.f.has("week") && Date.now() - Date.parse(v.published_at) > 7 * DAY) return false;
+    if (state.f.has("Internship") && !v.tags.includes("Internship")) return false;
+    if (state.f.has("entry") && !v.tags.some((t) => t === "Junior" || t === "No experience" || t === "Internship")) return false;
+    if (state.f.has("Remote") && v.format !== "Remote") return false;
+    return true;
+  });
+  const by = { new: (a, b) => Date.parse(b.published_at) - Date.parse(a.published_at),
+               old: (a, b) => Date.parse(a.published_at) - Date.parse(b.published_at),
+               company: (a, b) => a.company.localeCompare(b.company) };
+  list.sort(by[state.sort]);
+
+  $("#count").textContent = `${list.length} of ${state.all.length} vacancies`;
+  if (!list.length) {
+    $("#list").innerHTML = `<div class="empty">${state.all.length ? "No vacancies match these filters. Try clearing some." : "No vacancies yet. The list fills in automatically once the hourly update runs."}</div>`;
+    return;
+  }
+  $("#list").innerHTML = list.map((v) => {
+    const isNew = Date.now() - Date.parse(v.published_at) < DAY;
+    const chips = [
+      isNew ? `<span class="chip new">New</span>` : "",
+      ...v.tags.map((t) => `<span class="chip ${t === "Internship" ? "intern" : ""}">${esc(t)}</span>`),
+      v.format && v.format !== "Office" ? `<span class="chip">${esc(v.format)}</span>` : "",
+      fmtSalary(v.salary) ? `<span class="chip">${esc(fmtSalary(v.salary))}</span>` : "",
+    ].join("");
+    const logo = v.logo ? `<img src="${esc(v.logo)}" alt="" loading="lazy">` : esc(v.company.trim()[0] || "?");
+    return `<article class="card">
+      <div class="logo">${logo}</div>
+      <div>
+        <div class="company">${esc(v.company)}</div>
+        <div class="title">${esc(v.title)}</div>
+        <div class="meta">
+          <span title="${esc(fmtDate(v.published_at))}">${esc(v.city)}${v.city ? " · " : ""}Posted ${ago(v.published_at)} · ${esc(fmtDate(v.published_at))}</span>
+          ${chips}
+        </div>
+      </div>
+      <a class="btn" href="${esc(v.url)}" target="_blank" rel="noopener">Open vacancy →</a>
+    </article>`;
+  }).join("");
+}
+
+async function load() {
+  try {
+    const res = await fetch(`data/vacancies.json?t=${Date.now()}`, { cache: "no-store" });
+    const data = await res.json();
+    state.all = (data.vacancies || []).map((v) => ({ tags: [], ...v }));
+    const cities = [...new Set(state.all.map((v) => v.city).filter(Boolean))].sort();
+    $("#city").innerHTML = `<option value="">All cities</option>` + cities.map((c) => `<option>${esc(c)}</option>`).join("");
+    $("#city").value = state.city;
+    const fresh = state.all.filter((v) => Date.now() - Date.parse(v.published_at) < DAY).length;
+    $("#status").innerHTML =
+      `<span><span class="dot ${data.live ? "" : "off"}"></span>${data.live ? "Live from hh.kz" : "hh.kz connection not set up yet"}</span>` +
+      `<span>Updated <b>${ago(data.updated_at)}</b></span>` +
+      `<span><b>${state.all.length}</b> vacancies</span>` +
+      (fresh ? `<span><b>${fresh}</b> new today</span>` : "");
+    render();
+  } catch (e) {
+    $("#status").textContent = "Could not load vacancies. Please refresh the page.";
+  }
+}
+
+$("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+$("#city").addEventListener("change", (e) => { state.city = e.target.value; render(); });
+$("#sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+document.querySelectorAll(".toggle").forEach((b) => b.addEventListener("click", () => {
+  const on = b.getAttribute("aria-pressed") !== "true";
+  b.setAttribute("aria-pressed", on);
+  on ? state.f.add(b.dataset.f) : state.f.delete(b.dataset.f);
+  render();
+}));
+
+load();
+setInterval(load, 10 * 60e3); // refresh the list every 10 minutes while the page is open
+</script>
+</body>
+</html>
