@@ -1,8 +1,18 @@
-# Design Internships KZ
+# IT Internships KZ
 
-A one-page site with UX/UI, product and web design vacancies for students in Kazakhstan. It collects
-from 25+ sources every hour: designjobs.kz, hackathon.kz, hh.kz, 13 Telegram channels, inDrive and Wolt careers, Habr Career and 6 remote-job boards.
+A one-page site with internships and jobs in Kazakhstan for the college's three IT directions:
+**Design** (UX/UI & product, graphic & brand), **Mobile** (Android, iOS, Flutter) and **Web development**
+(frontend, backend, fullstack). It collects from 25+ sources every hour: designjobs.kz, hackathon.kz, hh.kz,
+14 Telegram channels, inDrive and Wolt careers, Habr Career and 6 remote-job boards.
 See [SOURCES.md](SOURCES.md) for the full list and why some sites are only linked.
+
+**Links for each group.** The page remembers the chosen direction in the link, so you can send each group its own:
+`#design`, `#design/ux-ui-product`, `#design/graphic-brand`, `#mobile`, `#mobile/android`, `#mobile/ios`,
+`#mobile/flutter-cross-platform`, `#web`, `#web/frontend`, `#web/backend`, `#web/fullstack`.
+For example: `https://jakenzewws.github.io/design-internships/#mobile`
+
+Jobs are sorted into directions by their title (see `classify()` in `scripts/fetch.mjs`). QA, DevOps,
+data/ML, 1C, game development and manager roles are left out.
 
 - `index.html`: the page students open
 - `data/vacancies.json`: the vacancy list (generated, don't edit)

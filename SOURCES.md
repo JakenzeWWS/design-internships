@@ -4,6 +4,12 @@ Researched and tested 13 November 2026. "Connected" means the site collects from
 every hour. Every connection uses an official API, an RSS feed, or a public page the site allows bots
 to read. No login, no faking a browser.
 
+**Update 14 November 2026:** every source below now also collects **mobile** (Android, iOS, Flutter) and
+**web development** (frontend, backend, fullstack) vacancies, not just design. Kazakhstan IT Telegram
+channels are also searched for `#android`, `#ios`, `#flutter`, `#frontend`, `#backend`, `#fullstack`,
+`стажер`, `стажировка` and `junior`. The remote boards add their developer categories. designjobs.kz and
+the design Telegram channels stay design-only.
+
 ## ✅ Connected automatically
 
 | # | Source | What it gives | How | Notes |

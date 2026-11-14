@@ -1,5 +1,6 @@
-// Collects UX/UI, product and web design vacancies for students in Kazakhstan
-// from many sources and writes data/vacancies.json for the website.
+// Collects internships and entry-level jobs for IT students in Kazakhstan in three
+// directions — Design (UX/UI, graphic), Mobile (Android, iOS) and Web (frontend,
+// backend) — from many sources, and writes data/vacancies.json for the website.
 //
 // Every source runs independently: if one fails, the others still update and the
 // failed source keeps its previous results. Only official APIs, RSS feeds and
@@ -17,14 +18,46 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "vacancies.json");
 const MANUAL = path.join(ROOT, "data", "manual.json");
 const MAX_AGE_DAYS = 60;
-const UA = "DesignInternshipsKZ/1.0 (+https://jakenzewws.github.io/design-internships/)";
+const UA = "ITInternshipsKZ/1.0 (+https://jakenzewws.github.io/design-internships/)";
 
 // ---------------------------------------------------------------- filters ---
 
-// Job is about digital design?
+// Every job is sorted into one of the college's three directions by its title.
+// classify(title) → { dirs: ["design"|"mobile"|"web"], roles: [...] } or null (not relevant).
 const DESIGN_RE = /\bux\b|\bui\b|ux\/ui|ui\/ux|дизайн|design|figma|interface|интерфейс/i;
-// ...but not these kinds of design.
-const EXCLUDE_RE = /interior|интерьер|ландшафт|landscape|fashion|одежд|мебел|furniture|level design|game design|геймдиз|instructional|ювелир|jewel|маникюр|ногт|парикмах|\bhair|engineer|инженер|architect|архитект|конструкт|\bcad\b|швея|флорист|полиграф|упаковк|packaging|print|developer|разработчик|программист|frontend|front-end|automobil|automotive|автомоб|трубопровод|pipeline|монтаж|сварщ|электр/i;
+// Kinds of "design" that aren't ours.
+const EXCLUDE_RE = /interior|интерьер|ландшафт|landscape|fashion|одежд|мебел|furniture|level design|game design|геймдиз|instructional|ювелир|jewel|маникюр|ногт|парикмах|\bhair|architect|архитект|конструкт|\bcad\b|швея|флорист|полиграф|упаковк|packaging|print|automobil|automotive|автомоб|трубопровод|pipeline|монтаж|сварщ|электр/i;
+const UX_RE = /\bux\b|\bui\b|ux\/ui|ui\/ux|product design|продукт\S* дизайн|интерфейс|interface|ux[- ]?research|ux[- ]?writ|web design|веб[- ]?дизайн/i;
+const JOB_WORD_RE = /developer|engineer|разработчик|программист|designer|дизайнер|стаж|intern|trainee|front|back|full[- ]?stack|фулл?стек|android|\bios\b|flutter|\bux\b|\bui\b|верстальщик|team lead|тимлид/i;
+const DEV_WORD_RE = /developer|разработчик|программист|engineer|инженер|\bdev\b/i;
+// Not part of the three directions (or not for students).
+const SKIP_RE = /manager|менеджер|head of|director|директор|руководител|recruit|рекрутер|sales|продаж|\bqa\b|тестировщ|tester|devops|\bsre\b|data |данных|аналитик|analyst|\bml\b|machine learning|1[сc]\b|sysadmin|системн\S* администр|security|безопасност|support (specialist|engineer|agent)|техподдержк|служб\S* поддержк|embedded|game|unity|unreal|c\+\+|blockchain|solidity|\bsap\b|marketing|маркетолог|smm[- ]?менедж/i;
+const MOBILE_RE = /android|kotlin|\bios\b|swift|flutter|react native|xamarin|multiplatform|\bkmp\b|mobile|мобильн/i;
+const FRONT_RE = /front[- ]?end|фронт|react(?! native)|\bvue|angular|next\.?js|java ?script|typescript|верстальщик|html|web[- ]developer|веб[- ]?разработчик|ui developer/i;
+const BACK_RE = /back[- ]?end|б[эе]к[- ]?[эе]нд|python|django|fastapi|golang|\bgo\b|java\b(?! ?script)|spring|\bphp|laravel|symfony|node\.?js|nest\.?js|\.net\b|c#|ruby|rails|rust\b|scala|elixir/i;
+const FULL_RE = /full[- ]?stack|фул+[- ]?ст[еэ]к/i;
+
+function classify(title = "") {
+  const t = title;
+  const isDev = DEV_WORD_RE.test(t) || MOBILE_RE.test(t) || FRONT_RE.test(t) || BACK_RE.test(t) || FULL_RE.test(t);
+  if (DESIGN_RE.test(t) && !/developer|разработчик|программист|engineer|инженер/i.test(t)) {
+    if (EXCLUDE_RE.test(t) || /manager|менеджер|director|директор|head of|руководител/i.test(t)) return null;
+    return { dirs: ["design"], roles: [UX_RE.test(t) ? "UX/UI & product" : "Graphic & brand"] };
+  }
+  if (!isDev || SKIP_RE.test(t)) return null;
+  if (MOBILE_RE.test(t) && !/back[- ]?end|б[эе]к[- ]?[эе]нд|server/i.test(t)) {
+    const roles = [];
+    if (/android|kotlin/i.test(t)) roles.push("Android");
+    if (/\bios\b|swift/i.test(t)) roles.push("iOS");
+    if (/flutter|react native|xamarin|multiplatform|\bkmp\b|dart/i.test(t)) roles.push("Flutter / cross-platform");
+    return { dirs: ["mobile"], roles };
+  }
+  if (FULL_RE.test(t)) return { dirs: ["web"], roles: ["Fullstack"] };
+  const roles = [];
+  if (FRONT_RE.test(t)) roles.push("Frontend");
+  if (BACK_RE.test(t) || /kotlin/i.test(t)) roles.push("Backend");
+  return roles.length ? { dirs: ["web"], roles } : null;
+}
 const INTERN_RE = /стаж[её]р|стажир|intern\b|internship|trainee|практикант|практика/i;
 const JUNIOR_RE = /junior|младш|джун|entry[- ]level|начинающ/i;
 const NOEXP_RE = /без опыта|no experience|опыт не (требуется|обязателен)/i;
@@ -39,7 +72,7 @@ const KZ_CITIES = [
   ["Kyzylorda", /кызылорд|qyzylorda|kyzylorda/i], ["Semey", /семей|semey/i], ["Oral", /уральск|орал|oral\b/i], ["Aktau", /актау|aktau/i],
 ];
 
-const isDesign = (t) => DESIGN_RE.test(t) && !EXCLUDE_RE.test(t);
+const withClass = (v, title = v.title) => { const c = classify(title); return c ? [{ ...v, ...c }] : []; };
 const cityOf = (t) => (KZ_CITIES.find(([, re]) => re.test(t)) || [""])[0];
 function tagsOf(text) {
   const tags = [];
@@ -98,8 +131,15 @@ async function hh() {
   }
   if (!token) return { skipped: "no API key yet (see README)" };
 
-  const terms = ["UX", "UI", "UX/UI", "UI/UX", "product designer", "продуктовый дизайнер", "web designer", "веб-дизайнер",
-    "веб дизайнер", "дизайнер интерфейсов", "digital designer", "digital-дизайнер", "figma", "графический дизайнер"];
+  const terms = [
+    // design
+    "UX", "UI", "UX/UI", "UI/UX", "product designer", "продуктовый дизайнер", "web designer", "веб-дизайнер",
+    "дизайнер интерфейсов", "digital-дизайнер", "figma", "графический дизайнер",
+    // mobile
+    "android", "kotlin", "ios", "swift", "flutter", "react native", "мобильный разработчик",
+    // web
+    "frontend", "фронтенд", "react", "vue", "angular", "верстальщик", "backend", "бэкенд", "python", "java", "golang",
+    "php", "node.js", ".net", "fullstack", "веб-разработчик", "web developer"];
   const entry = "стажер OR стажёр OR стажировка OR intern OR internship OR trainee OR junior OR младший OR практикант";
   const byId = new Map();
   for (const term of terms) {
@@ -112,25 +152,26 @@ async function hh() {
       await sleep(300);
     }
   }
-  return [...byId.values()].filter((v) => !EXCLUDE_RE.test(v.name)).map((v) => {
+  return [...byId.values()].flatMap((v) => {
     const fmt = (v.work_format || []).map((f) => f.id);
     const tags = tagsOf(v.name);
     if (v.experience?.id === "noExperience" && !tags.includes("No experience")) tags.push("No experience");
-    return {
+    return withClass({
       id: `hh-${v.id}`, title: v.name, company: v.employer?.name || "", logo: v.employer?.logo_urls?.["90"] || null,
       city: v.area?.name || "", region: "Kazakhstan", published_at: v.published_at,
       salary: v.salary ? { from: v.salary.from, to: v.salary.to, currency: v.salary.currency } : null,
       format: fmt.includes("REMOTE") || v.schedule?.id === "remote" ? "Remote" : fmt.includes("HYBRID") ? "Hybrid" : "Office",
       tags, url: v.alternate_url, source: "hh.kz",
-    };
+    });
   });
 }
 
 // 2. Telegram — public channel previews (t.me/s/…), newest ~20 posts per channel.
-// Kazakhstan job channels: keep posts about design.
+// Kazakhstan job channels: keep posts in any of the three directions.
 const TG_KZ = ["designkziskra", "itcom_kz", "workitkz", "itvacancykz", "itworkkz", "it_jobs_kz", "jobkz_1", "vakankz"];
 // Searches run inside each Kazakhstan channel (t.me/s/<channel>?q=…), so older matching posts are found too.
-const TG_SEARCHES = ["дизайнер", "#UX", "#design", "UX/UI"];
+const TG_SEARCHES = ["дизайнер", "#UX", "#design", "UX/UI", "#android", "#ios", "#flutter", "#frontend", "#backend",
+  "#fullstack", "стажер", "стажировка", "junior"];
 // Design job channels (mostly Russia): keep design posts that are remote, in KZ, or entry-level.
 const TG_DESIGN = ["designer_ru", "designhunters", "designwork_vacansii", "designbirzha", "forproducts", "digital_hr"];
 
@@ -155,24 +196,33 @@ async function telegramChannel(ch, kz) {
     if (!post || !date || !textHtml) continue;
     const text = stripTags(textHtml);
     const lines = text.split("\n")
-      .map((l) => l.replace(/[\u200b\u200c\u200d]/g, "").trim())
-      .filter((l) => !l.startsWith("#"))
-      .map((l) => l.replace(/^[\s\p{Extended_Pictographic}\u{FE0F}•\-–—:|*]+/u, "").trim())
+      .map((l) => l.replace(/[\u200b\u200c\u200d]/g, "").replace(/(^|\s)#[\p{L}_][\p{L}\p{N}_]*/gu, "$1").trim())
+      .map((l) => l.replace(/^(\d\u{FE0F}?\u20E3|\d{1,2}[.)]\s)/u, "").replace(/^[\s\p{Extended_Pictographic}\u{FE0F}•\-–—:|*]+/u, "").trim())
       .filter((l) => l.length > 2);
-    const position = (text.match(/(?:должность|позиция|position|role|вакансия)\s*[:\-–]\s*([^\n]{3,100})/i) || [])[1]?.trim();
-    const head = position || lines.slice(0, 3).join(" ");
-    if (!isDesign(head)) continue;
+    const position = (text.match(/(?:должность|позиция|position|role)\s*[:\-–]\s*([^\n]{3,100})/i) || [])[1]?.trim();
+    // The job title is the "Position:" field, or the first of the top lines that names a job.
+    let titleLine = position || lines.slice(0, 3).find((l) => JOB_WORD_RE.test(l));
+    if (!titleLine) continue;
+    // "Company: Job title" → keep the part that names the job.
+    const parts = titleLine.split(/:\s/);
+    const jobPart = parts.find((x) => classify(x)) || titleLine;
+    let cls = classify(jobPart);
+    // Internship announcements often name the stack only in the text.
+    if (!cls && INTERN_RE.test(titleLine)) cls = classify(text.slice(0, 600));
+    if (!cls) continue;
+    if (!kz && !cls.dirs.includes("design")) continue;
     const kzMention = /казахстан|kazakhstan|алмат|almaty|астан|astana|шымкент/i.test(text);
     const remote = REMOTE_RE.test(text);
     const tags = tagsOf(text);
     if (!kz && !(remote || kzMention || tags.length)) continue;
-    const title = (position || lines.find((l) => isDesign(l)) || lines[0]).replace(/^(вакансия|hiring)\s*[:\-–]\s*/i, "").split(/\s+\|\s+/)[0].split(/(?<=[.!?])\s|:\s/)[0];
+    const title = (classify(jobPart) ? jobPart : titleLine).replace(/^(вакансия|hiring)\s*[:\-–]\s*/i, "").split(/\s+\|\s+/)[0].split(/(?<=[.!?])\s/)[0];
     const shortTitle = title.length > 90 ? title.slice(0, 87).replace(/\s+\S*$/, "") + "…" : title;
-    const company = (text.match(/(?:компания|company|работодатель)\s*[:\-–]\s*([^\n]{2,60})/i) || [])[1]?.trim();
+    const company = (text.match(/(?:компания|company|работодатель)\s*[:\-–]\s*([^\n]{2,60})/i) || [])[1]?.trim()
+      || (parts.length > 1 && jobPart !== parts[0] && parts[0].length < 40 ? parts[0] : null);
     out.push({
       id: `tg-${post.replace("/", "-")}`, title: shortTitle, company: company || channelTitle, logo: null,
       city: cityOf(text), region: kz || kzMention ? "Kazakhstan" : "Remote", published_at: iso(date), salary: null,
-      format: remote ? "Remote" : "Office", tags, url: `https://t.me/${post}`, source: `Telegram @${ch}`, accumulate: true,
+      format: remote ? "Remote" : "Office", tags, url: `https://t.me/${post}`, source: `Telegram @${ch}`, ...cls,
     });
   }
   return out;
@@ -180,7 +230,9 @@ async function telegramChannel(ch, kz) {
 
 // 3. Habr Career — official RSS. Keep jobs in Kazakhstan or remote.
 async function habr() {
-  const queries = ["UX", "UI дизайнер", "product designer", "продуктовый дизайнер", "веб-дизайнер", "дизайнер интерфейсов", "web designer"];
+  const queries = ["UX", "UI дизайнер", "product designer", "продуктовый дизайнер", "веб-дизайнер", "дизайнер интерфейсов",
+    "Android", "iOS", "Flutter", "Frontend", "React", "Vue", "Backend", "Python", "Java", "Golang", "PHP", "Node.js", "Fullstack",
+    "стажер", "junior"];
   const byUrl = new Map();
   for (const q of queries) {
     const xml = await get(`https://career.habr.com/vacancies/rss?type=all&q=${encodeURIComponent(q)}`);
@@ -191,37 +243,43 @@ async function habr() {
     const role = (it.title.match(/«(.+)»/) || [, it.title])[1];
     const kz = /казахстан/i.test(it.description);
     const remote = /можно удал/i.test(it.description);
-    if (!isDesign(role) || !(kz || remote)) return [];
-    return [{
+    if (!(kz || remote)) return [];
+    return withClass({
       id: `habr-${it.link.split("/").pop()}`, title: role, company: it.author, logo: it.image || null,
       city: kz ? cityOf(it.description) : "", region: kz ? "Kazakhstan" : "Remote", published_at: iso(it.pubDate),
       salary: null, format: remote ? "Remote" : "Office", tags: tagsOf(role), url: it.link, source: "Habr Career",
-    }];
+    });
   });
 }
 
-// 4–9. International remote boards (public APIs / RSS). Keep design jobs open worldwide / Asia / CIS.
+// 4–9. International remote boards (public APIs / RSS). Keep jobs open worldwide / Asia / CIS.
 function remoteJob({ id, title, company, logo, date, url, source, location = "" }) {
-  if (!isDesign(title) || !OPEN_TO_KZ_RE.test(location.trim())) return [];
-  return [{ id, title, company, logo: logo || null, city: "", region: "Remote", published_at: iso(date), salary: null,
-    format: "Remote", tags: tagsOf(title), url, source }];
+  if (!OPEN_TO_KZ_RE.test(location.trim())) return [];
+  return withClass({ id, title, company, logo: logo || null, city: "", region: "Remote", published_at: iso(date), salary: null,
+    format: "Remote", tags: tagsOf(title), url, source });
 }
 
 async function remoteok() {
-  const data = await get("https://remoteok.com/api?tag=design", { json: true });
+  const data = await get("https://remoteok.com/api", { json: true });
   return data.filter((j) => j.id).flatMap((j) => remoteJob({ id: `rok-${j.id}`, title: j.position, company: j.company,
     logo: j.company_logo, date: j.date, url: j.url, source: "RemoteOK", location: j.location || "" }));
 }
 
 async function jobicy() {
-  const data = await get("https://jobicy.com/api/v2/remote-jobs?count=100&industry=design-multimedia", { json: true });
-  return (data.jobs || []).flatMap((j) => remoteJob({ id: `jcy-${j.id}`, title: j.jobTitle, company: j.companyName,
-    logo: j.companyLogo, date: j.pubDate, url: j.url, source: "Jobicy", location: j.jobGeo === "Anywhere" ? "" : j.jobGeo || "" }));
+  const out = [];
+  for (const industry of ["design-multimedia", "web-app-design", "engineering"]) {
+    const data = await get(`https://jobicy.com/api/v2/remote-jobs?count=100&industry=${industry}`, { json: true });
+    for (const j of data.jobs || []) out.push(...remoteJob({ id: `jcy-${j.id}`, title: j.jobTitle, company: j.companyName,
+      logo: j.companyLogo, date: j.pubDate, url: j.url, source: "Jobicy", location: j.jobGeo === "Anywhere" ? "" : j.jobGeo || "" }));
+    await sleep(500);
+  }
+  return out;
 }
 
 async function himalayas() {
   const out = [];
-  for (const q of ["product designer", "ux designer", "ui designer", "web designer"]) {
+  for (const q of ["product designer", "ux designer", "ui designer", "web designer", "frontend developer", "backend developer",
+    "full stack developer", "android developer", "ios developer", "flutter developer", "junior developer"]) {
     const data = await get(`https://himalayas.app/jobs/api/search?q=${encodeURIComponent(q)}&worldwide=true`, { json: true });
     for (const j of data.jobs || []) {
       out.push(...remoteJob({ id: `him-${j.guid}`, title: j.title, company: j.companyName, logo: j.companyLogo,
@@ -233,23 +291,28 @@ async function himalayas() {
 }
 
 async function weworkremotely() {
-  const xml = await get("https://weworkremotely.com/categories/remote-design-jobs.rss");
-  return rssItems(xml).flatMap((it) => {
-    const [company, ...rest] = it.title.split(":");
-    const location = /anywhere/i.test(it.region) ? "" : it.region;
-    return remoteJob({ id: `wwr-${it.link.split("/").pop()}`, title: rest.join(":").trim() || it.title, company: company.trim(),
-      date: it.pubDate, url: it.link, source: "We Work Remotely", location });
-  });
+  const out = [];
+  for (const cat of ["remote-design-jobs", "remote-front-end-programming-jobs", "remote-back-end-programming-jobs", "remote-full-stack-programming-jobs"]) {
+    const xml = await get(`https://weworkremotely.com/categories/${cat}.rss`);
+    for (const it of rssItems(xml)) {
+      const [company, ...rest] = it.title.split(":");
+      const location = /anywhere/i.test(it.region) ? "" : it.region;
+      out.push(...remoteJob({ id: `wwr-${it.link.split("/").pop()}`, title: rest.join(":").trim() || it.title, company: company.trim(),
+        date: it.pubDate, url: it.link, source: "We Work Remotely", location }));
+    }
+    await sleep(500);
+  }
+  return out;
 }
 
 async function workingnomads() {
   const data = await get("https://www.workingnomads.com/api/exposed_jobs/", { json: true });
-  return data.filter((j) => /design/i.test(j.category_name)).flatMap((j) => remoteJob({ id: `wn-${j.url.split("/").filter(Boolean).pop()}`,
+  return data.filter((j) => /design|development/i.test(j.category_name)).flatMap((j) => remoteJob({ id: `wn-${j.url.split("/").filter(Boolean).pop()}`,
     title: j.title, company: j.company_name, date: j.pub_date, url: j.url, source: "Working Nomads", location: j.location || "" }));
 }
 
 async function remotive() {
-  const data = await get("https://remotive.com/api/remote-jobs?category=design", { json: true });
+  const data = await get("https://remotive.com/api/remote-jobs", { json: true });
   return (data.jobs || []).flatMap((j) => remoteJob({ id: `rmt-${j.id}`, title: j.title, company: j.company_name, logo: j.company_logo,
     date: j.publication_date, url: j.url, source: "Remotive", location: j.candidate_required_location || "" }));
 }
@@ -264,10 +327,10 @@ const COMPANIES = [
 ];
 
 function companyJob(c, { id, title, location, date, url }) {
-  if (!isDesign(title) || !KZ_RE.test(`${title} ${location}`)) return [];
-  return [{ id: `co-${c.name}-${id}`, title: title.replace(/\s+[–-]\s+Kazakhstan$/i, ""), company: c.name, logo: null,
+  if (!KZ_RE.test(`${title} ${location}`)) return [];
+  return withClass({ id: `co-${c.name}-${id}`, title: title.replace(/\s+[–-]\s+Kazakhstan$/i, ""), company: c.name, logo: null,
     city: cityOf(`${title} ${location}`), region: "Kazakhstan", published_at: iso(date), salary: null,
-    format: REMOTE_RE.test(location) ? "Remote" : "Office", tags: tagsOf(title), url, source: `${c.name} careers`, evergreen: true }];
+    format: REMOTE_RE.test(location) ? "Remote" : "Office", tags: tagsOf(title), url, source: `${c.name} careers`, evergreen: true });
 }
 
 async function company(c) {
@@ -338,21 +401,35 @@ async function designjobs(old) {
         format: job.jobLocationType === "TELECOMMUTE" ? "Remote" : "Office", tags, url, source: "designjobs.kz", evergreen: true,
       };
     }
-    if (EXCLUDE_RE.test(v.title)) continue;
+    const cls = classify(v.title);
+    if (!cls || !cls.dirs.includes("design")) continue;
+    Object.assign(v, cls);
     if (v.valid_through && Date.parse(v.valid_through) < Date.now() - 864e5) continue;
     out.push(v);
   }
   return out;
 }
 
-// 12. hackathon.kz — internships board. Keeps internships that include design;
+// 12. hackathon.kz — internships board. Directions come from each internship's stack;
 // the date is the first time we saw the listing (the board doesn't publish one).
 async function hackathonkz(old) {
   const items = await get("https://api.hackathon.kz/api/internships", { json: true });
   const firstSeen = new Map(old.map((v) => [v.id, v.published_at]));
   return (Array.isArray(items) ? items : []).flatMap((x) => {
-    const text = `${x.title} ${(x.stack || []).join(" ")} ${x.summary || ""}`;
-    if (!isDesign(`${x.title} ${(x.stack || []).join(" ")}`) && !/ux\/ui|ui\/ux|дизайн/i.test(text)) return [];
+    const stack = (x.stack || []).join(" | ");
+    const roles = [];
+    if (/ux|ui|дизайн|design|figma/i.test(stack)) roles.push("UX/UI & product");
+    if (/android|kotlin/i.test(stack)) roles.push("Android");
+    if (/\bios\b|swift/i.test(stack)) roles.push("iOS");
+    if (/flutter|react native/i.test(stack)) roles.push("Flutter / cross-platform");
+    if (FRONT_RE.test(stack)) roles.push("Frontend");
+    if (BACK_RE.test(stack)) roles.push("Backend");
+    if (FULL_RE.test(stack)) roles.push("Fullstack");
+    const dirs = [];
+    if (roles.includes("UX/UI & product") || /graphic|график/i.test(stack)) dirs.push("design");
+    if (/mobile|мобильн/i.test(stack) || roles.some((r) => ["Android", "iOS", "Flutter / cross-platform"].includes(r))) dirs.push("mobile");
+    if (roles.some((r) => ["Frontend", "Backend", "Fullstack"].includes(r)) || /\bweb\b|веб/i.test(stack)) dirs.push("web");
+    if (!dirs.length) return [];
     const id = `hk-${x.slug}`;
     const tags = ["Internship"];
     if (x.paid) tags.push("Paid");
@@ -360,6 +437,7 @@ async function hackathonkz(old) {
       id, title: x.title, company: x.company || "", logo: null, city: cityOf(x.city || "") || x.city || "", region: "Kazakhstan",
       published_at: firstSeen.get(id) || new Date().toISOString(), salary: null, format: x.remote ? "Remote" : "Office",
       tags, url: `https://hackathon.kz/internship?slug=${encodeURIComponent(x.slug)}`, source: "hackathon.kz", evergreen: true,
+      dirs, roles,
     }];
   });
 }
@@ -369,7 +447,7 @@ async function manual() {
   try {
     const list = JSON.parse(await readFile(MANUAL, "utf8"));
     return list.map((v, i) => ({ id: `manual-${i}`, tags: [], format: "Office", region: "Kazakhstan", city: "", logo: null,
-      salary: null, ...v, source: "Added by teacher" }));
+      salary: null, ...v, source: "Added by teacher" })).flatMap((v) => (v.dirs ? [v] : withClass(v)));
   } catch {
     return [];
   }
@@ -424,6 +502,11 @@ async function main() {
     for (const v of items) {
       if (!v.url || !(v.evergreen || Date.parse(v.published_at) >= cutoff)) continue;
       delete v.accumulate;
+      if (!v.dirs) {
+        const cls = classify(v.title);
+        if (!cls) continue;
+        Object.assign(v, cls);
+      }
       all.set(v.id, v);
     }
     console.log(`${status.at(-1).ok ? "✓" : "–"} ${src.name}: ${status.at(-1).count}${status.at(-1).note ? ` (${status.at(-1).note})` : ""}`);

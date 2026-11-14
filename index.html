@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Design Internships KZ</title>
-<meta name="description" content="Live UX/UI, product and web design internships and entry-level vacancies in Kazakhstan.">
+<title>IT Internships KZ</title>
+<meta name="description" content="Live internships and entry-level jobs in Kazakhstan for design (UX/UI, graphic), mobile (Android, iOS) and web development (frontend, backend) students.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,9 @@
     --new: #0f8a4f;
     --new-soft: #e2f5ea;
     --chip: #f0f0ec;
+    --design: #c2410c; --design-soft: #fdeee4;
+    --mobile: #0e7490; --mobile-soft: #e0f3f7;
+    --web: #6d28d9; --web-soft: #efe7fd;
     --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
   }
   @media (prefers-color-scheme: dark) {
@@ -28,12 +31,14 @@
       --bg: #111114; --surface: #1b1b20; --text: #f1f1f3; --muted: #9a9aa5; --line: #2c2c33;
       --accent: #8f84ff; --accent-text: #111114; --accent-soft: #26234a;
       --new: #4fd18b; --new-soft: #17301f; --chip: #25252b; --shadow: none;
+      --design: #fb923c; --design-soft: #33200f; --mobile: #38bdf8; --mobile-soft: #0f2a36; --web: #b794f6; --web-soft: #271b3d;
     }
   }
   :root[data-theme="dark"] {
     --bg: #111114; --surface: #1b1b20; --text: #f1f1f3; --muted: #9a9aa5; --line: #2c2c33;
     --accent: #8f84ff; --accent-text: #111114; --accent-soft: #26234a;
     --new: #4fd18b; --new-soft: #17301f; --chip: #25252b; --shadow: none;
+    --design: #fb923c; --design-soft: #33200f; --mobile: #38bdf8; --mobile-soft: #0f2a36; --web: #b794f6; --web-soft: #271b3d;
   }
   * { box-sizing: border-box; }
   body {
@@ -41,7 +46,7 @@
     font: 15px/1.5 Inter, system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 40px 16px 64px; }
   header h1 { font-size: clamp(26px, 5vw, 38px); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 8px; }
   header p { margin: 0; color: var(--muted); }
   .status { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-size: 13px; color: var(--muted); }
@@ -49,23 +54,39 @@
   .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--new); margin-right: 6px; vertical-align: 1px; }
   .dot.off { background: #c9a227; }
 
+  /* Direction tabs */
+  .tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 24px; }
+  .tab {
+    font: inherit; cursor: pointer; text-align: left; color: var(--text);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+  }
+  .tab b { display: block; font-size: 15px; }
+  .tab span { font-size: 12.5px; color: var(--muted); }
+  .tab[aria-selected="true"] { border-color: var(--tab-color, var(--accent)); box-shadow: inset 0 0 0 1px var(--tab-color, var(--accent)); background: var(--tab-soft, var(--accent-soft)); }
+  .tab[data-dir="design"] { --tab-color: var(--design); --tab-soft: var(--design-soft); }
+  .tab[data-dir="mobile"] { --tab-color: var(--mobile); --tab-soft: var(--mobile-soft); }
+  .tab[data-dir="web"] { --tab-color: var(--web); --tab-soft: var(--web-soft); }
+  .roles { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; min-height: 0; }
+  .roles:empty { display: none; }
+
   .controls {
     position: sticky; top: 0; z-index: 2; background: var(--bg);
-    display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px;
-    padding: 20px 0 14px; margin-top: 12px; border-bottom: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;
+    padding: 16px 0 14px; margin-top: 8px; border-bottom: 1px solid var(--line);
   }
   input[type=search], select {
     font: inherit; color: var(--text); background: var(--surface);
     border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-width: 0;
   }
   .controls input[type=search] { grid-column: 1 / -1; }
-  input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  input[type=search]:focus, select:focus, .tab:focus-visible, .toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: -1px; }
   .toggles { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
   .toggle {
     font: inherit; font-size: 13px; cursor: pointer; border: 1px solid var(--line);
     background: var(--surface); color: var(--text); border-radius: 999px; padding: 6px 12px;
   }
   .toggle[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+  .toggle .n { opacity: .65; margin-left: 4px; }
 
   .count { font-size: 13px; color: var(--muted); margin: 16px 0 10px; }
   .list { display: grid; gap: 10px; }
@@ -85,6 +106,9 @@
   .chip { background: var(--chip); border-radius: 6px; padding: 2px 8px; color: var(--text); }
   .chip.intern { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
   .chip.new { background: var(--new-soft); color: var(--new); font-weight: 600; }
+  .chip.design { background: var(--design-soft); color: var(--design); font-weight: 500; }
+  .chip.mobile { background: var(--mobile-soft); color: var(--mobile); font-weight: 500; }
+  .chip.web { background: var(--web-soft); color: var(--web); font-weight: 500; }
   .src { font-weight: 500; color: var(--text); }
   .btn {
     display: inline-block; text-decoration: none; white-space: nowrap; font-weight: 600; font-size: 14px;
@@ -105,9 +129,8 @@
 
   @media (max-width: 600px) {
     .wrap { padding-top: 28px; }
+    .tabs { grid-template-columns: 1fr 1fr; }
     .controls { grid-template-columns: 1fr 1fr; position: static; }
-    .controls #role { grid-column: 1 / -1; }
-    .controls input[type=search] { grid-column: 1 / -1; }
     .card { grid-template-columns: 40px 1fr; }
     .logo { width: 40px; height: 40px; }
     .card .btn { grid-column: 1 / -1; text-align: center; }
@@ -117,17 +140,21 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>Design internships in Kazakhstan</h1>
-    <p>UX/UI, product and web design roles from job boards, Telegram channels and remote-work sites, collected in one place. Updated automatically every hour.</p>
+    <h1>IT internships & jobs in Kazakhstan</h1>
+    <p>Design, mobile and web development vacancies from job boards, Telegram channels, company career pages and remote-work sites, collected in one place. Updated automatically every hour.</p>
     <div class="status" id="status">Loading…</div>
   </header>
 
+  <div class="tabs" role="tablist" aria-label="Direction">
+    <button class="tab" role="tab" data-dir="" aria-selected="true"><b>All directions</b><span id="n-all">–</span></button>
+    <button class="tab" role="tab" data-dir="design" aria-selected="false"><b>Design</b><span id="n-design">–</span></button>
+    <button class="tab" role="tab" data-dir="mobile" aria-selected="false"><b>Mobile</b><span id="n-mobile">–</span></button>
+    <button class="tab" role="tab" data-dir="web" aria-selected="false"><b>Web development</b><span id="n-web">–</span></button>
+  </div>
+  <div class="roles" id="roles" aria-label="Role"></div>
+
   <div class="controls">
-    <input type="search" id="q" placeholder="Search company or role…" aria-label="Search">
-    <select id="role" aria-label="Role">
-      <option value="ux">UX/UI & product</option>
-      <option value="">All design jobs</option>
-    </select>
+    <input type="search" id="q" placeholder="Search company, role or technology…" aria-label="Search">
     <select id="where" aria-label="Where">
       <option value="">All locations</option>
       <option value="Kazakhstan">Kazakhstan only</option>
@@ -155,28 +182,32 @@
     <h2>More places to look</h2>
     <p>These sites don't allow automatic collection, so check them yourself every few days.</p>
     <div class="links">
-      <a href="https://hh.kz/search/vacancy?text=UX%2FUI+%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80&area=40&experience=noExperience" target="_blank" rel="noopener"><b>hh.kz</b><span>Biggest job board in KZ: no-experience design roles</span></a>
-      <a href="https://www.enbek.kz/ru/search/vacancy?prof=%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80" target="_blank" rel="noopener"><b>Enbek.kz</b><span>Official state labor exchange</span></a>
+      <a href="https://hh.kz/search/vacancy?text=%D1%81%D1%82%D0%B0%D0%B6%D0%B5%D1%80&area=40&experience=noExperience" target="_blank" rel="noopener"><b>hh.kz</b><span>Biggest job board in KZ: intern and no-experience roles</span></a>
+      <a href="https://www.enbek.kz/ru/search/vacancy" target="_blank" rel="noopener"><b>Enbek.kz</b><span>Official state labor exchange</span></a>
       <a href="https://astanahub.com/ru/vacancy/" target="_blank" rel="noopener"><b>Astana Hub</b><span>IT park startups and tech companies</span></a>
-      <a href="https://www.linkedin.com/jobs/search/?keywords=UX%20UI%20designer&location=Kazakhstan&f_E=1%2C2" target="_blank" rel="noopener"><b>LinkedIn Jobs</b><span>Internship + entry level in Kazakhstan</span></a>
-      <a href="https://www.olx.kz/rabota/q-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80/" target="_blank" rel="noopener"><b>OLX.kz</b><span>Local small businesses looking for designers</span></a>
-      <a href="https://career.habr.com/vacancies?q=%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80&qualification=1&type=all" target="_blank" rel="noopener"><b>Habr Career</b><span>Intern-level design roles</span></a>
-      <a href="https://qyzmet.kz/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/UI-UX-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80" target="_blank" rel="noopener"><b>Qyzmet.kz</b><span>Job search across many KZ sites: UI/UX designer</span></a>
-      <a href="https://people.andersenlab.com/vacancies" target="_blank" rel="noopener"><b>Andersen</b><span>Runs UI/UX design internships in Almaty and Astana</span></a>
-      <a href="https://www.behance.net/joblist" target="_blank" rel="noopener"><b>Behance Jobs</b><span>Design jobs from Adobe's portfolio site</span></a>
-      <a href="https://dribbble.com/jobs?location=Anywhere" target="_blank" rel="noopener"><b>Dribbble Jobs</b><span>Remote design jobs worldwide</span></a>
+      <a href="https://www.linkedin.com/jobs/search/?keywords=intern&location=Kazakhstan&f_E=1%2C2" target="_blank" rel="noopener"><b>LinkedIn Jobs</b><span>Internship + entry level in Kazakhstan</span></a>
+      <a href="https://career.habr.com/vacancies?qualification=1&type=all" target="_blank" rel="noopener"><b>Habr Career</b><span>Intern-level IT roles</span></a>
+      <a href="https://people.andersenlab.com/vacancies" target="_blank" rel="noopener"><b>Andersen</b><span>Internships in design and development in Almaty and Astana</span></a>
+      <a href="https://www.olx.kz/rabota/it-internet-telekom/" target="_blank" rel="noopener"><b>OLX.kz</b><span>IT jobs at local small businesses</span></a>
+      <a href="https://qyzmet.kz/%D0%B2%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/UI-UX-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80" target="_blank" rel="noopener"><b>Qyzmet.kz</b><span>Job search across many KZ sites</span></a>
+      <a href="https://www.behance.net/joblist" target="_blank" rel="noopener"><b>Behance Jobs</b><span>Design: jobs from Adobe's portfolio site</span></a>
+      <a href="https://dribbble.com/jobs?location=Anywhere" target="_blank" rel="noopener"><b>Dribbble Jobs</b><span>Design: remote jobs worldwide</span></a>
     </div>
   </section>
 
-  <footer>Collected from designjobs.kz, hackathon.kz, hh.kz, Telegram channels, inDrive and Wolt careers, Habr Career, Jobicy, Himalayas, We Work Remotely, RemoteOK, Working Nomads and Remotive. Remote listings link back to their original boards. Always check details on the original page before applying.</footer>
+  <footer>Collected from hh.kz, designjobs.kz, hackathon.kz, Kazakhstan IT and design Telegram channels, inDrive and Wolt careers, Habr Career, Himalayas, Jobicy, We Work Remotely, RemoteOK, Working Nomads and Remotive. Every listing links to its original page. Always check details there before applying.</footer>
 </div>
 
 <script>
 const $ = (s) => document.querySelector(s);
-const state = { all: [], q: "", role: "ux", where: "", city: "", source: "", sort: "new", f: new Set() };
-// "UX/UI & product design" = job title mentions UX, UI, product design, interfaces or UX research/writing.
-const UX_RE = /\bux\b|\bui\b|ux\/ui|ui\/ux|product design|продукт\S* дизайн|интерфейс|interface|ux[- ]?research|ux[- ]?writ/i;
 const DAY = 864e5;
+const DIRS = {
+  design: { label: "Design", roles: ["UX/UI & product", "Graphic & brand"] },
+  mobile: { label: "Mobile", roles: ["Android", "iOS", "Flutter / cross-platform"] },
+  web: { label: "Web", roles: ["Frontend", "Backend", "Fullstack"] },
+};
+const slug = (r) => r.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
+const state = { all: [], dir: "", role: "", q: "", where: "", city: "", source: "", sort: "new", f: new Set() };
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -200,20 +231,51 @@ function fmtSalary(s) {
   return s.from ? `from ${n(s.from)} ${cur}` : `up to ${n(s.to)} ${cur}`;
 }
 
-function render() {
+// ---- URL hash: #design, #design/ux-ui-product, #mobile/android, #web/frontend ----
+function readHash() {
+  const [d, r] = decodeURIComponent(location.hash.slice(1)).split("/");
+  state.dir = DIRS[d] ? d : "";
+  state.role = state.dir ? (DIRS[state.dir].roles.find((x) => slug(x) === r) || "") : "";
+}
+function writeHash() {
+  const h = state.dir ? `#${state.dir}${state.role ? "/" + slug(state.role) : ""}` : " ";
+  history.replaceState(null, "", h === " " ? location.pathname + location.search : h);
+  try { localStorage.setItem("dir", h); } catch {}
+}
+
+// Filters other than direction/role (so tab counts reflect search, location, toggles…).
+function baseMatch(v) {
   const q = state.q.toLowerCase();
-  let list = state.all.filter((v) => {
-    if (q && !`${v.title} ${v.company} ${v.city}`.toLowerCase().includes(q)) return false;
-    if (state.role === "ux" && !UX_RE.test(v.title)) return false;
-    if (state.city && v.city !== state.city) return false;
-    if (state.where && v.region !== state.where) return false;
-    if (state.source && v.source !== state.source) return false;
-    if (state.f.has("week") && Date.now() - Date.parse(v.published_at) > 7 * DAY) return false;
-    if (state.f.has("Internship") && !v.tags.includes("Internship")) return false;
-    if (state.f.has("entry") && !v.tags.some((t) => t === "Junior" || t === "No experience" || t === "Internship")) return false;
-    if (state.f.has("Remote") && v.format !== "Remote") return false;
-    return true;
-  });
+  if (q && !`${v.title} ${v.company} ${v.city} ${v.roles.join(" ")}`.toLowerCase().includes(q)) return false;
+  if (state.city && v.city !== state.city) return false;
+  if (state.where && v.region !== state.where) return false;
+  if (state.source && v.source !== state.source) return false;
+  if (state.f.has("week") && Date.now() - Date.parse(v.published_at) > 7 * DAY) return false;
+  if (state.f.has("Internship") && !v.tags.includes("Internship")) return false;
+  if (state.f.has("entry") && !v.tags.some((t) => t === "Junior" || t === "No experience" || t === "Internship")) return false;
+  if (state.f.has("Remote") && v.format !== "Remote") return false;
+  return true;
+}
+
+function renderTabs(base) {
+  $("#n-all").textContent = `${base.length} jobs`;
+  for (const d of Object.keys(DIRS)) {
+    const n = base.filter((v) => v.dirs.includes(d));
+    $(`#n-${d}`).textContent = `${n.length} jobs · ${n.filter((v) => v.region === "Kazakhstan").length} in KZ`;
+  }
+  document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", String(t.dataset.dir === state.dir)));
+  if (!state.dir) { $("#roles").innerHTML = ""; return; }
+  const inDir = base.filter((v) => v.dirs.includes(state.dir));
+  const chips = [["", `All ${DIRS[state.dir].label.toLowerCase()}`, inDir.length],
+    ...DIRS[state.dir].roles.map((r) => [r, r, inDir.filter((v) => v.roles.includes(r)).length])];
+  $("#roles").innerHTML = chips.map(([val, label, n]) =>
+    `<button class="toggle" data-role="${esc(val)}" aria-pressed="${state.role === val}">${esc(label)}<span class="n">${n}</span></button>`).join("");
+}
+
+function render() {
+  const base = state.all.filter(baseMatch);
+  renderTabs(base);
+  const list = base.filter((v) => (!state.dir || v.dirs.includes(state.dir)) && (!state.role || v.roles.includes(state.role)));
   const by = { new: (a, b) => Date.parse(b.published_at) - Date.parse(a.published_at),
                old: (a, b) => Date.parse(a.published_at) - Date.parse(b.published_at),
                company: (a, b) => a.company.localeCompare(b.company) };
@@ -221,13 +283,15 @@ function render() {
 
   $("#count").textContent = `${list.length} of ${state.all.length} vacancies`;
   if (!list.length) {
-    $("#list").innerHTML = `<div class="empty">${state.all.length ? `No vacancies match these filters.${state.role === "ux" ? " Try “All design jobs”." : " Try clearing some."}` : "No vacancies yet. The list fills in automatically once the hourly update runs."}</div>`;
+    $("#list").innerHTML = `<div class="empty">${state.all.length ? "No vacancies match these filters. Try another role or clear some filters." : "No vacancies yet. The list fills in automatically once the hourly update runs."}</div>`;
     return;
   }
   $("#list").innerHTML = list.map((v) => {
     const isNew = Date.now() - Date.parse(v.published_at) < DAY;
+    const roleChips = v.roles.length ? v.roles : v.dirs.map((d) => DIRS[d]?.label || d);
     const chips = [
       isNew ? `<span class="chip new">New</span>` : "",
+      ...roleChips.map((r) => `<span class="chip ${esc(v.dirs[0])}">${esc(r)}</span>`),
       ...v.tags.map((t) => `<span class="chip ${t === "Internship" ? "intern" : ""}">${esc(t)}</span>`),
       v.format && v.format !== "Office" && v.region !== "Remote" ? `<span class="chip">${esc(v.format)}</span>` : "",
       fmtSalary(v.salary) ? `<span class="chip">${esc(fmtSalary(v.salary))}</span>` : "",
@@ -253,20 +317,19 @@ async function load() {
   try {
     const res = await fetch(`data/vacancies.json?t=${Date.now()}`, { cache: "no-store" });
     const data = await res.json();
-    state.all = (data.vacancies || []).map((v) => ({ tags: [], ...v }));
+    state.all = (data.vacancies || []).map((v) => ({ tags: [], roles: [], dirs: ["design"], ...v }));
     const cities = [...new Set(state.all.map((v) => v.city).filter(Boolean))].sort();
     $("#city").innerHTML = `<option value="">All cities</option>` + cities.map((c) => `<option>${esc(c)}</option>`).join("");
     $("#city").value = state.city;
     const sources = [...new Set(state.all.map((v) => v.source))].sort();
     $("#source").innerHTML = `<option value="">All sources</option>` + sources.map((c) => `<option>${esc(c)}</option>`).join("");
     $("#source").value = state.source;
-    const ux = state.all.filter((v) => UX_RE.test(v.title));
-    const kz = ux.filter((v) => v.region === "Kazakhstan").length;
+    const kz = state.all.filter((v) => v.region === "Kazakhstan").length;
     const fresh = state.all.filter((v) => Date.now() - Date.parse(v.published_at) < DAY).length;
     $("#status").innerHTML =
       `<span><span class="dot ${data.live ? "" : "off"}"></span>Live from <b>${sources.length}</b> sources</span>` +
       `<span>Updated <b>${ago(data.updated_at)}</b></span>` +
-      `<span><b>${ux.length}</b> UX/UI & product jobs (<b>${kz}</b> in Kazakhstan) · <b>${state.all.length}</b> design jobs in total</span>` +
+      `<span><b>${kz}</b> in Kazakhstan · <b>${state.all.length - kz}</b> remote</span>` +
       (fresh ? `<span><b>${fresh}</b> new today</span>` : "");
     render();
   } catch (e) {
@@ -274,19 +337,30 @@ async function load() {
   }
 }
 
+document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => {
+  state.dir = t.dataset.dir; state.role = ""; writeHash(); render();
+}));
+$("#roles").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-role]");
+  if (!b) return;
+  state.role = b.dataset.role; writeHash(); render();
+});
 $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
 $("#city").addEventListener("change", (e) => { state.city = e.target.value; render(); });
-$("#role").addEventListener("change", (e) => { state.role = e.target.value; render(); });
 $("#where").addEventListener("change", (e) => { state.where = e.target.value; render(); });
 $("#source").addEventListener("change", (e) => { state.source = e.target.value; render(); });
 $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
-document.querySelectorAll(".toggle").forEach((b) => b.addEventListener("click", () => {
+document.querySelectorAll(".toggles .toggle").forEach((b) => b.addEventListener("click", () => {
   const on = b.getAttribute("aria-pressed") !== "true";
   b.setAttribute("aria-pressed", on);
   on ? state.f.add(b.dataset.f) : state.f.delete(b.dataset.f);
   render();
 }));
+window.addEventListener("hashchange", () => { readHash(); render(); });
 
+// A shared link (#web, #design/ux-ui-product…) wins; otherwise reopen the student's last direction.
+if (!location.hash) { try { const last = localStorage.getItem("dir"); if (last && last.startsWith("#")) history.replaceState(null, "", last); } catch {} }
+readHash();
 load();
 setInterval(load, 10 * 60e3); // refresh the list every 10 minutes while the page is open
 </script>
