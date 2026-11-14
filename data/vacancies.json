@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T10:23:42.147Z",
+  "updated_at": "2026-11-14T15:06:40.749Z",
   "live": true,
   "count": 312,
   "sources": [
@@ -141,6 +141,46 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "tg-designwork_vacansii-9361",
+      "title": "Мы в поиске 3D Motion Designer с опытом производства рекламных креативов в GameDev и…",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-14T15:00:10.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9361",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000166673",
+      "title": "Senior/Lead Frontend разработчик (React)",
+      "company": "РОСГОССТРАХ",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/733/004/648/logo/medium_309b8f718ee3ecc10e77153d19241547.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-14T12:30:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000166673",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
     {
       "id": "habr-1000167746",
       "title": "Fullstack-разработчик ",
@@ -2370,26 +2410,6 @@
       "format": "Remote",
       "tags": [],
       "url": "https://career.habr.com/vacancies/1000169696",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
-      ]
-    },
-    {
-      "id": "habr-1000166673",
-      "title": "Senior/Lead Frontend разработчик (React)",
-      "company": "РОСГОССТРАХ",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/733/004/648/logo/medium_309b8f718ee3ecc10e77153d19241547.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T12:30:02.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000166673",
       "source": "Habr Career",
       "dirs": [
         "web"
@@ -6360,26 +6380,6 @@
       ],
       "roles": [
         "Flutter / cross-platform"
-      ]
-    },
-    {
-      "id": "tg-it_jobs_kz-396",
-      "title": "Senior Backend",
-      "company": "IT Jobs (DSML.KZ)",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-09-15T13:16:57.000Z",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://t.me/it_jobs_kz/396",
-      "source": "Telegram @it_jobs_kz",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
