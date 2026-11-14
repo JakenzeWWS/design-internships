@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T19:58:40.183Z",
+  "updated_at": "2026-11-14T23:57:12.780Z",
   "live": true,
   "count": 308,
   "sources": [
@@ -141,6 +141,26 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "habr-1000169258",
+      "title": "QAA на Java",
+      "company": "Top Selection",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/086/9/logo/medium_471913a34c9e1fd546aecd2d816485c8.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-14T20:27:07.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169258",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "tg-designwork_vacansii-9361",
       "title": "Мы в поиске 3D Motion Designer с опытом производства рекламных креативов в GameDev и…",
@@ -2689,26 +2709,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "habr-1000169258",
-      "title": "QAA на Java",
-      "company": "Top Selection",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/086/9/logo/medium_471913a34c9e1fd546aecd2d816485c8.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-05T20:21:25.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169258",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
