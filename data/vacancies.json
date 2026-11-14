@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-13T19:21:59.654Z",
+  "updated_at": "2026-11-14T00:21:17.889Z",
   "live": true,
-  "count": 122,
+  "count": 121,
   "sources": [
     {
       "name": "hh.kz",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 58
+      "count": 57
     },
     {
       "name": "hackathon.kz",
@@ -1547,22 +1547,6 @@
       "tags": [],
       "url": "https://weworkremotely.com/remote-jobs/maptiler-head-of-design-maps-platform-remote-in-europe",
       "source": "We Work Remotely"
-    },
-    {
-      "id": "dj-ux-ui-dizainer-akjet-1f0obl0",
-      "title": "Product / UX / UI-дизайнер",
-      "company": "AKJET",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-10-22T00:00:00.000Z",
-      "valid_through": "2026-11-13",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-akjet-1f0obl0",
-      "source": "designjobs.kz",
-      "evergreen": true
     },
     {
       "id": "wwr-cata-kor-graphic-designer",
