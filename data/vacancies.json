@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-14T15:06:40.749Z",
+  "updated_at": "2026-11-14T19:58:40.183Z",
   "live": true,
-  "count": 312,
+  "count": 308,
   "sources": [
     {
       "name": "hh.kz",
@@ -92,7 +92,7 @@
     {
       "name": "Jobicy",
       "ok": true,
-      "count": 8
+      "count": 0
     },
     {
       "name": "Himalayas",
@@ -2291,86 +2291,6 @@
       "tags": [],
       "url": "https://himalayas.app/companies/healthhue/jobs/senior-web-designer?utm_source=api",
       "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
-      "id": "jcy-159606",
-      "title": "Web Developer",
-      "company": "Canonical",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T15:23:31.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/159606-web-developer",
-      "source": "Jobicy",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
-      ]
-    },
-    {
-      "id": "jcy-159605",
-      "title": "Visual Designer",
-      "company": "Canonical",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T15:23:30.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/159605-visual-designer",
-      "source": "Jobicy",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "jcy-159604",
-      "title": "UX Designer - Infrastructure",
-      "company": "Canonical",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T15:23:28.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/159604-ux-designer-infrastructure",
-      "source": "Jobicy",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
-      "id": "jcy-159602",
-      "title": "UX Designer - Design systems",
-      "company": "Canonical",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T15:23:25.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/159602-ux-designer-design-systems",
-      "source": "Jobicy",
       "dirs": [
         "design"
       ],
