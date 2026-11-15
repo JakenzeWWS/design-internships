@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-14T23:57:12.780Z",
+  "updated_at": "2026-11-15T06:32:54.966Z",
   "live": true,
-  "count": 308,
+  "count": 303,
   "sources": [
     {
       "name": "hh.kz",
@@ -32,7 +32,7 @@
     {
       "name": "Telegram @itworkkz",
       "ok": true,
-      "count": 42
+      "count": 41
     },
     {
       "name": "Telegram @it_jobs_kz",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 51
+      "count": 47
     },
     {
       "name": "hackathon.kz",
@@ -141,6 +141,29 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "tg-designwork_vacansii-9364",
+      "title": "Для соцсетей нового бренда искусства, иллюстрации и дизайна ищут графического дизайнера",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-15T06:00:12.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior",
+        "No experience"
+      ],
+      "url": "https://t.me/designwork_vacansii/9364",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
     {
       "id": "habr-1000169258",
       "title": "QAA на Java",
@@ -4834,106 +4857,6 @@
       ]
     },
     {
-      "id": "dj-graficheskii-dizainer-tmk-limited-llp-03razkh",
-      "title": "Графический дизайнер",
-      "company": "TMK Limited LLP",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "valid_through": "2026-11-14",
-      "salary": {
-        "from": 250000,
-        "to": 400000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-tmk-limited-llp-03razkh",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-sofiaglobal-12mgha6",
-      "title": "Creative Designer — Figma + AI",
-      "company": "SofiaGlobal",
-      "logo": null,
-      "city": "Astana",
-      "region": "Kazakhstan",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "valid_through": "2026-11-14",
-      "salary": {
-        "from": 300000,
-        "to": 300000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-sofiaglobal-12mgha6",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-beeline-tm-1qhuw0f",
-      "title": "Ведущий специалист по дизайну клиентского опыта B2B",
-      "company": "Beeline, ТМ",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "valid_through": "2026-11-14",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-beeline-tm-1qhuw0f",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-lead-brend-dizainer-invictus-astana-1xcw7qo",
-      "title": "Design Lead / Дизайн-лид в INVICTUS",
-      "company": "Invictus Astana",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "valid_through": "2026-11-14",
-      "salary": {
-        "from": 800000,
-        "to": 800000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/lead-brend-dizainer-invictus-astana-1xcw7qo",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "dj-3d-dizainer-too-affari-finance-1yqe0xa",
       "title": "IT-дизайнер (3D моделирование – 3D Дженералист)",
       "company": "ТОО «Affari finance»",
@@ -6221,26 +6144,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/micro1/jobs/sr-full-stack-software-engineer",
-      "title": "Sr. Full-Stack Software Engineer",
-      "company": "micro1",
-      "logo": "https://cdn-images.himalayas.app/91oa56akgt3qjqc1nh3uoruub40c",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-09-17T08:49:09.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/micro1/jobs/sr-full-stack-software-engineer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "tg-designkziskra-2577",
       "title": "Ищем графического / Brand-дизайнера",
       "company": "Дизайн вакансии | Казахстан | Iskra Station",
@@ -6278,28 +6181,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "tg-jobkz_1-22628",
-      "title": "Junior/Middle Flutter Developer",
-      "company": "Lagrange Labs",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-09-16T03:44:29.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://t.me/jobkz_1/22628",
-      "source": "Telegram @jobkz_1",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Flutter / cross-platform"
       ]
     },
     {
