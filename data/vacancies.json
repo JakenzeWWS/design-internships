@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-16T08:01:28.423Z",
+  "updated_at": "2026-11-16T18:34:34.009Z",
   "live": true,
-  "count": 313,
+  "count": 317,
   "sources": [
     {
       "name": "hh.kz",
@@ -12,12 +12,12 @@
     {
       "name": "Telegram @designkziskra",
       "ok": true,
-      "count": 74
+      "count": 73
     },
     {
       "name": "Telegram @itcom_kz",
       "ok": true,
-      "count": 117
+      "count": 116
     },
     {
       "name": "Telegram @workitkz",
@@ -57,17 +57,17 @@
     {
       "name": "Telegram @designhunters",
       "ok": true,
-      "count": 5
+      "count": 6
     },
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 6
+      "count": 5
     },
     {
       "name": "Telegram @designbirzha",
       "ok": true,
-      "count": 5
+      "count": 3
     },
     {
       "name": "Telegram @forproducts",
@@ -82,7 +82,7 @@
     {
       "name": "Habr Career",
       "ok": true,
-      "count": 83
+      "count": 85
     },
     {
       "name": "RemoteOK",
@@ -97,12 +97,12 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 90
+      "count": 88
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 25
+      "count": 24
     },
     {
       "name": "Working Nomads",
@@ -117,7 +117,7 @@
     {
       "name": "inDrive careers",
       "ok": true,
-      "count": 19
+      "count": 17
     },
     {
       "name": "Wolt careers",
@@ -141,6 +141,225 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "habr-1000169480",
+      "title": "Java разработчик в Wildberries Банк",
+      "company": "RWB",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T13:18:30.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169480",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000163346",
+      "title": "Python Developer",
+      "company": "ITK academy",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/378/9/logo/medium_0f7eeedce5e0720336108a3d85bc3d37.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T12:27:26.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000163346",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169711",
+      "title": "Tech Lead (70% .NET / 30% React), удалённо, вне РФ",
+      "company": "BGStaff",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/094/9/logo/medium_4a301072dec6b6a49050e5b294cd7983.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T12:23:13.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169711",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169635",
+      "title": "AQA Java Engineer (Mobile)",
+      "company": "Юзтех",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/692/196/204/logo/medium_f0b6f2291c7dfa77b70a6d57f5d1ebbe.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T12:23:09.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169635",
+      "source": "Habr Career",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": []
+    },
+    {
+      "id": "tg-designwork_vacansii-9371",
+      "title": "AI Motion Designer / AI Video Creator (Full-time)",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T12:00:02.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9371",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000168741",
+      "title": "Python Developer / AI Engineer (Document Processing)",
+      "company": "AYROSA",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/527/3/logo/medium_394b29c3d0ed81616e93f5a040016f9f.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T11:27:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168741",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000170103",
+      "title": "Golang-разработчик в команду Рекламной платформы",
+      "company": "RWB",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T10:50:19.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170103",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169525",
+      "title": "Golang Tech Lead в Корпоративный портал",
+      "company": "RWB",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T10:30:48.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169525",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designkziskra-2593",
+      "title": "UI/UX дизайнер на проект (EdTech + геймификация)",
+      "company": "Дизайн вакансии | Казахстан | Iskra Station",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-16T09:54:46.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designkziskra/2593",
+      "source": "Telegram @designkziskra",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "habr-1000167904",
+      "title": "Java разработчик со знанием платформы ЦФТ/ Проектная работа / АУТСТАФФ",
+      "company": "Extyl",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/783/6/logo/medium_c1ca371fd48be5f414a06814bd2b7f74.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T09:43:14.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167904",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000150058",
+      "title": "Java разработчик",
+      "company": "SENSE",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/243/7/logo/medium_bb47c4ee5edf08b129bc236e94758896.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-16T08:27:16.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000150058",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "tg-designhunters-7831",
       "title": "Дизайнер цифровых продуктов.",
@@ -675,28 +894,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
-      "title": "Full Stack Developer Intern",
-      "company": "ASG Company",
-      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T19:30:17.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Internship"
-      ],
-      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "habr-1000167010",
       "title": "Эксперт по разработке Go / Software Engineer Go (TATLIN.UNIFIED)",
       "company": "YADRO",
@@ -1049,26 +1246,6 @@
       ]
     },
     {
-      "id": "habr-1000169480",
-      "title": "Java разработчик в Wildberries Банк",
-      "company": "RWB",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T07:41:45.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169480",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "habr-1000168358",
       "title": "Backend-разработчик BItrix/PHP (cтажер)",
       "company": "ИТ-компания «Лоция»",
@@ -1358,27 +1535,6 @@
       ],
       "roles": [
         "Backend"
-      ]
-    },
-    {
-      "id": "co-inDrive-7552",
-      "title": "Android Engineer",
-      "company": "inDrive",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-12T14:04:03.000Z",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://careers.indrive.com/vacancies/df558e3ab15a0e12838798b51c1c12af/",
-      "source": "inDrive careers",
-      "evergreen": true,
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Android"
       ]
     },
     {
@@ -2431,67 +2587,6 @@
       ]
     },
     {
-      "id": "habr-1000163346",
-      "title": "Python Developer",
-      "company": "ITK academy",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/378/9/logo/medium_0f7eeedce5e0720336108a3d85bc3d37.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-09T12:27:19.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000163346",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169711",
-      "title": "Tech Lead (70% .NET / 30% React), удалённо, вне РФ",
-      "company": "BGStaff",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/094/9/logo/medium_4a301072dec6b6a49050e5b294cd7983.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-09T12:22:57.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169711",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend",
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169525",
-      "title": "Golang Tech Lead в Корпоративный портал",
-      "company": "RWB",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-09T10:31:03.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169525",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "tg-designkziskra-2591",
       "title": "Ищем продуктового дизайнера UI/UX в SGL One",
       "company": "Дизайн вакансии | Казахстан | Iskra Station",
@@ -2509,26 +2604,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "habr-1000167904",
-      "title": "Java разработчик со знанием платформы ЦФТ/ Проектная работа / АУТСТАФФ",
-      "company": "Extyl",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/783/6/logo/medium_c1ca371fd48be5f414a06814bd2b7f74.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-09T09:43:16.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167904",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -2799,46 +2874,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "habr-1000168741",
-      "title": "Python Developer / AI Engineer (Document Processing)",
-      "company": "AYROSA",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/527/3/logo/medium_394b29c3d0ed81616e93f5a040016f9f.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T11:47:19.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000168741",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000150058",
-      "title": "Java разработчик",
-      "company": "SENSE",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/243/7/logo/medium_bb47c4ee5edf08b129bc236e94758896.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-07T08:27:19.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000150058",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -3114,28 +3149,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
-      "title": "Junior Full-Stack Developer",
-      "company": "Appetiser Apps",
-      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-05T19:32:52.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -3700,6 +3713,26 @@
       ]
     },
     {
+      "id": "him-https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global",
+      "title": "PHP Developer (Flex-Time) (Remote/Global)",
+      "company": "Motu Novu LLC",
+      "logo": "https://cdn-images.himalayas.app/e0ihe5dnh07ployk22z16ys4b1ed",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-02T18:19:01.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
       "id": "tg-jobkz_1-23127",
       "title": "Middle Backend Developer",
       "company": "JobKZ: вакансии / работа в Казахстане",
@@ -4016,6 +4049,26 @@
       ]
     },
     {
+      "id": "him-https://himalayas.app/companies/emcd/jobs/go-developer-fintech-crypto",
+      "title": "Go Developer (fintech/crypto)",
+      "company": "EMCD",
+      "logo": "https://cdn-images.himalayas.app/s1vxwh3bzaiyhbpe3g3bpav8537p",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-01T12:21:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/emcd/jobs/go-developer-fintech-crypto?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
       "id": "him-https://himalayas.app/companies/hivex/jobs/php-developer-8222071015",
       "title": "PHP developer",
       "company": "Hivex",
@@ -4087,6 +4140,26 @@
       "format": "Remote",
       "tags": [],
       "url": "https://himalayas.app/companies/hivex/jobs/python-developer-1783009587?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/hivex/jobs/ai-python-jambonz-or-vapi-developer-3725261180",
+      "title": "AI Python (Jambonz or Vapi) developer",
+      "company": "Hivex",
+      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-01T12:20:21.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/hivex/jobs/ai-python-jambonz-or-vapi-developer-3725261180?utm_source=api",
       "source": "Himalayas",
       "dirs": [
         "web"
@@ -4523,6 +4596,27 @@
       ],
       "roles": [
         "UX/UI & product"
+      ]
+    },
+    {
+      "id": "co-inDrive-7518",
+      "title": "Android Engineer",
+      "company": "inDrive",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-10-30T11:20:06.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://careers.indrive.com/vacancies/b2729b6cb7368f1c33e4c2157cd1e4eb/",
+      "source": "inDrive careers",
+      "evergreen": true,
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Android"
       ]
     },
     {
@@ -6400,26 +6494,6 @@
       ]
     },
     {
-      "id": "wwr-twikey-senior-java-developer",
-      "title": "Senior Java Developer",
-      "company": "Twikey",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-09-17T10:51:23.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://weworkremotely.com/remote-jobs/twikey-senior-java-developer",
-      "source": "We Work Remotely",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "co-inDrive-7328",
       "title": "Senior Brand & Product Communication Designer",
       "company": "inDrive",
@@ -6441,27 +6515,6 @@
       ]
     },
     {
-      "id": "co-inDrive-7297",
-      "title": "Senior Backend Engineer",
-      "company": "inDrive",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-08-24T09:02:07.000Z",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://careers.indrive.com/vacancies/859bb73cb14fb5ad575f653a6576fc4d/",
-      "source": "inDrive careers",
-      "evergreen": true,
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "co-inDrive-7019",
       "title": "Staff Backend Engineer (Unit Intercity)",
       "company": "inDrive",
@@ -6473,6 +6526,27 @@
       "format": "Office",
       "tags": [],
       "url": "https://careers.indrive.com/vacancies/ac02f869e4b66d978a283657121ee390/",
+      "source": "inDrive careers",
+      "evergreen": true,
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "co-inDrive-7016",
+      "title": "Senior Backend Engineer",
+      "company": "inDrive",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-06-18T13:08:05.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://careers.indrive.com/vacancies/173406cba868053e1b68a3b2cd3d8b78/",
       "source": "inDrive careers",
       "evergreen": true,
       "dirs": [
