@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-15T20:26:24.023Z",
+  "updated_at": "2026-11-16T01:03:09.260Z",
   "live": true,
-  "count": 304,
+  "count": 303,
   "sources": [
     {
       "name": "hh.kz",
@@ -102,7 +102,7 @@
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 26
+      "count": 25
     },
     {
       "name": "Working Nomads",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 47
+      "count": 46
     },
     {
       "name": "hackathon.kz",
@@ -4898,32 +4898,6 @@
       ],
       "roles": [
         "Backend"
-      ]
-    },
-    {
-      "id": "dj-3d-dizainer-too-affari-finance-1yqe0xa",
-      "title": "IT-дизайнер (3D моделирование – 3D Дженералист)",
-      "company": "ТОО «Affari finance»",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "valid_through": "2026-11-15",
-      "salary": {
-        "from": 250000,
-        "to": 300000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/3d-dizainer-too-affari-finance-1yqe0xa",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
