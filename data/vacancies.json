@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T11:53:16.351Z",
+  "updated_at": "2026-11-17T20:57:16.820Z",
   "live": true,
   "count": 319,
   "sources": [
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "name": "Telegram @designbirzha",
@@ -82,7 +82,7 @@
     {
       "name": "Habr Career",
       "ok": true,
-      "count": 85
+      "count": 86
     },
     {
       "name": "RemoteOK",
@@ -97,7 +97,7 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 91
+      "count": 89
     },
     {
       "name": "We Work Remotely",
@@ -141,6 +141,106 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "him-https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056",
+      "title": "Senior Frontend Engineer",
+      "company": "vidIQ",
+      "logo": "https://cdn-images.himalayas.app/2kjyqrgd7f3d673w6ve8o2fb2f7a",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-17T19:34:51.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "habr-1000169769",
+      "title": "Middle/Middle+ Android Developer (ИИ-департамент)",
+      "company": "СберЗдоровье",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/701/7/logo/medium_aa05390e6fb12ea4e132cfac5d6759cf.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-17T15:06:43.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169769",
+      "source": "Habr Career",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Android"
+      ]
+    },
+    {
+      "id": "habr-1000169768",
+      "title": "Middle Android Developer (Умный мониторинг здоровья)",
+      "company": "СберЗдоровье",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/701/7/logo/medium_aa05390e6fb12ea4e132cfac5d6759cf.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-17T15:06:22.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169768",
+      "source": "Habr Career",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Android"
+      ]
+    },
+    {
+      "id": "habr-1000169767",
+      "title": "Технический лидер команды (php)",
+      "company": "СберЗдоровье",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/701/7/logo/medium_aa05390e6fb12ea4e132cfac5d6759cf.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-17T15:05:58.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169767",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000170305",
+      "title": "AI Engineer / Python Developer | LLM Agents & Rag | ",
+      "company": "ДеФакто",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-17T14:03:05.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170305",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "tg-workitkz-7911",
       "title": "Middle Go Developer (Almaty)",
@@ -2197,26 +2297,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056",
-      "title": "Senior Frontend Engineer",
-      "company": "vidIQ",
-      "logo": "https://cdn-images.himalayas.app/2kjyqrgd7f3d673w6ve8o2fb2f7a",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-11T16:50:14.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
-      ]
-    },
-    {
       "id": "habr-1000168194",
       "title": "Full Stack разработчик (PHP 8.3 • Laravel 10 • RabbitMQ • PostgreSQL • Vue.js)",
       "company": "Erne S&P Ltd.",
@@ -2402,66 +2482,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "habr-1000169769",
-      "title": "Middle/Middle+ Android Developer (ИИ-департамент)",
-      "company": "СберЗдоровье",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/701/7/logo/medium_aa05390e6fb12ea4e132cfac5d6759cf.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-10T15:06:36.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169769",
-      "source": "Habr Career",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Android"
-      ]
-    },
-    {
-      "id": "habr-1000169768",
-      "title": "Middle Android Developer (Умный мониторинг здоровья)",
-      "company": "СберЗдоровье",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/701/7/logo/medium_aa05390e6fb12ea4e132cfac5d6759cf.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-10T15:06:17.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169768",
-      "source": "Habr Career",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Android"
-      ]
-    },
-    {
-      "id": "habr-1000169767",
-      "title": "Технический лидер команды (php)",
-      "company": "СберЗдоровье",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/701/7/logo/medium_aa05390e6fb12ea4e132cfac5d6759cf.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-10T15:05:56.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169767",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -4194,26 +4214,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/b12/jobs/web-designer",
-      "title": "Web Designer",
-      "company": "B12",
-      "logo": "https://cdn-images.himalayas.app/tvg3t31p7yh3com6vs6dd9jgggtp",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:56:29.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/b12/jobs/web-designer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
       ]
     },
     {
