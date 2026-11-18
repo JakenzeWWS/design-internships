@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-18T11:43:01.753Z",
+  "updated_at": "2026-11-18T20:32:50.440Z",
   "live": true,
-  "count": 322,
+  "count": 321,
   "sources": [
     {
       "name": "hh.kz",
@@ -57,7 +57,7 @@
     {
       "name": "Telegram @designhunters",
       "ok": true,
-      "count": 5
+      "count": 4
     },
     {
       "name": "Telegram @designwork_vacansii",
@@ -67,7 +67,7 @@
     {
       "name": "Telegram @designbirzha",
       "ok": true,
-      "count": 6
+      "count": 5
     },
     {
       "name": "Telegram @forproducts",
@@ -97,12 +97,12 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 92
+      "count": 96
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 21
+      "count": 19
     },
     {
       "name": "Working Nomads",
@@ -141,6 +141,148 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
+      "title": "Full Stack Developer Intern",
+      "company": "ASG Company",
+      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T19:31:12.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/canonical/jobs/golang-engineer",
+      "title": "Golang Engineer",
+      "company": "Canonical",
+      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T19:31:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/canonical/jobs/golang-engineer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169832",
+      "title": "Frontend-разработчик",
+      "company": "Альфа-Деньги",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/504/9/logo/medium_57d31f72752dccc953f19cc4148c1c9f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T17:29:27.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169832",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "habr-1000169831",
+      "title": "PHP-разработчик",
+      "company": "Альфа-Деньги",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/504/9/logo/medium_57d31f72752dccc953f19cc4148c1c9f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T17:26:59.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169831",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/b12/jobs/web-designer",
+      "title": "Web Designer",
+      "company": "B12",
+      "logo": "https://cdn-images.himalayas.app/tvg3t31p7yh3com6vs6dd9jgggtp",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T17:11:35.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/b12/jobs/web-designer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter",
+      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
+      "company": "Canonical",
+      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T17:05:34.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Flutter / cross-platform"
+      ]
+    },
+    {
+      "id": "habr-1000168197",
+      "title": "Go Architect / Solution Architect",
+      "company": "Vital Partners",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/733/6/logo/medium_79ee34c04994b33f9e32904084e95151.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-18T13:52:20.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168197",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "wwr-shirvano-graphic-design-intern-remote",
       "title": "Graphic Design Intern (Remote)",
@@ -2481,46 +2623,6 @@
       ]
     },
     {
-      "id": "habr-1000169832",
-      "title": "Frontend-разработчик",
-      "company": "Альфа-Деньги",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/504/9/logo/medium_57d31f72752dccc953f19cc4148c1c9f.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-11T17:29:26.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169832",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
-      ]
-    },
-    {
-      "id": "habr-1000169831",
-      "title": "PHP-разработчик",
-      "company": "Альфа-Деньги",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/504/9/logo/medium_57d31f72752dccc953f19cc4148c1c9f.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-11T17:26:47.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169831",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "wwr-koru-ux-design-llp-sr-ux-researcher-uxr-2-112026",
       "title": "Sr. UX Researcher (UXR-2-112026)",
       "company": "Koru UX Design LLP",
@@ -2618,26 +2720,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "habr-1000168197",
-      "title": "Go Architect / Solution Architect",
-      "company": "Vital Partners",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/733/6/logo/medium_79ee34c04994b33f9e32904084e95151.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-11T13:27:16.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000168197",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -4062,26 +4144,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global",
-      "title": "PHP Developer (Flex-Time) (Remote/Global)",
-      "company": "Motu Novu LLC",
-      "logo": "https://cdn-images.himalayas.app/e0ihe5dnh07ployk22z16ys4b1ed",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-02T18:19:01.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -5642,26 +5704,6 @@
       ]
     },
     {
-      "id": "wwr-affirm-analytics-engineer-ii-full-stack-revenue-analytics",
-      "title": "Analytics Engineer II, Full Stack (Revenue Analytics)",
-      "company": "Affirm",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-22T07:31:25.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://weworkremotely.com/remote-jobs/affirm-analytics-engineer-ii-full-stack-revenue-analytics",
-      "source": "We Work Remotely",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "habr-1000169421",
       "title": "Python разработчик / Python Developer",
       "company": "Hireway",
@@ -6001,26 +6043,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/g2i/jobs/typescript-senior-software-engineer-ai-training",
-      "title": "TypeScript Senior Software Engineer, AI Training",
-      "company": "G2i",
-      "logo": "https://cdn-images.himalayas.app/49kfobngoz7995mexnwgqsabr7ah",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-16T00:55:35.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/g2i/jobs/typescript-senior-software-engineer-ai-training?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
       ]
     },
     {
@@ -6412,26 +6434,6 @@
       ]
     },
     {
-      "id": "wwr-cribl-sr-ux-designer-security",
-      "title": "Sr. UX Designer, Security",
-      "company": "Cribl",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-09-30T14:50:43.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://weworkremotely.com/remote-jobs/cribl-sr-ux-designer-security",
-      "source": "We Work Remotely",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
       "id": "tg-it_jobs_kz-399",
       "title": "Fullstack Developer (Mobile and Server Development)",
       "company": "IT Jobs (DSML.KZ)",
@@ -6572,26 +6574,6 @@
       ],
       "roles": [
         "Android"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/canonical/jobs/golang-engineer",
-      "title": "Golang Engineer",
-      "company": "Canonical",
-      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-09-19T18:35:48.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/canonical/jobs/golang-engineer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
