@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-19T11:41:16.421Z",
+  "updated_at": "2026-11-19T20:38:12.372Z",
   "live": true,
-  "count": 325,
+  "count": 328,
   "sources": [
     {
       "name": "hh.kz",
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 3
+      "count": 5
     },
     {
       "name": "Telegram @designbirzha",
@@ -82,12 +82,12 @@
     {
       "name": "Habr Career",
       "ok": true,
-      "count": 89
+      "count": 87
     },
     {
       "name": "RemoteOK",
       "ok": true,
-      "count": 7
+      "count": 8
     },
     {
       "name": "Jobicy",
@@ -102,7 +102,7 @@
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 20
+      "count": 22
     },
     {
       "name": "Working Nomads",
@@ -141,6 +141,494 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote",
+      "title": "Graphic and Editorial Design Expert, Remote",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T19:30:33.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
+      "title": "Full Stack Developer Intern",
+      "company": "ASG Company",
+      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T19:30:33.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "wwr-tebra-product-designer",
+      "title": "Product Designer",
+      "company": "Tebra",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T18:31:26.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/tebra-product-designer",
+      "source": "We Work Remotely",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/b12/jobs/web-designer",
+      "title": "Web Designer",
+      "company": "B12",
+      "logo": "https://cdn-images.himalayas.app/tvg3t31p7yh3com6vs6dd9jgggtp",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T18:07:42.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/b12/jobs/web-designer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter",
+      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
+      "company": "Canonical",
+      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T18:06:19.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Flutter / cross-platform"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/canonical/jobs/golang-engineer",
+      "title": "Golang Engineer",
+      "company": "Canonical",
+      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T18:06:19.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/canonical/jobs/golang-engineer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
+      "title": "Junior Full-Stack Developer",
+      "company": "Appetiser Apps",
+      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T18:01:18.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9397",
+      "title": "Дизайнер HoReCa — 300 000 тенге в месяц",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-19T18:00:03.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9397",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056",
+      "title": "Senior Frontend Engineer",
+      "company": "vidIQ",
+      "logo": "https://cdn-images.himalayas.app/2kjyqrgd7f3d673w6ve8o2fb2f7a",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T17:46:32.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/defuse-labs/jobs/senior-product-designer-full-stack",
+      "title": "Senior Product Designer (Full-Stack)",
+      "company": "Defuse Labs",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T17:24:44.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/defuse-labs/jobs/senior-product-designer-full-stack?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/eastwood-cleef-llc/jobs/frontend-software-development-engineer-javascript-vue-js",
+      "title": "Frontend Software Development Engineer JavaScript Vue.JS",
+      "company": "Eastwood & Cleef, LLC",
+      "logo": "https://cdn-images.himalayas.app/3uucvav57jwxunzj4h1qew28r3ui",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T17:23:39.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/eastwood-cleef-llc/jobs/frontend-software-development-engineer-javascript-vue-js?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/religiate-interactive-brand-consulting-pvt-ltd/jobs/senior-graphic-designer",
+      "title": "Senior Graphic Designer",
+      "company": "Religiate Interactive Brand Consulting Pvt Ltd",
+      "logo": "https://cdn-images.himalayas.app/p2jtrhvne21rbhavuv8ucsvg9gpu",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:59:17.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/religiate-interactive-brand-consulting-pvt-ltd/jobs/senior-graphic-designer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/evb/jobs/sr-full-stack-software-engineer",
+      "title": "Sr. Full-Stack Software Engineer",
+      "company": "EVB",
+      "logo": "https://cdn-images.himalayas.app/puw65fghk2uumj2xoiybzkvubi20",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:43:03.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/evb/jobs/sr-full-stack-software-engineer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412",
+      "title": "Sr. Full-Stack Software Engineer, Remote",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:42:41.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract",
+      "title": "🌍 Sr. Full-Stack Software Engineer, Remote- Contract",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:41:45.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/opinov8/jobs/senior-full-stack-engineer-net-react-ai-services",
+      "title": "Senior Full Stack Engineer (.NET/React) - AI Services",
+      "company": "Opinov8",
+      "logo": "https://cdn-images.himalayas.app/6jll464vxmzgxd9w64cl2vc9qff5",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:40:48.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/opinov8/jobs/senior-full-stack-engineer-net-react-ai-services?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/banco-plata-s-a-institucion-de-banca-multiple/jobs/product-designer-junior",
+      "title": "Product Designer Junior+",
+      "company": "Banco Plata, S.A., Institución de Banca Múltiple",
+      "logo": "https://cdn-images.himalayas.app/cu15rhdxs9omvo0ml1kwr014ai5y",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:38:41.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://himalayas.app/companies/banco-plata-s-a-institucion-de-banca-multiple/jobs/product-designer-junior?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "wwr-lemon-io-senior-react-full-stack-developer-8",
+      "title": "Senior React Full-stack Developer",
+      "company": "Lemon.io",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T16:12:15.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-8",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "habr-1000166751",
+      "title": "Ведущий Python-разработчик",
+      "company": "Лига Цифровой Экономики",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/110/9/logo/medium_816709d84d40b7407c91289045bc7d2a.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T14:27:24.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000166751",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169400",
+      "title": "Go разработчик",
+      "company": "Лига Цифровой Экономики",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/110/9/logo/medium_816709d84d40b7407c91289045bc7d2a.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T14:27:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169400",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9393",
+      "title": "Product Designer (Middle+ / Senior)",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T14:00:08.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9393",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "habr-1000170527",
+      "title": "Junior Frontend разработчик (React)",
+      "company": "Pulsea",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/7/logo/medium_0ee9b10e6eb226f732f62230aa8dd70f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T12:59:29.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://career.habr.com/vacancies/1000170527",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "habr-1000169586",
+      "title": "Golang разработчик (с опытом в PHP)",
+      "company": "Employ City",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/123/7/logo/medium_e0b49d3a11ec856ea01a6ff6f6b8aa09.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T12:41:48.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169586",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169585",
+      "title": "Fullstack-разработчик (Golang+React)",
+      "company": "Employ City",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/123/7/logo/medium_e0b49d3a11ec856ea01a6ff6f6b8aa09.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-19T12:33:47.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169585",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
     {
       "id": "habr-1000170506",
       "title": "Стажировка Python разработчик (FastAPI)",
@@ -472,48 +960,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
-      "title": "Full Stack Developer Intern",
-      "company": "ASG Company",
-      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T19:31:12.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Internship"
-      ],
-      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/canonical/jobs/golang-engineer",
-      "title": "Golang Engineer",
-      "company": "Canonical",
-      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T19:31:04.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/canonical/jobs/golang-engineer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "habr-1000169832",
       "title": "Frontend-разработчик",
       "company": "Альфа-Деньги",
@@ -554,43 +1000,23 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/b12/jobs/web-designer",
-      "title": "Web Designer",
-      "company": "B12",
-      "logo": "https://cdn-images.himalayas.app/tvg3t31p7yh3com6vs6dd9jgggtp",
+      "id": "rok-1137805",
+      "title": "SEO Full Stack Engineer",
+      "company": "Treatwell",
+      "logo": null,
       "city": "",
       "region": "Remote",
-      "published_at": "2026-11-18T17:11:35.000Z",
+      "published_at": "2026-11-18T16:00:31.000Z",
       "salary": null,
       "format": "Remote",
       "tags": [],
-      "url": "https://himalayas.app/companies/b12/jobs/web-designer?utm_source=api",
-      "source": "Himalayas",
+      "url": "https://remoteOK.com/remote-jobs/remote-seo-full-stack-engineer-treatwell-1137805",
+      "source": "RemoteOK",
       "dirs": [
-        "design"
+        "web"
       ],
       "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter",
-      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
-      "company": "Canonical",
-      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T17:05:34.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Flutter / cross-platform"
+        "Fullstack"
       ]
     },
     {
@@ -633,68 +1059,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/banco-plata-s-a-institucion-de-banca-multiple/jobs/product-designer-junior",
-      "title": "Product Designer Junior+",
-      "company": "Banco Plata, S.A., Institución de Banca Múltiple",
-      "logo": "https://cdn-images.himalayas.app/cu15rhdxs9omvo0ml1kwr014ai5y",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T11:29:29.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://himalayas.app/companies/banco-plata-s-a-institucion-de-banca-multiple/jobs/product-designer-junior?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
-      "id": "habr-1000170402",
-      "title": "Frontend-разработчика",
-      "company": "Employ City",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/123/7/logo/medium_e0b49d3a11ec856ea01a6ff6f6b8aa09.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T11:27:57.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170402",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
-      ]
-    },
-    {
-      "id": "habr-1000168331",
-      "title": "Middle+ Python developer",
-      "company": "Циан",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/971/386/858/logo/medium_531739be7a3e542225a4341ddb513211.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T11:27:09.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000168331",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -908,26 +1272,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056",
-      "title": "Senior Frontend Engineer",
-      "company": "vidIQ",
-      "logo": "https://cdn-images.himalayas.app/2kjyqrgd7f3d673w6ve8o2fb2f7a",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-17T19:34:51.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/vidiq/jobs/senior-frontend-engineer-1174306056?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
-      ]
-    },
-    {
       "id": "habr-1000169769",
       "title": "Middle/Middle+ Android Developer (ИИ-департамент)",
       "company": "СберЗдоровье",
@@ -1068,26 +1412,6 @@
       ]
     },
     {
-      "id": "habr-1000170153",
-      "title": "Java Developer",
-      "company": "Bell Integrator",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/431/936/411/logo/medium_f1357fbfec55a045f655cade248fa3da.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-17T06:14:16.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170153",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "him-https://himalayas.app/companies/agencyhires/jobs/graphic-designer",
       "title": "Graphic Designer",
       "company": "Agencyhires",
@@ -1105,28 +1429,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
-      "title": "Junior Full-Stack Developer",
-      "company": "Appetiser Apps",
-      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-16T19:30:32.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -1369,46 +1671,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote",
-      "title": "Graphic and Editorial Design Expert, Remote",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-16T06:56:32.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/opinov8/jobs/senior-full-stack-engineer-net-react-ai-services",
-      "title": "Senior Full Stack Engineer (.NET/React) - AI Services",
-      "company": "Opinov8",
-      "logo": "https://cdn-images.himalayas.app/6jll464vxmzgxd9w64cl2vc9qff5",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-16T06:47:01.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/opinov8/jobs/senior-full-stack-engineer-net-react-ai-services?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "habr-1000162215",
       "title": "Стажер Frontend-разработчик (React)",
       "company": "PREAX",
@@ -1498,26 +1760,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract",
-      "title": "🌍 Sr. Full-Stack Software Engineer, Remote- Contract",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-15T21:54:26.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -1889,46 +2131,6 @@
       ],
       "roles": [
         "Backend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412",
-      "title": "Sr. Full-Stack Software Engineer, Remote",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-14T03:29:25.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/evb/jobs/sr-full-stack-software-engineer",
-      "title": "Sr. Full-Stack Software Engineer",
-      "company": "EVB",
-      "logo": "https://cdn-images.himalayas.app/puw65fghk2uumj2xoiybzkvubi20",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T20:02:40.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/evb/jobs/sr-full-stack-software-engineer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -2556,26 +2758,6 @@
       ]
     },
     {
-      "id": "habr-1000166751",
-      "title": "Ведущий Python-разработчик",
-      "company": "Лига Цифровой Экономики",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/110/9/logo/medium_816709d84d40b7407c91289045bc7d2a.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T14:27:20.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000166751",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "habr-1000167936",
       "title": "Oracle developer (+Delphi+Vue+Go)",
       "company": "SM Lab",
@@ -2615,46 +2797,6 @@
       "roles": [
         "Frontend",
         "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169586",
-      "title": "Golang разработчик (с опытом в PHP)",
-      "company": "Employ City",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/123/7/logo/medium_e0b49d3a11ec856ea01a6ff6f6b8aa09.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T12:41:49.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169586",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169585",
-      "title": "Fullstack-разработчик (Golang+React)",
-      "company": "Employ City",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/123/7/logo/medium_e0b49d3a11ec856ea01a6ff6f6b8aa09.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T12:33:42.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169585",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -3119,26 +3261,6 @@
       "tags": [],
       "url": "https://himalayas.app/companies/hivex/jobs/c-developer-5324365700?utm_source=api",
       "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169400",
-      "title": "Go разработчик",
-      "company": "Лига Цифровой Экономики",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/110/9/logo/medium_816709d84d40b7407c91289045bc7d2a.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-10T14:43:13.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169400",
-      "source": "Habr Career",
       "dirs": [
         "web"
       ],
@@ -3649,26 +3771,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/eastwood-cleef-llc/jobs/frontend-software-development-engineer-javascript-vue-js",
-      "title": "Frontend Software Development Engineer JavaScript Vue.JS",
-      "company": "Eastwood & Cleef, LLC",
-      "logo": "https://cdn-images.himalayas.app/3uucvav57jwxunzj4h1qew28r3ui",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-06T17:36:03.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/eastwood-cleef-llc/jobs/frontend-software-development-engineer-javascript-vue-js?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
       ]
     },
     {
@@ -4409,26 +4511,6 @@
       "tags": [],
       "url": "https://t.me/itcom_kz/7585",
       "source": "Telegram @itcom_kz",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/religiate-interactive-brand-consulting-pvt-ltd/jobs/senior-graphic-designer",
-      "title": "Senior Graphic Designer",
-      "company": "Religiate Interactive Brand Consulting Pvt Ltd",
-      "logo": "https://cdn-images.himalayas.app/p2jtrhvne21rbhavuv8ucsvg9gpu",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-02T03:43:57.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/religiate-interactive-brand-consulting-pvt-ltd/jobs/senior-graphic-designer?utm_source=api",
-      "source": "Himalayas",
       "dirs": [
         "design"
       ],
@@ -6111,26 +6193,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/defuse-labs/jobs/senior-product-designer-full-stack",
-      "title": "Senior Product Designer (Full-Stack)",
-      "company": "Defuse Labs",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-16T01:14:15.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/defuse-labs/jobs/senior-product-designer-full-stack?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
       ]
     },
     {
