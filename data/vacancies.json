@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-20T11:40:43.159Z",
+  "updated_at": "2026-11-20T20:20:31.999Z",
   "live": true,
-  "count": 313,
+  "count": 317,
   "sources": [
     {
       "name": "hh.kz",
@@ -22,12 +22,12 @@
     {
       "name": "Telegram @workitkz",
       "ok": true,
-      "count": 121
+      "count": 120
     },
     {
       "name": "Telegram @itvacancykz",
       "ok": true,
-      "count": 89
+      "count": 88
     },
     {
       "name": "Telegram @itworkkz",
@@ -62,12 +62,12 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 6
+      "count": 8
     },
     {
       "name": "Telegram @designbirzha",
       "ok": true,
-      "count": 4
+      "count": 5
     },
     {
       "name": "Telegram @forproducts",
@@ -87,7 +87,7 @@
     {
       "name": "RemoteOK",
       "ok": true,
-      "count": 6
+      "count": 4
     },
     {
       "name": "Jobicy",
@@ -97,12 +97,12 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 93
+      "count": 95
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 21
+      "count": 22
     },
     {
       "name": "Working Nomads",
@@ -141,6 +141,252 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
+      "title": "Full Stack Developer Intern",
+      "company": "ASG Company",
+      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T19:30:27.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "wwr-cockroach-labs-escalation-engineer",
+      "title": "Escalation Engineer",
+      "company": "Cockroach Labs",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T18:32:40.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/cockroach-labs-escalation-engineer",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "wwr-postscript-senior-software-engineer-full-stack-80-backend",
+      "title": "Senior Software Engineer, Full Stack (80% backend)",
+      "company": "Postscript",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T18:32:40.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9404",
+      "title": "Ищем дизайнера-декоратора квартир",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T18:00:01.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://t.me/designwork_vacansii/9404",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/human-power-bg/jobs/full-stack-node-js-react-developer",
+      "title": "Full-Stack Node.js & React Developer",
+      "company": "Human Power BG",
+      "logo": "https://cdn-images.himalayas.app/5ujx1p2mlcgkg6ji9h2etf2c3wg3",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T16:55:24.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/human-power-bg/jobs/full-stack-node-js-react-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/human-power-bg/jobs/senior-full-stack-javascript-developer",
+      "title": "Senior Full-Stack JavaScript Developer",
+      "company": "Human Power BG",
+      "logo": "https://cdn-images.himalayas.app/5ujx1p2mlcgkg6ji9h2etf2c3wg3",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T16:55:24.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/human-power-bg/jobs/senior-full-stack-javascript-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
+      "title": "Junior Full-Stack Developer",
+      "company": "Appetiser Apps",
+      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T16:51:22.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9402",
+      "title": "КАРПОВА СОФИЯ",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T15:00:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9402",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000167010",
+      "title": "Эксперт по разработке Go / Software Engineer Go (TATLIN.UNIFIED)",
+      "company": "YADRO",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/888/4/logo/medium_eb819572234e132167204b11e8f70dc8.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T14:37:33.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167010",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000170086",
+      "title": "C#/.NET-разработчик",
+      "company": "ПИК",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/530/6/logo/medium_e601a4185ab5a569257133fdabe054e6.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T13:36:15.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170086",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000170080",
+      "title": "Старший Backend-разработчик PHP (лидер команды)",
+      "company": "ПИК",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/530/6/logo/medium_e601a4185ab5a569257133fdabe054e6.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T13:25:26.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170080",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169682",
+      "title": "Claude Code Backend Developer",
+      "company": "SR",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/806/1/logo/medium_531a8e6e4ba7bad57d1872f32dd52fd8.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-20T11:51:28.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169682",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "habr-1000159654",
       "title": "Преподаватель, разработчик курсов по Rust",
@@ -526,28 +772,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
-      "title": "Full Stack Developer Intern",
-      "company": "ASG Company",
-      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T19:30:33.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Internship"
-      ],
-      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "wwr-tebra-product-designer",
       "title": "Product Designer",
       "company": "Tebra",
@@ -625,28 +849,6 @@
       ],
       "roles": [
         "Backend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
-      "title": "Junior Full-Stack Developer",
-      "company": "Appetiser Apps",
-      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T18:01:18.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -2446,66 +2648,6 @@
       ]
     },
     {
-      "id": "habr-1000167010",
-      "title": "Эксперт по разработке Go / Software Engineer Go (TATLIN.UNIFIED)",
-      "company": "YADRO",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/888/4/logo/medium_eb819572234e132167204b11e8f70dc8.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T14:27:06.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167010",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000170086",
-      "title": "C#/.NET-разработчик",
-      "company": "ПИК",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/530/6/logo/medium_e601a4185ab5a569257133fdabe054e6.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T13:36:10.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170086",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000170080",
-      "title": "Старший Backend-разработчик PHP (лидер команды)",
-      "company": "ПИК",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/530/6/logo/medium_e601a4185ab5a569257133fdabe054e6.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T13:25:20.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170080",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "hk-halyk-start-it-stazhirovka-halyk-bank",
       "title": "Halyk Start — IT-стажировка",
       "company": "Halyk Bank",
@@ -2571,26 +2713,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "habr-1000169682",
-      "title": "Claude Code Backend Developer",
-      "company": "SR",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/806/1/logo/medium_531a8e6e4ba7bad57d1872f32dd52fd8.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T11:51:25.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169682",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -3199,7 +3321,7 @@
     },
     {
       "id": "tg-workitkz-7897",
-      "title": "Go backend-разработчик (Middle+/Senior)",
+      "title": "Go backend -разработчик (Middle+/Senior)",
       "company": "Doodocs",
       "logo": null,
       "city": "Astana",
@@ -5752,26 +5874,6 @@
       ]
     },
     {
-      "id": "rok-1137544",
-      "title": "Senior Backend Engineer",
-      "company": "Rain",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-18T18:00:01.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-rain-1137544",
-      "source": "RemoteOK",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "tg-jobkz_1-22979",
       "title": "ДИЗАЙНЕР -ОПЕРАТОР ПЕЧАТИ (CorelDRAW)",
       "company": "JobKZ: вакансии / работа в Казахстане",
@@ -5804,26 +5906,6 @@
       "tags": [],
       "url": "https://t.me/itcom_kz/7479",
       "source": "Telegram @itcom_kz",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "rok-1137534",
-      "title": "APAC Python",
-      "company": "Kodland",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-16T16:00:26.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://remoteOK.com/remote-jobs/remote-apac-python-kodland-1137534",
-      "source": "RemoteOK",
       "dirs": [
         "web"
       ],
