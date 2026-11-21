@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-20T20:20:31.999Z",
+  "updated_at": "2026-11-21T02:15:34.830Z",
   "live": true,
-  "count": 317,
+  "count": 314,
   "sources": [
     {
       "name": "hh.kz",
@@ -87,7 +87,7 @@
     {
       "name": "RemoteOK",
       "ok": true,
-      "count": 4
+      "count": 3
     },
     {
       "name": "Jobicy",
@@ -97,7 +97,7 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 95
+      "count": 91
     },
     {
       "name": "We Work Remotely",
@@ -4151,26 +4151,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/agentplace/jobs/agentic-ux-designer",
-      "title": "Agentic UX Designer",
-      "company": "Agentplace",
-      "logo": "https://cdn-images.himalayas.app/9zs14j3l0lkw6g4rd3my49vj869y",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-04T00:16:46.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/agentplace/jobs/agentic-ux-designer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
       "id": "dj-graficheskii-dizainer-0lzxoul",
       "title": "Графический дизайнер (удаленно, парт тайм)",
       "company": "Компания не указана",
@@ -4863,26 +4843,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/g2i/jobs/full-stack-developer-g2i-talent-pool-2528939820",
-      "title": "Full Stack Developer - G2i Talent Pool",
-      "company": "G2i",
-      "logo": "https://cdn-images.himalayas.app/49kfobngoz7995mexnwgqsabr7ah",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T01:21:23.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/g2i/jobs/full-stack-developer-g2i-talent-pool-2528939820?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "wwr-dropbox-backend-product-software-engineer-1",
       "title": "Backend Product Software Engineer",
       "company": "Dropbox",
@@ -5335,26 +5295,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "rok-1137597",
-      "title": "Front End Developer",
-      "company": "Cambridge Information Group",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-28T21:53:15.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-cambridge-information-group-1137597",
-      "source": "RemoteOK",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
       ]
     },
     {
