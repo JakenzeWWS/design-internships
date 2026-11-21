@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-21T09:53:00.463Z",
+  "updated_at": "2026-11-21T17:34:00.829Z",
   "live": true,
-  "count": 314,
+  "count": 321,
   "sources": [
     {
       "name": "hh.kz",
@@ -67,7 +67,7 @@
     {
       "name": "Telegram @designbirzha",
       "ok": true,
-      "count": 6
+      "count": 5
     },
     {
       "name": "Telegram @forproducts",
@@ -82,7 +82,7 @@
     {
       "name": "Habr Career",
       "ok": true,
-      "count": 82
+      "count": 84
     },
     {
       "name": "RemoteOK",
@@ -97,7 +97,7 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 89
+      "count": 90
     },
     {
       "name": "We Work Remotely",
@@ -141,6 +141,228 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "tg-designwork_vacansii-9415",
+      "title": "Графический дизайнер бренда средств для полости рта",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "Oral",
+      "region": "Remote",
+      "published_at": "2026-11-21T17:00:00.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9415",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "tg-jobkz_1-23330",
+      "title": "Android-разработчик (Middle/Senior)",
+      "company": "JobKZ: вакансии / работа в Казахстане",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-21T16:43:53.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://t.me/jobkz_1/23330",
+      "source": "Telegram @jobkz_1",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Android"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote",
+      "title": "Graphic and Editorial Design Expert, Remote",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T16:40:49.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000169469",
+      "title": "Middle Golang Разработчик",
+      "company": "Базис",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/259/9/logo/medium_1f238124c5f4f2b6dfbc1a19bdc572c3.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T14:27:03.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169469",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000167936",
+      "title": "Oracle developer (+Delphi+Vue+Go)",
+      "company": "SM Lab",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/170/007/741/logo/medium_97823adb689b9853f963b306bd348fbc.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T13:27:31.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167936",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000167935",
+      "title": "Oracle developer (+Vue+C#)",
+      "company": "SM Lab",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/170/007/741/logo/medium_97823adb689b9853f963b306bd348fbc.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T13:27:30.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167935",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9411",
+      "title": "Middle UI/UX Designer в MMO эпохи паруса",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T13:00:05.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9411",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "habr-1000169456",
+      "title": "AI-инженер / Fullstack-разработчик AI-решений",
+      "company": "SM Lab",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/170/007/741/logo/medium_97823adb689b9853f963b306bd348fbc.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T12:27:12.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169456",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9409",
+      "title": "Motion Designer (AI-native) в EdTech-продукт",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T10:30:02.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9409",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000168803",
+      "title": "Python разработчик",
+      "company": "Джетлин",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/784/0/logo/medium_4c88611c018b065f0cad34b848b033c5.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T10:27:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168803",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000167746",
+      "title": "Fullstack-разработчик ",
+      "company": "МТС Web Services",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/355/898/672/logo/medium_2264131b76090b2efb7d0cc37a346fe1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T09:58:45.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167746",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
     {
       "id": "habr-1000168799",
       "title": "AI-Native Go Engineer",
@@ -2670,26 +2892,6 @@
       ]
     },
     {
-      "id": "habr-1000167746",
-      "title": "Fullstack-разработчик ",
-      "company": "МТС Web Services",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/355/898/672/logo/medium_2264131b76090b2efb7d0cc37a346fe1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-14T09:58:40.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167746",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "tg-designhunters-7824",
       "title": "Продуктовый дизайнер",
       "company": "Design Hunters",
@@ -3067,68 +3269,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "habr-1000169469",
-      "title": "Middle Golang Разработчик",
-      "company": "Базис",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/259/9/logo/medium_1f238124c5f4f2b6dfbc1a19bdc572c3.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T14:42:24.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169469",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000167936",
-      "title": "Oracle developer (+Delphi+Vue+Go)",
-      "company": "SM Lab",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/170/007/741/logo/medium_97823adb689b9853f963b306bd348fbc.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T13:57:51.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167936",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend",
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000167935",
-      "title": "Oracle developer (+Vue+C#)",
-      "company": "SM Lab",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/170/007/741/logo/medium_97823adb689b9853f963b306bd348fbc.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T13:35:20.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167935",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend",
-        "Backend"
       ]
     },
     {
