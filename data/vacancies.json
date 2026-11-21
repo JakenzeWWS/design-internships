@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-21T17:34:00.829Z",
+  "updated_at": "2026-11-21T23:17:22.226Z",
   "live": true,
-  "count": 321,
+  "count": 323,
   "sources": [
     {
       "name": "hh.kz",
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 9
+      "count": 8
     },
     {
       "name": "Telegram @designbirzha",
@@ -92,7 +92,7 @@
     {
       "name": "Jobicy",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "name": "Himalayas",
@@ -102,7 +102,7 @@
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 23
+      "count": 26
     },
     {
       "name": "Working Nomads",
@@ -141,6 +141,106 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "habr-1000169258",
+      "title": "QAA на Java",
+      "company": "Top Selection",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/086/9/logo/medium_471913a34c9e1fd546aecd2d816485c8.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T20:27:09.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169258",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "wwr-gemini-senior-product-designer-prediction-markets",
+      "title": "Senior Product Designer (Prediction Markets)",
+      "company": "Gemini",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T18:32:07.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/gemini-senior-product-designer-prediction-markets",
+      "source": "We Work Remotely",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "wwr-gitlab-backend-engineer-ruby-ai-engineering-ai-catalog",
+      "title": "Backend Engineer (Ruby), AI Engineering: AI Catalog",
+      "company": "GitLab",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T18:31:46.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/gitlab-backend-engineer-ruby-ai-engineering-ai-catalog",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "wwr-gitlab-backend-engineer-python-ai-engineering-agent-foundations",
+      "title": "Backend Engineer (Python),AI Engineering: Agent Foundations",
+      "company": "GitLab",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T18:31:46.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/gitlab-backend-engineer-python-ai-engineering-agent-foundations",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "wwr-gusto-inc-staff-product-designer",
+      "title": "Staff Product Designer",
+      "company": "Gusto, Inc.",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T18:31:36.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-product-designer",
+      "source": "We Work Remotely",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
     {
       "id": "tg-designwork_vacansii-9415",
       "title": "Графический дизайнер бренда средств для полости рта",
@@ -1850,26 +1950,6 @@
       ]
     },
     {
-      "id": "jcy-155939",
-      "title": "Full-Stack Engineer (Backend Leaning) - Creative Agents",
-      "company": "Elevenlabs",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/e01b4c5d-221.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T03:30:18.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/155939-full-stack-engineer-backend-leaning-creative-agents",
-      "source": "Jobicy",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "dj-ux-ui-dizainer-too-first-web-ferst-veb-1i9b8m3",
       "title": "UI/UX-дизайнер (Web Designer)",
       "company": "ТОО FIRST WEB (ФЕРСТ ВЕБ)",
@@ -2829,26 +2909,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "habr-1000169258",
-      "title": "QAA на Java",
-      "company": "Top Selection",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/086/9/logo/medium_471913a34c9e1fd546aecd2d816485c8.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-14T20:27:07.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169258",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -5499,26 +5559,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "wwr-cambridge-information-group-inc-front-end-developer",
-      "title": "Front-End Developer",
-      "company": "Cambridge Information Group Inc",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-28T21:42:43.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://weworkremotely.com/remote-jobs/cambridge-information-group-inc-front-end-developer",
-      "source": "We Work Remotely",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
       ]
     },
     {
