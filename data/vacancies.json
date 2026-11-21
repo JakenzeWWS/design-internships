@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T02:15:34.830Z",
+  "updated_at": "2026-11-21T09:53:00.463Z",
   "live": true,
   "count": 314,
   "sources": [
@@ -62,12 +62,12 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 8
+      "count": 9
     },
     {
       "name": "Telegram @designbirzha",
       "ok": true,
-      "count": 5
+      "count": 6
     },
     {
       "name": "Telegram @forproducts",
@@ -82,27 +82,27 @@
     {
       "name": "Habr Career",
       "ok": true,
-      "count": 87
+      "count": 82
     },
     {
       "name": "RemoteOK",
       "ok": true,
-      "count": 3
+      "count": 1
     },
     {
       "name": "Jobicy",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 91
+      "count": 89
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 22
+      "count": 23
     },
     {
       "name": "Working Nomads",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 37
+      "count": 39
     },
     {
       "name": "hackathon.kz",
@@ -141,6 +141,146 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "habr-1000168799",
+      "title": "AI-Native Go Engineer",
+      "company": "Vital Partners",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/733/6/logo/medium_79ee34c04994b33f9e32904084e95151.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T09:27:18.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168799",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9407",
+      "title": "Дизайнер-верстальщик в журнал «Банковское обозрение» — от 650 ₽ за полосу",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T09:00:09.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9407",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9406",
+      "title": "Pravda AI ищет UI/UX-дизайнера для ИИ-юриста, который проверяет договоры, находит…",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T07:30:03.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9406",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "tg-designbirzha-7643",
+      "title": "Middle+ дизайнер",
+      "company": "Дизайн-биржа 💵",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T06:59:49.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designbirzha/7643",
+      "source": "Telegram @designbirzha",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "wwr-ritual-frontend-engineer",
+      "title": "Frontend Engineer",
+      "company": "Ritual",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T06:02:45.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/ritual-frontend-engineer",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "wwr-smartsheet-software-engineer-ii-full-stack-remote-eligible",
+      "title": "Software Engineer II - Full Stack (Remote Eligible)",
+      "company": "Smartsheet",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T06:02:26.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "jcy-151013",
+      "title": "Distributed Systems Testing Software Engineer, Python / Go",
+      "company": "Canonical",
+      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-21T03:00:25.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go",
+      "source": "Jobicy",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
       "title": "Full Stack Developer Intern",
@@ -752,18 +892,20 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote",
-      "title": "Graphic and Editorial Design Expert, Remote",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T19:30:33.000Z",
+      "id": "dj-graficheskii-dizainer-too-dori-digital-1jdcsvy",
+      "title": "Digital-дизайнер",
+      "company": "ТОО DORI DIGITAL",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-20T00:00:00.000Z",
+      "valid_through": "2026-12-12",
       "salary": null,
-      "format": "Remote",
+      "format": "Office",
       "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote?utm_source=api",
-      "source": "Himalayas",
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-dori-digital-1jdcsvy",
+      "source": "designjobs.kz",
+      "evergreen": true,
       "dirs": [
         "design"
       ],
@@ -1282,26 +1424,6 @@
       ]
     },
     {
-      "id": "wwr-proxify-ab-senior-fullstack-developer-react-js-node-js-6",
-      "title": "Senior Fullstack Developer (React.js / Node.js)",
-      "company": "Proxify AB",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T10:40:24.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-6",
-      "source": "We Work Remotely",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "habr-1000170502",
       "title": "Flutter-разработчик",
       "company": "hirix",
@@ -1523,6 +1645,28 @@
       ],
       "roles": [
         "Fullstack"
+      ]
+    },
+    {
+      "id": "dj-ux-ui-dizainer-too-first-web-ferst-veb-1i9b8m3",
+      "title": "UI/UX-дизайнер (Web Designer)",
+      "company": "ТОО FIRST WEB (ФЕРСТ ВЕБ)",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-19T00:00:00.000Z",
+      "valid_through": "2026-12-12",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-too-first-web-ferst-veb-1i9b8m3",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
       ]
     },
     {
@@ -2988,26 +3132,6 @@
       ]
     },
     {
-      "id": "habr-1000168799",
-      "title": "AI-Native Go Engineer",
-      "company": "Vital Partners",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/733/6/logo/medium_79ee34c04994b33f9e32904084e95151.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-12T09:44:59.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000168799",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "tg-designwork_vacansii-9345",
       "title": "Для соцсетей косметологии ищут графического дизайнера",
       "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
@@ -3276,26 +3400,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/c-developer-5324365700",
-      "title": "C# developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-10T16:51:50.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/c-developer-5324365700?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -3888,26 +3992,6 @@
       ]
     },
     {
-      "id": "rok-1137690",
-      "title": "Operations Expert with Python for AI Supply Chain Task Design",
-      "company": "Toptal",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-05T15:01:09.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://remoteOK.com/remote-jobs/remote-operations-expert-with-python-for-ai-supply-chain-task-design-toptal-1137690",
-      "source": "RemoteOK",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "co-inDrive-7531",
       "title": "Senior Software Engineer | Full Stack (AI Customer Support and Safety)",
       "company": "inDrive",
@@ -3926,26 +4010,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "rok-1137688",
-      "title": "Senior Vue Developer",
-      "company": "Lemon.io",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-05T12:45:45.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
-      "source": "RemoteOK",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
       ]
     },
     {
@@ -5607,68 +5671,6 @@
       ],
       "roles": [
         "Flutter / cross-platform"
-      ]
-    },
-    {
-      "id": "habr-1000169425",
-      "title": "Стажер AI-разработчик (fullstack) - продукты и клиентские проекты",
-      "company": "Aveds.ru",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/073/9/logo/medium_29c84e00c6845af3dd30de18880d7022.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-22T07:41:47.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Internship"
-      ],
-      "url": "https://career.habr.com/vacancies/1000169425",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
-      "id": "habr-1000169421",
-      "title": "Python разработчик / Python Developer",
-      "company": "Hireway",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/246/1/logo/medium_4003ce6809645fd834bb05f089ca833e.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-22T06:37:07.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169421",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169420",
-      "title": "Java разработчик / Java Developer",
-      "company": "Hireway",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/246/1/logo/medium_4003ce6809645fd834bb05f089ca833e.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-22T06:28:47.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169420",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
