@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-22T11:29:50.831Z",
+  "updated_at": "2026-11-22T19:40:32.130Z",
   "live": true,
-  "count": 323,
+  "count": 332,
   "sources": [
     {
       "name": "hh.kz",
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 7
+      "count": 5
     },
     {
       "name": "Telegram @designbirzha",
@@ -97,12 +97,12 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 86
+      "count": 89
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 28
+      "count": 29
     },
     {
       "name": "Working Nomads",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 40
+      "count": 46
     },
     {
       "name": "hackathon.kz",
@@ -141,6 +141,144 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "wwr-gemini-senior-software-engineer-predictions-mobile",
+      "title": "Senior Software Engineer, Predictions (Mobile)",
+      "company": "Gemini",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T18:31:57.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/gemini-senior-software-engineer-predictions-mobile",
+      "source": "We Work Remotely",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": []
+    },
+    {
+      "id": "him-https://himalayas.app/companies/hivex/jobs/flutter-developer-2970208123",
+      "title": "Flutter Developer",
+      "company": "Hivex",
+      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T16:55:43.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/hivex/jobs/flutter-developer-2970208123?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Flutter / cross-platform"
+      ]
+    },
+    {
+      "id": "habr-1000169116",
+      "title": "Senior Golang разработчик",
+      "company": "Top Selection",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/086/9/logo/medium_471913a34c9e1fd546aecd2d816485c8.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T16:42:18.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169116",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9424",
+      "title": "Графический / веб-дизайнер в штат проекта из Дубая",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T15:00:05.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9424",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/micro1/jobs/graphic-and-editorial-design-expert",
+      "title": "Graphic and Editorial Design Expert",
+      "company": "micro1",
+      "logo": "https://cdn-images.himalayas.app/91oa56akgt3qjqc1nh3uoruub40c",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T14:20:18.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/micro1/jobs/graphic-and-editorial-design-expert?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000168906",
+      "title": "Senior Java/Kotlin Developer",
+      "company": "CHOICEIT",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/345/5/logo/medium_cef98cd0b67971456c56e534467c39f5.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T13:51:49.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168906",
+      "source": "Habr Career",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Android"
+      ]
+    },
+    {
+      "id": "habr-1000165251",
+      "title": "Python-разработчик",
+      "company": "ИТ-компания «Лоция»",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/003/5/logo/medium_143d6a25cf35969705921fbd915ff6d1.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T12:27:06.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000165251",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "habr-1000167056",
       "title": "Разработчик .Net с опытом работы Solar, Lekton/ Проектная работа / АУТСТАФФ",
@@ -2889,46 +3027,6 @@
       ]
     },
     {
-      "id": "habr-1000169116",
-      "title": "Senior Golang разработчик",
-      "company": "Top Selection",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/086/9/logo/medium_471913a34c9e1fd546aecd2d816485c8.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-15T16:42:12.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169116",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000168906",
-      "title": "Senior Java/Kotlin Developer",
-      "company": "CHOICEIT",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/345/5/logo/medium_cef98cd0b67971456c56e534467c39f5.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-15T13:51:44.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000168906",
-      "source": "Habr Career",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Android"
-      ]
-    },
-    {
       "id": "habr-1000166705",
       "title": "Графический дизайнер",
       "company": "СберЗдоровье",
@@ -3204,26 +3302,6 @@
       "roles": [
         "UX/UI & product",
         "Frontend",
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000165251",
-      "title": "Python-разработчик",
-      "company": "ИТ-компания «Лоция»",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/003/5/logo/medium_143d6a25cf35969705921fbd915ff6d1.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T12:44:57.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000165251",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
         "Backend"
       ]
     },
@@ -4376,26 +4454,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/micro1/jobs/graphic-and-editorial-design-expert",
-      "title": "Graphic and Editorial Design Expert",
-      "company": "micro1",
-      "logo": "https://cdn-images.himalayas.app/91oa56akgt3qjqc1nh3uoruub40c",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-04T06:01:59.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/micro1/jobs/graphic-and-editorial-design-expert?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
@@ -5626,6 +5684,32 @@
       ]
     },
     {
+      "id": "dj-graficheskii-dizainer-impuls-0co2g40",
+      "title": "Графический дизайнер",
+      "company": "Impuls",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": {
+        "from": 150000,
+        "to": 250000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-impuls-0co2g40",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
       "id": "dj-graficheskii-dizainer-storylove-0i4z82r",
       "title": "Графический дизайнер",
       "company": "StoryLove",
@@ -5660,6 +5744,76 @@
       "format": "Remote",
       "tags": [],
       "url": "https://designjobs.kz/jobs/motion-dizainer-0k8fygk",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-aleiron-0uau808",
+      "title": "Дизайнер (в типографию)",
+      "company": "Алейрон",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": {
+        "from": 200000,
+        "to": 350000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-aleiron-0uau808",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-korzinka-retail-group-0wv2lv4",
+      "title": "Графический дизайнер",
+      "company": "KORZINKA RETAIL GROUP",
+      "logo": null,
+      "city": "Taraz",
+      "region": "Kazakhstan",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-korzinka-retail-group-0wv2lv4",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-brend-dizainer-interneshnl-trevel-plyus-1cn2rac",
+      "title": "Графический дизайнер / Presentation & Brand Designer",
+      "company": "Интэрнэшнл Трэвэл плюс",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/brend-dizainer-interneshnl-trevel-plyus-1cn2rac",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
@@ -5875,6 +6029,28 @@
       ],
       "roles": [
         "Flutter / cross-platform"
+      ]
+    },
+    {
+      "id": "dj-ux-ui-dizainer-akjet-1f0obl0",
+      "title": "Product / UX / UI-дизайнер",
+      "company": "AKJET",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-10-22T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-akjet-1f0obl0",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
       ]
     },
     {
@@ -6564,6 +6740,30 @@
       ],
       "roles": [
         "Android"
+      ]
+    },
+    {
+      "id": "dj-intern-motion-dizainer-playrix-0qdamq0",
+      "title": "Motion Designer & Creator (Стажер)",
+      "company": "Playrix",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-08-30T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://designjobs.kz/jobs/intern-motion-dizainer-playrix-0qdamq0",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
       ]
     },
     {
