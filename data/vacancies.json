@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T03:16:29.435Z",
+  "updated_at": "2026-11-22T11:29:50.831Z",
   "live": true,
   "count": 323,
   "sources": [
@@ -57,12 +57,12 @@
     {
       "name": "Telegram @designhunters",
       "ok": true,
-      "count": 4
+      "count": 5
     },
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 8
+      "count": 7
     },
     {
       "name": "Telegram @designbirzha",
@@ -97,12 +97,12 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 89
+      "count": 86
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 26
+      "count": 28
     },
     {
       "name": "Working Nomads",
@@ -141,6 +141,148 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "habr-1000167056",
+      "title": "Разработчик .Net с опытом работы Solar, Lekton/ Проектная работа / АУТСТАФФ",
+      "company": "Extyl",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/783/6/logo/medium_c1ca371fd48be5f414a06814bd2b7f74.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T11:27:19.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167056",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000166832",
+      "title": "Java-разработчик",
+      "company": "Лига Цифровой Экономики",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/110/9/logo/medium_816709d84d40b7407c91289045bc7d2a.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T11:27:19.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000166832",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000168365",
+      "title": "Junior Go Developer",
+      "company": "ITK academy",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/378/9/logo/medium_0f7eeedce5e0720336108a3d85bc3d37.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T11:27:05.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://career.habr.com/vacancies/1000168365",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000167228",
+      "title": "Go-разработчик, Товародвижение и коммерция",
+      "company": "Ozon Tech",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/446/0/logo/medium_be8fb62dd15d085663c26629acf84779.jpeg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T10:27:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167228",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000168358",
+      "title": "Backend-разработчик BItrix/PHP (cтажер)",
+      "company": "ИТ-компания «Лоция»",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/003/5/logo/medium_143d6a25cf35969705921fbd915ff6d1.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T07:27:20.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168358",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designhunters-7847",
+      "title": "Middle+ дизайнер",
+      "company": "Design Hunters",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T06:59:49.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designhunters/7847",
+      "source": "Telegram @designhunters",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "wwr-gitlab-backend-engineer-ruby-plan-spec-driven-development-1",
+      "title": "Backend Engineer (Ruby), Plan: Spec-Driven Development",
+      "company": "GitLab",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-22T06:02:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/gitlab-backend-engineer-ruby-plan-spec-driven-development-1",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
     {
       "id": "habr-1000169258",
       "title": "QAA на Java",
@@ -2787,46 +2929,6 @@
       ]
     },
     {
-      "id": "habr-1000166832",
-      "title": "Java-разработчик",
-      "company": "Лига Цифровой Экономики",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/006/110/9/logo/medium_816709d84d40b7407c91289045bc7d2a.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-15T11:27:19.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000166832",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000167056",
-      "title": "Разработчик .Net с опытом работы Solar, Lekton/ Проектная работа / АУТСТАФФ",
-      "company": "Extyl",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/783/6/logo/medium_c1ca371fd48be5f414a06814bd2b7f74.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-15T11:27:13.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167056",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "habr-1000166705",
       "title": "Графический дизайнер",
       "company": "СберЗдоровье",
@@ -3146,48 +3248,6 @@
       ]
     },
     {
-      "id": "habr-1000168365",
-      "title": "Junior Go Developer",
-      "company": "ITK academy",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/009/378/9/logo/medium_0f7eeedce5e0720336108a3d85bc3d37.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T11:27:12.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://career.habr.com/vacancies/1000168365",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000167228",
-      "title": "Go-разработчик, Товародвижение и коммерция",
-      "company": "Ozon Tech",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/446/0/logo/medium_be8fb62dd15d085663c26629acf84779.jpeg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T10:51:39.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167228",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "tg-designkziskra-2592",
       "title": "ИЩЕМ GRAPHIC DESIGNER",
       "company": "Дизайн вакансии | Казахстан | Iskra Station",
@@ -3207,26 +3267,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "habr-1000168358",
-      "title": "Backend-разработчик BItrix/PHP (cтажер)",
-      "company": "ИТ-компания «Лоция»",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/003/5/logo/medium_143d6a25cf35969705921fbd915ff6d1.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-13T07:28:05.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000168358",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -3903,26 +3943,6 @@
       ]
     },
     {
-      "id": "tg-designhunters-7812",
-      "title": "Middle+ дизайнер",
-      "company": "Design Hunters",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-08T07:38:52.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://t.me/designhunters/7812",
-      "source": "Telegram @designhunters",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "him-https://himalayas.app/companies/healthhue/jobs/senior-graphic-designer",
       "title": "Senior Graphic Designer",
       "company": "Health Hue Digital",
@@ -4587,6 +4607,26 @@
       ]
     },
     {
+      "id": "him-https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global",
+      "title": "PHP Developer (Flex-Time) (Remote/Global)",
+      "company": "Motu Novu LLC",
+      "logo": "https://cdn-images.himalayas.app/e0ihe5dnh07ployk22z16ys4b1ed",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-02T18:19:01.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
       "id": "tg-jobkz_1-23127",
       "title": "Middle Backend Developer",
       "company": "JobKZ: вакансии / работа в Казахстане",
@@ -4968,26 +5008,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/flutter-developer-2970208123",
-      "title": "Flutter Developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:20:10.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/flutter-developer-2970208123?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Flutter / cross-platform"
       ]
     },
     {
@@ -6501,26 +6521,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "tg-designkziskra-2579",
-      "title": "ГРАФИЧЕСКИЙ ДИЗАЙНЕР КЕРЕК",
-      "company": "Дизайн вакансии | Казахстан | Iskra Station",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-09-23T06:09:44.000Z",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://t.me/designkziskra/2579",
-      "source": "Telegram @designkziskra",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
