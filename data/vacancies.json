@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T23:17:22.226Z",
+  "updated_at": "2026-11-22T03:16:29.435Z",
   "live": true,
   "count": 323,
   "sources": [
@@ -87,7 +87,7 @@
     {
       "name": "RemoteOK",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "name": "Jobicy",
@@ -97,7 +97,7 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 90
+      "count": 89
     },
     {
       "name": "We Work Remotely",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 39
+      "count": 40
     },
     {
       "name": "hackathon.kz",
@@ -601,6 +601,50 @@
       ],
       "roles": [
         "Backend"
+      ]
+    },
+    {
+      "id": "dj-brend-dizainer-113e0g0",
+      "title": "Графический дизайнер бренда средств для полости рта",
+      "company": "Компания не указана",
+      "logo": null,
+      "city": "Oral",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-21T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/brend-dizainer-113e0g0",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-motion-dizainer-v-edtech-produkt-13b7oht",
+      "title": "Motion Designer (AI-native) в EdTech-продукт",
+      "company": "В EdTech-продукт",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-21T00:00:00.000Z",
+      "valid_through": "2026-12-13",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/motion-dizainer-v-edtech-produkt-13b7oht",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
       ]
     },
     {
@@ -2009,26 +2053,6 @@
       ],
       "roles": [
         "Backend"
-      ]
-    },
-    {
-      "id": "rok-1137805",
-      "title": "SEO Full Stack Engineer",
-      "company": "Treatwell",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T16:00:31.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://remoteOK.com/remote-jobs/remote-seo-full-stack-engineer-treatwell-1137805",
-      "source": "RemoteOK",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -4560,26 +4584,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global",
-      "title": "PHP Developer (Flex-Time) (Remote/Global)",
-      "company": "Motu Novu LLC",
-      "logo": "https://cdn-images.himalayas.app/e0ihe5dnh07ployk22z16ys4b1ed",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-02T18:19:01.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
