@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T19:40:32.130Z",
+  "updated_at": "2026-11-23T00:54:07.885Z",
   "live": true,
   "count": 332,
   "sources": [
@@ -97,7 +97,7 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 89
+      "count": 90
     },
     {
       "name": "We Work Remotely",
@@ -4315,7 +4315,7 @@
     },
     {
       "id": "co-inDrive-7531",
-      "title": "Senior Software Engineer | Full Stack (AI Customer Support and Safety)",
+      "title": "Senior Software Engineer (AI, Golang, Python)",
       "company": "inDrive",
       "logo": null,
       "city": "",
@@ -4331,7 +4331,7 @@
         "web"
       ],
       "roles": [
-        "Fullstack"
+        "Backend"
       ]
     },
     {
