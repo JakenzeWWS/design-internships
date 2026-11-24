@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-23T21:25:10.382Z",
+  "updated_at": "2026-11-24T06:04:07.645Z",
   "live": true,
-  "count": 358,
+  "count": 364,
   "sources": [
     {
       "name": "hh.kz",
@@ -27,7 +27,7 @@
     {
       "name": "Telegram @itvacancykz",
       "ok": true,
-      "count": 89
+      "count": 90
     },
     {
       "name": "Telegram @itworkkz",
@@ -97,12 +97,12 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 88
+      "count": 89
     },
     {
       "name": "We Work Remotely",
       "ok": true,
-      "count": 34
+      "count": 37
     },
     {
       "name": "Working Nomads",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 58
+      "count": 59
     },
     {
       "name": "hackathon.kz",
@@ -141,6 +141,208 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "wwr-airbnb-senior-mobile-software-engineer-quality-engineering",
+      "title": "Senior Mobile Software Engineer, Quality Engineering",
+      "company": "Airbnb",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T06:02:03.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-mobile-software-engineer-quality-engineering",
+      "source": "We Work Remotely",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": []
+    },
+    {
+      "id": "wwr-affirm-analytics-lead-full-stack-collections-recoveries",
+      "title": "Analytics Lead, Full Stack (Collections & Recoveries)",
+      "company": "Affirm",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T06:01:35.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/affirm-analytics-lead-full-stack-collections-recoveries",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "wwr-stripe-backend-engineer-developer-end-user-experience-platform",
+      "title": "Backend Engineer, Developer & End-user Experience Platform",
+      "company": "Stripe",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T06:01:32.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/stripe-backend-engineer-developer-end-user-experience-platform",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itvacancykz-2203",
+      "title": "PHP-developer",
+      "company": "Alif Uzbekistan",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-24T05:59:55.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://t.me/itvacancykz/2203",
+      "source": "Telegram @itvacancykz",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itcom_kz-7735",
+      "title": "Air Astana ищет графического дизайнера (Специалиста по визуальному контенту)",
+      "company": "IT community 🇵🇸",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-24T05:48:16.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://t.me/itcom_kz/7735",
+      "source": "Telegram @itcom_kz",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/edgeq-technologies-private-limited/jobs/full-stack-developer-ai-113216089",
+      "title": "Full Stack Developer (AI)",
+      "company": "EdgeQ Technologies Private Limited",
+      "logo": "https://cdn-images.himalayas.app/nsoksch835xdr8dpttroc9r1w35t",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T04:25:42.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/edgeq-technologies-private-limited/jobs/full-stack-developer-ai-113216089?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/edgeq-technologies-private-limited/jobs/php-developer",
+      "title": "PHP Developer",
+      "company": "EdgeQ Technologies Private Limited",
+      "logo": "https://cdn-images.himalayas.app/nsoksch835xdr8dpttroc9r1w35t",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T04:25:34.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/edgeq-technologies-private-limited/jobs/php-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/edgeq-technologies-private-limited/jobs/ui-developer",
+      "title": "UI Developer",
+      "company": "EdgeQ Technologies Private Limited",
+      "logo": "https://cdn-images.himalayas.app/nsoksch835xdr8dpttroc9r1w35t",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T04:25:28.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/edgeq-technologies-private-limited/jobs/ui-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/g2i-inc/jobs/senior-fullstack-developer",
+      "title": "Senior FullStack Developer",
+      "company": "G2i Inc.",
+      "logo": "https://cdn-images.himalayas.app/ckuqsrkaozq27a0j36ioy518vaug",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-24T00:09:16.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/g2i-inc/jobs/senior-fullstack-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
+      "title": "Full Stack Developer Intern",
+      "company": "ASG Company",
+      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-23T19:30:19.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
     {
       "id": "wwr-dropbox-full-stack-product-software-engineer",
       "title": "Full Stack Product Software Engineer",
@@ -721,6 +923,196 @@
       ],
       "roles": [
         "Backend"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-chastnaya-kompaniya-circle-limited-04f8vnl",
+      "title": "Графический дизайнер",
+      "company": "Частная компания Circle Limited",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-chastnaya-kompaniya-circle-limited-04f8vnl",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-shimaster-0fvix7e",
+      "title": "Дизайнер- проектировщик",
+      "company": "ШиМастер",
+      "logo": null,
+      "city": "Petropavl",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": {
+        "from": 85000,
+        "to": 850000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-shimaster-0fvix7e",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-intern-ux-ui-dizainer-tovarischestvo-s-ogranichennoi-otvetstvennostyu-itimas-0n71q0u",
+      "title": "Стажёр UX/UI-дизайнер",
+      "company": "Товарищество с ограниченной ответственностью ИТИМАС",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://designjobs.kz/jobs/intern-ux-ui-dizainer-tovarischestvo-s-ogranichennoi-otvetstvennostyu-itimas-0n71q0u",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "dj-junior-graficheskii-dizainer-ip-demyanov-0own6kf",
+      "title": "Дизайнер",
+      "company": "ИП Демьянов",
+      "logo": null,
+      "city": "Karaganda",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/junior-graficheskii-dizainer-ip-demyanov-0own6kf",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-too-bbdo-ca-13myjjy",
+      "title": "Графический дизайнер",
+      "company": "ТОО \"ББДО ЦА\"",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-bbdo-ca-13myjjy",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-veb-dizainer-176yypg",
+      "title": "Дизайнер сайтов и Telegram-чат-ботов",
+      "company": "Компания не указана",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/veb-dizainer-176yypg",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-senior-graficheskii-dizainer-too-enereco-caspio-engineering-and-contracting-ener-1c8wqge",
+      "title": "старший дизайнер",
+      "company": "ТОО \"ENERECO CASPIO ENGINEERING AND CONTRACTING\" / \"ЭНЕРЕКО КАСПИО ИНЖИНИРИНГ ЭНД КОНТРАКТИНГ\"",
+      "logo": null,
+      "city": "Atyrau",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": {
+        "from": 738000,
+        "to": 984000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/senior-graficheskii-dizainer-too-enereco-caspio-engineering-and-contracting-ener-1c8wqge",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-ux-ui-dizainer-too-naiza-fighting-championship-1ezlxxu",
+      "title": "UI/UX дизайнер",
+      "company": "ТОО \"Naiza Fighting Championship\"",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": {
+        "from": 270000,
+        "to": 300000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-too-naiza-fighting-championship-1ezlxxu",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
       ]
     },
     {
@@ -1452,28 +1844,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
-      "title": "Full Stack Developer Intern",
-      "company": "ASG Company",
-      "logo": "https://cdn-images.himalayas.app/7g0puyzmb0x66ua8z3yowipafac5",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T19:30:27.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Internship"
-      ],
-      "url": "https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
       "id": "wwr-cockroach-labs-escalation-engineer",
       "title": "Escalation Engineer",
       "company": "Cockroach Labs",
@@ -2059,6 +2429,76 @@
       ],
       "roles": [
         "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-intern-graficheskii-dizainer-too-ecpk-it-0m305qz",
+      "title": "Графический дизайнер. Стажер",
+      "company": "ТОО ECPK IT",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-20T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://designjobs.kz/jobs/intern-graficheskii-dizainer-too-ecpk-it-0m305qz",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-ux-ui-dizainer-nekommercheskaya-organizaciya-kazakhstan-literary-society-npio-0mwvtbx",
+      "title": "UI/UX-дизайнер",
+      "company": "НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ KAZAKHSTAN LITERARY SOCIETY NPIO",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-20T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-nekommercheskaya-organizaciya-kazakhstan-literary-society-npio-0mwvtbx",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "dj-intern-ux-ui-dizainer-too-ecpk-it-0n6ykiv",
+      "title": "UX/UI-дизайнер. Стажер",
+      "company": "ТОО ECPK IT",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-20T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://designjobs.kz/jobs/intern-ux-ui-dizainer-too-ecpk-it-0n6ykiv",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
       ]
     },
     {
@@ -2840,32 +3280,6 @@
       "format": "Office",
       "tags": [],
       "url": "https://designjobs.kz/jobs/graficheskii-dizainer-ip-soboleva-0rgchux",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-memoleto-18u39t3",
-      "title": "Дизайнер",
-      "company": "Мемолето",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-19T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": {
-        "from": 85000,
-        "to": 110000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-memoleto-18u39t3",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
@@ -4130,6 +4544,32 @@
       ]
     },
     {
+      "id": "dj-motion-dizainer-circle-creative-buro-18ls548",
+      "title": "Motion Designer",
+      "company": "Circle creative buro",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": {
+        "from": 500000,
+        "to": 500000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/motion-dizainer-circle-creative-buro-18ls548",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
       "id": "dj-graficheskii-dizainer-circle-creative-buro-1bdjhf0",
       "title": "Графический дизайнер/ Иллюстратор",
       "company": "Circle creative buro",
@@ -4495,49 +4935,25 @@
       ]
     },
     {
-      "id": "dj-graficheskii-dizainer-akademii-edyuson-0akbtgf",
-      "title": "Младший графический дизайнер",
-      "company": "Академии Эдюсон",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-akademii-edyuson-0akbtgf",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-too-triosynergy-0ldohy9",
-      "title": "Графический дизайнер",
-      "company": "ТОО \"TrioSynergy\"",
+      "id": "dj-senior-product-designer-pragmatike-0c6ti5j",
+      "title": "Product Designer (Remote EMEA)",
+      "company": "Pragmatike",
       "logo": null,
       "city": "Almaty",
       "region": "Kazakhstan",
       "published_at": "2026-11-10T00:00:00.000Z",
-      "valid_through": "2026-12-14",
+      "valid_through": "2026-12-15",
       "salary": null,
       "format": "Office",
       "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-triosynergy-0ldohy9",
+      "url": "https://designjobs.kz/jobs/senior-product-designer-pragmatike-0c6ti5j",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
         "design"
       ],
       "roles": [
-        "Graphic & brand"
+        "UX/UI & product"
       ]
     },
     {
@@ -4622,25 +5038,25 @@
       ]
     },
     {
-      "id": "dj-graficheskii-dizainer-too-infopolis-0zxshgd",
-      "title": "Графический дизайнер",
-      "company": "ТОО \"Инфополис\"",
+      "id": "dj-ux-ui-dizainer-1hxelgf",
+      "title": "Продуктовый дизайнер UI/UX",
+      "company": "Компания не указана",
       "logo": null,
       "city": "Almaty",
       "region": "Kazakhstan",
       "published_at": "2026-11-09T00:00:00.000Z",
-      "valid_through": "2026-12-14",
+      "valid_through": "2026-12-04",
       "salary": null,
       "format": "Office",
       "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-infopolis-0zxshgd",
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-1hxelgf",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
         "design"
       ],
       "roles": [
-        "Graphic & brand"
+        "UX/UI & product"
       ]
     },
     {
@@ -4656,28 +5072,6 @@
       "format": "Office",
       "tags": [],
       "url": "https://designjobs.kz/jobs/product-designer-too-abr-tech-1dqo6zp",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
-      "id": "dj-ux-ui-dizainer-1hxelgf",
-      "title": "Продуктовый дизайнер UI/UX",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-1hxelgf",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
@@ -4917,50 +5311,6 @@
       ]
     },
     {
-      "id": "dj-motion-dizainer-ao-agentstvo-habar-08b14lh",
-      "title": "Моушн-дизайнер Департамента дизайна и телевизионной графики",
-      "company": "АО \"Агентство \"Хабар\"",
-      "logo": null,
-      "city": "Astana",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-06T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/motion-dizainer-ao-agentstvo-habar-08b14lh",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-0l5yvro",
-      "title": "Графический дизайнер",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-06T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-0l5yvro",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "dj-middle-ux-ui-dizainer-too-dream-digital-1e18xaa",
       "title": "Middle UX/UI Designer",
       "company": "TOO \"Dream Digital\"",
@@ -4980,50 +5330,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-1oeh6e7",
-      "title": "Дизайнер",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-06T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-1oeh6e7",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-3d-dizainer-imagine-zone-1uqmiqm",
-      "title": "Дизайнер-Визуализатор",
-      "company": "IMAGINE ZONE",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-06T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/3d-dizainer-imagine-zone-1uqmiqm",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
@@ -5250,50 +5556,6 @@
       ]
     },
     {
-      "id": "dj-graficheskii-dizainer-0lzxoul",
-      "title": "Графический дизайнер (удаленно, парт тайм)",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-04T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-0lzxoul",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-motion-dizainer-tovarischestvo-s-ogranichennoi-otvetstvennostyu-marketpleis-deli-1dxq0y2",
-      "title": "Motion Designer (2D/3D) / Моушн дизайнер",
-      "company": "Товарищество с ограниченной ответственностью Маркетплейс Деливери",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-04T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/motion-dizainer-tovarischestvo-s-ogranichennoi-otvetstvennostyu-marketpleis-deli-1dxq0y2",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "tg-workitkz-7878",
       "title": "Full-stack разработчик (.Net + Angular)",
       "company": "ТОО KMG-DIGITAL",
@@ -5334,28 +5596,6 @@
       ]
     },
     {
-      "id": "dj-lead-graficheskii-dizainer-0j4coak",
-      "title": "Дизайнер - верстальщик проектно, удаленка (многостраничные издания)",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/lead-graficheskii-dizainer-0j4coak",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "him-https://himalayas.app/companies/motu-novu-llc/jobs/front-end-developer-flex-time-global",
       "title": "Front-End Developer (Flex-Time) (Remote/Global)",
       "company": "Motu Novu LLC",
@@ -5373,26 +5613,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global",
-      "title": "PHP Developer (Flex-Time) (Remote/Global)",
-      "company": "Motu Novu LLC",
-      "logo": "https://cdn-images.himalayas.app/e0ihe5dnh07ployk22z16ys4b1ed",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-02T18:19:01.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/motu-novu-llc/jobs/php-developer-flex-time-global?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -5580,26 +5800,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/senior-ai-python-developer-584900448",
-      "title": "Senior AI Python Developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:20:26.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/senior-ai-python-developer-584900448?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "him-https://himalayas.app/companies/hivex/jobs/full-stack-angular-node-js-852729079",
       "title": "Full stack (Angular + Node.js)",
       "company": "Hivex",
@@ -5651,26 +5851,6 @@
       "format": "Remote",
       "tags": [],
       "url": "https://himalayas.app/companies/hivex/jobs/python-developer-1783009587?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/ai-python-jambonz-or-vapi-developer-3725261180",
-      "title": "AI Python (Jambonz or Vapi) developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:20:21.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/ai-python-jambonz-or-vapi-developer-3725261180?utm_source=api",
       "source": "Himalayas",
       "dirs": [
         "web"
@@ -5880,26 +6060,6 @@
       ]
     },
     {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/java-developer-3565059066",
-      "title": "Java developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:19:58.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/java-developer-3565059066?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "dj-junior-ux-ui-dizainer-ip-nursultan-08c2u6r",
       "title": "UX/UI дизайнер без опыта",
       "company": "ИП Нурсултан",
@@ -5918,6 +6078,28 @@
         "No experience"
       ],
       "url": "https://designjobs.kz/jobs/junior-ux-ui-dizainer-ip-nursultan-08c2u6r",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "dj-senior-ux-ui-dizainer-pixel-chain-1whwfez",
+      "title": "Senior UI/UX Designer | Kazakhstan relocate to UAE",
+      "company": "Pixel Chain",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "valid_through": "2026-12-15",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/senior-ux-ui-dizainer-pixel-chain-1whwfez",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
@@ -7271,26 +7453,6 @@
       ]
     },
     {
-      "id": "tg-workitkz-7796",
-      "title": "Android developer",
-      "company": "AO Bereke Bank",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-09-25T05:29:01.000Z",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://t.me/workitkz/7796",
-      "source": "Telegram @workitkz",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Android"
-      ]
-    },
-    {
       "id": "dj-ux-ui-dizainer-01j4t53",
       "title": "UX/UI Designer",
       "company": "Компания не указана",
@@ -7538,28 +7700,6 @@
       "format": "Office",
       "tags": [],
       "url": "https://designjobs.kz/jobs/ux-issledovatel-too-strong-te-am-1ekn6uh",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
-      "id": "dj-ux-ui-dizainer-too-aziyashymservis-1ef9693",
-      "title": "UI/UX-дизайнер",
-      "company": "ТОО АзияShymСервис",
-      "logo": null,
-      "city": "Shymkent",
-      "region": "Kazakhstan",
-      "published_at": "2025-06-27T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-too-aziyashymservis-1ef9693",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
