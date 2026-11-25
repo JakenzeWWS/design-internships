@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-25T02:29:53.116Z",
+  "updated_at": "2026-11-25T12:54:58.685Z",
   "live": true,
-  "count": 373,
+  "count": 382,
   "sources": [
     {
       "name": "hh.kz",
@@ -17,7 +17,7 @@
     {
       "name": "Telegram @itcom_kz",
       "ok": true,
-      "count": 119
+      "count": 122
     },
     {
       "name": "Telegram @workitkz",
@@ -27,7 +27,7 @@
     {
       "name": "Telegram @itvacancykz",
       "ok": true,
-      "count": 89
+      "count": 90
     },
     {
       "name": "Telegram @itworkkz",
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 10
+      "count": 11
     },
     {
       "name": "Telegram @designbirzha",
@@ -82,7 +82,7 @@
     {
       "name": "Habr Career",
       "ok": true,
-      "count": 89
+      "count": 90
     },
     {
       "name": "RemoteOK",
@@ -92,12 +92,12 @@
     {
       "name": "Jobicy",
       "ok": true,
-      "count": 1
+      "count": 5
     },
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 88
+      "count": 89
     },
     {
       "name": "We Work Remotely",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 59
+      "count": 58
     },
     {
       "name": "hackathon.kz",
@@ -141,6 +141,431 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "tg-designwork_vacansii-9454",
+      "title": "Графический дизайнер печатных изданий в Blessed Mess",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T12:00:11.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9454",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000170401",
+      "title": "Senior PHP Developer",
+      "company": "B2B-РТС",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/1/logo/medium_f621f38bdcdc5d4e405a470311d415a9.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T11:21:38.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170401",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itcom_kz-7750",
+      "title": "Senior Backend Engineer в Peec",
+      "company": "IT community 🇵🇸",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-25T11:04:23.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://t.me/itcom_kz/7750",
+      "source": "Telegram @itcom_kz",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000170384",
+      "title": "Senior LLM Engineer (.NET)",
+      "company": "B2B-РТС",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/1/logo/medium_f621f38bdcdc5d4e405a470311d415a9.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T11:03:55.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170384",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000170383",
+      "title": "Teamlead PHP",
+      "company": "B2B-РТС",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/1/logo/medium_f621f38bdcdc5d4e405a470311d415a9.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T10:59:57.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000170383",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itcom_kz-7749",
+      "title": "We're Hiring",
+      "company": "IT community 🇵🇸",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-25T10:50:18.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/itcom_kz/7749",
+      "source": "Telegram @itcom_kz",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itcom_kz-7746",
+      "title": "В IZI app открыта вакансия Junior/Middle UX/UI-дизайнера.",
+      "company": "IT community 🇵🇸",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-25T10:45:47.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://t.me/itcom_kz/7746",
+      "source": "Telegram @itcom_kz",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9453",
+      "title": "Графический дизайнер социальных сетей в PulseTech — 1000€",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T10:30:01.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9453",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000169525",
+      "title": "Golang Tech Lead в Корпоративный портал",
+      "company": "RWB",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T10:27:04.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169525",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000168525",
+      "title": "Principal backend engineer / Python",
+      "company": "YoloPrice",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/678/5/logo/medium_d317cab970ca55105baed97deced83ff.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T10:27:01.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000168525",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000167904",
+      "title": "Java разработчик со знанием платформы ЦФТ/ Проектная работа / АУТСТАФФ",
+      "company": "Extyl",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/783/6/logo/medium_c1ca371fd48be5f414a06814bd2b7f74.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T09:27:14.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000167904",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/indigo-vc/jobs/full-stack-developer",
+      "title": "Full Stack Developer",
+      "company": "Indigo VC",
+      "logo": "https://cdn-images.himalayas.app/2ef25nv9vifzjqf2oy8u85f5r8de",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T09:20:15.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/indigo-vc/jobs/full-stack-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9452",
+      "title": "Графический дизайнер в Bender&Frai",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T09:00:01.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9452",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000170717",
+      "title": "Java разработчик/Java Developer (стажер)",
+      "company": "Aston",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/005/141/5/logo/medium_ef24648c47ad217e53747556d5b49d4e.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T08:57:56.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Internship"
+      ],
+      "url": "https://career.habr.com/vacancies/1000170717",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itcom_kz-7742",
+      "title": "Срочно 🔥 нужен Founding Techlead Backend Engineer (Kotlin/Java, Rust) для запуска с…",
+      "company": "IT community 🇵🇸",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-25T07:37:11.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/itcom_kz/7742",
+      "source": "Telegram @itcom_kz",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itvacancykz-2208",
+      "title": "Срочно 🔥 нужен Founding Techlead Backend Engineer (Kotlin/Java, Rust) для запуска с…",
+      "company": "ITvacancy KZ & UZ",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-25T07:32:14.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/itvacancykz/2208",
+      "source": "Telegram @itvacancykz",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "wwr-customer-io-senior-software-engineer-backend",
+      "title": "Senior Software Engineer, Backend",
+      "company": "Customer.io",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T06:02:50.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
+      "source": "We Work Remotely",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "jcy-149566",
+      "title": "Rust Engineering Lead - Linux and Open Source",
+      "company": "Canonical",
+      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T03:15:49.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://jobicy.com/jobs/149566-rust-engineering-lead-linux-and-open-source",
+      "source": "Jobicy",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "jcy-149543",
+      "title": "Python Engineer",
+      "company": "Canonical",
+      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T03:10:56.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://jobicy.com/jobs/149543-python-engineer",
+      "source": "Jobicy",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "jcy-149538",
+      "title": "Golang Engineer",
+      "company": "Canonical",
+      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T03:05:17.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://jobicy.com/jobs/149538-golang-engineer-2",
+      "source": "Jobicy",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "jcy-149527",
+      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
+      "company": "Canonical",
+      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-25T03:05:10.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://jobicy.com/jobs/149527-web-frontend-engineer-js-css-react-flutter",
+      "source": "Jobicy",
+      "dirs": [
+        "mobile"
+      ],
+      "roles": [
+        "Flutter / cross-platform"
+      ]
+    },
     {
       "id": "him-https://himalayas.app/companies/asg-company/jobs/full-stack-developer-intern",
       "title": "Full Stack Developer Intern",
@@ -688,6 +1113,98 @@
       ],
       "roles": [
         "Fullstack"
+      ]
+    },
+    {
+      "id": "dj-veb-dizainer-02obixl",
+      "title": "Дизайнер презентаций, каталогов, Taplink и Tilda",
+      "company": "Компания не указана",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "valid_through": "2026-12-16",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/veb-dizainer-02obixl",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-of-futbolnyi-klub-elimai-0ltku68",
+      "title": "Графический дизайнер",
+      "company": "ОФ \"Футбольный клуб \"Елимай\"",
+      "logo": null,
+      "city": "Semey",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "valid_through": "2026-12-16",
+      "salary": {
+        "from": 210000,
+        "to": 500000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-of-futbolnyi-klub-elimai-0ltku68",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-too-agentstvo-ez-solutions-1l0a016",
+      "title": "Графический дизайнер",
+      "company": "ТОО \"Агентство EZ Solutions\"",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "valid_through": "2026-12-16",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-agentstvo-ez-solutions-1l0a016",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-veb-dizainer-1m7vuec",
+      "title": "Веб-дизайнер",
+      "company": "Компания не указана",
+      "logo": null,
+      "city": "",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-24T00:00:00.000Z",
+      "valid_through": "2026-12-16",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/veb-dizainer-1m7vuec",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
       ]
     },
     {
@@ -1273,26 +1790,6 @@
       ]
     },
     {
-      "id": "jcy-156558",
-      "title": "Senior Software Engineer, Backend",
-      "company": "Customer.io",
-      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b82146da-221.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-23T03:40:38.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://jobicy.com/jobs/156558-senior-software-engineer-backend-4",
-      "source": "Jobicy",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "dj-graficheskii-dizainer-chastnaya-kompaniya-circle-limited-04f8vnl",
       "title": "Графический дизайнер",
       "company": "Частная компания Circle Limited",
@@ -1578,26 +2075,6 @@
       ],
       "roles": [
         "Android"
-      ]
-    },
-    {
-      "id": "habr-1000165251",
-      "title": "Python-разработчик",
-      "company": "ИТ-компания «Лоция»",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/003/5/logo/medium_143d6a25cf35969705921fbd915ff6d1.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-22T12:27:06.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000165251",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -2656,7 +3133,7 @@
     },
     {
       "id": "tg-itcom_kz-7720",
-      "title": "Начинающий AI-дизайнер / Дизайнер по работе с нейросетями",
+      "title": "Начинающий AI- дизайнер / Дизайнер по работе с нейросетями",
       "company": "IT community 🇵🇸",
       "logo": null,
       "city": "Almaty",
@@ -2888,46 +3365,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter",
-      "title": "Web Frontend Engineer - JS, CSS, React, Flutter",
-      "company": "Canonical",
-      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T18:06:19.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/canonical/jobs/web-frontend-engineer-js-css-react-flutter?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "mobile"
-      ],
-      "roles": [
-        "Flutter / cross-platform"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/canonical/jobs/golang-engineer",
-      "title": "Golang Engineer",
-      "company": "Canonical",
-      "logo": "https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T18:06:19.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/canonical/jobs/golang-engineer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -3721,66 +4158,6 @@
       ]
     },
     {
-      "id": "habr-1000170401",
-      "title": "Senior PHP Developer",
-      "company": "B2B-РТС",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/1/logo/medium_f621f38bdcdc5d4e405a470311d415a9.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T11:21:23.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170401",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000170384",
-      "title": "Senior LLM Engineer (.NET)",
-      "company": "B2B-РТС",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/1/logo/medium_f621f38bdcdc5d4e405a470311d415a9.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T11:03:36.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170384",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000170383",
-      "title": "Teamlead PHP",
-      "company": "B2B-РТС",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/010/004/1/logo/medium_f621f38bdcdc5d4e405a470311d415a9.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T10:59:52.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000170383",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "tg-designkziskra-2594",
       "title": "Мы ищем Senior дизайнера в команду креативного агентства SEED.",
       "company": "Дизайн вакансии | Казахстан | Iskra Station",
@@ -4033,26 +4410,6 @@
       ]
     },
     {
-      "id": "habr-1000169525",
-      "title": "Golang Tech Lead в Корпоративный портал",
-      "company": "RWB",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/679/1/logo/medium_8fd0371fb7e95437462915129cb3809f.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-16T10:30:48.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169525",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
       "id": "tg-designkziskra-2593",
       "title": "UI/UX дизайнер на проект (EdTech + геймификация)",
       "company": "Дизайн вакансии | Казахстан | Iskra Station",
@@ -4070,26 +4427,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "habr-1000167904",
-      "title": "Java разработчик со знанием платформы ЦФТ/ Проектная работа / АУТСТАФФ",
-      "company": "Extyl",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/783/6/logo/medium_c1ca371fd48be5f414a06814bd2b7f74.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-16T09:43:14.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000167904",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -4783,50 +5120,6 @@
       ]
     },
     {
-      "id": "dj-graficheskii-dizainer-too-ezs-ivents-1g9zwcx",
-      "title": "Дизайнер",
-      "company": "ТОО \"EZS ивентс\"",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-ezs-ivents-1g9zwcx",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-inshape-1yaafku",
-      "title": "Дизайнер карточек",
-      "company": "Inshape",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-inshape-1yaafku",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "him-https://himalayas.app/companies/search-atlas/jobs/senior-full-stack-engineer-django-next-js-9755090924",
       "title": "Senior Full-Stack Engineer (Django / Next.js)",
       "company": "Search Atlas",
@@ -4944,76 +5237,6 @@
       ],
       "roles": [
         "Frontend"
-      ]
-    },
-    {
-      "id": "dj-motion-dizainer-1jypu3b",
-      "title": "3D Motion Designer",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-11T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/motion-dizainer-1jypu3b",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-zhambylskii-oblastnoi-filial-akcionernogo-obschestva-respu-1eqgu03",
-      "title": "Графический дизайнер",
-      "company": "Жамбылский областной филиал акционерного общества \"Республиканская Телерадиокорпорация \"Казахстан\"",
-      "logo": null,
-      "city": "Taraz",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-11T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-zhambylskii-oblastnoi-filial-akcionernogo-obschestva-respu-1eqgu03",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-ip-dzhulai-oleg-alekseevich-1id5qkx",
-      "title": "Помощник дизайнера - дизайнер",
-      "company": "ИП ДЖУЛАЙ ОЛЕГ АЛЕКСЕЕВИЧ",
-      "logo": null,
-      "city": "Astana",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-11T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": {
-        "from": 150000,
-        "to": 210000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-ip-dzhulai-oleg-alekseevich-1id5qkx",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
@@ -5926,6 +6149,28 @@
       ]
     },
     {
+      "id": "dj-ux-ui-dizainer-monolith-studio-1kigmuq",
+      "title": "Interface designer",
+      "company": "Monolith Studio",
+      "logo": null,
+      "city": "Aktobe",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "valid_through": "2026-12-16",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-monolith-studio-1kigmuq",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
       "id": "him-https://himalayas.app/companies/emcd/jobs/go-developer-fintech-crypto",
       "title": "Go Developer (fintech/crypto)",
       "company": "EMCD",
@@ -6037,26 +6282,6 @@
       "format": "Remote",
       "tags": [],
       "url": "https://himalayas.app/companies/hivex/jobs/python-developer-1783009587?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/ai-python-jambonz-or-vapi-developer-3725261180",
-      "title": "AI Python (Jambonz or Vapi) developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:20:21.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/ai-python-jambonz-or-vapi-developer-3725261180?utm_source=api",
       "source": "Himalayas",
       "dirs": [
         "web"
@@ -6836,26 +7061,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "wwr-reddit-frontend-engineer-ads",
-      "title": "Frontend Engineer, Ads",
-      "company": "Reddit",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-10-26T07:31:27.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://weworkremotely.com/remote-jobs/reddit-frontend-engineer-ads",
-      "source": "We Work Remotely",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Frontend"
       ]
     },
     {
@@ -7871,28 +8076,6 @@
       ],
       "roles": [
         "Android"
-      ]
-    },
-    {
-      "id": "dj-ux-issledovatel-too-strong-te-am-1ekn6uh",
-      "title": "Ведущий UX-исследователь",
-      "company": "ТОО STRONG te.am",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2025-12-26T00:00:00.000Z",
-      "valid_through": "2026-12-04",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/ux-issledovatel-too-strong-te-am-1ekn6uh",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
       ]
     }
   ]
