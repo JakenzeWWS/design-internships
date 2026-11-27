@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-26T23:54:32.649Z",
+  "updated_at": "2026-11-27T08:32:42.053Z",
   "live": true,
-  "count": 388,
+  "count": 398,
   "sources": [
     {
       "name": "hh.kz",
@@ -32,7 +32,7 @@
     {
       "name": "Telegram @itworkkz",
       "ok": true,
-      "count": 41
+      "count": 42
     },
     {
       "name": "Telegram @it_jobs_kz",
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 7
+      "count": 8
     },
     {
       "name": "Telegram @designbirzha",
@@ -92,12 +92,12 @@
     {
       "name": "Jobicy",
       "ok": true,
-      "count": 4
+      "count": 5
     },
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 87
+      "count": 86
     },
     {
       "name": "We Work Remotely",
@@ -127,7 +127,7 @@
     {
       "name": "designjobs.kz",
       "ok": true,
-      "count": 55
+      "count": 61
     },
     {
       "name": "hackathon.kz",
@@ -141,6 +141,308 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "habr-1000159611",
+      "title": "Python разработчик",
+      "company": "IRLIX",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/018/3/logo/medium_a223d337e2d17d88f95133dd0feaaeea.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T08:27:02.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000159611",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169979",
+      "title": "Коммуникационный дизайнер",
+      "company": "ВсеИнструменты.ру",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/336/7/logo/medium_3e1c58b00201266731d58cf6cf1e7811.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T08:26:27.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169979",
+      "source": "Habr Career",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000169952",
+      "title": "Старший графический дизайнер",
+      "company": "ВсеИнструменты.ру",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/336/7/logo/medium_3e1c58b00201266731d58cf6cf1e7811.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T08:09:20.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169952",
+      "source": "Habr Career",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000169947",
+      "title": "Senior Product Designer (B2B)",
+      "company": "ВсеИнструменты.ру",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/336/7/logo/medium_3e1c58b00201266731d58cf6cf1e7811.jpg",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T08:05:07.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169947",
+      "source": "Habr Career",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "tg-jobkz_1-23383",
+      "title": "Graphic Designer",
+      "company": "Higgsfield AI",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-27T08:03:51.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://t.me/jobkz_1/23383",
+      "source": "Telegram @jobkz_1",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9474",
+      "title": "3D-дизайнер в YouTube-команду — Blender",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T08:00:09.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9474",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000165768",
+      "title": "Java-разработчик",
+      "company": "БФТ - Холдинг",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/776/272/539/logo/medium_4e44003fcd92bdf4c6a650f2d5cf2a6d.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T07:44:12.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000165768",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000164665",
+      "title": "Scala разработчик",
+      "company": "Т-Банк",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/379/4/logo/medium_0dcb3cbba9a132801d4507e1443f712f.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T07:27:28.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000164665",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9473",
+      "title": "#3dдизайнер",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T07:00:08.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://t.me/designwork_vacansii/9473",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "wwr-affirm-content-designer-ii",
+      "title": "Content Designer II",
+      "company": "Affirm",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T06:02:43.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://weworkremotely.com/remote-jobs/affirm-content-designer-ii",
+      "source": "We Work Remotely",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "tg-designwork_vacansii-9472",
+      "title": "Агентство Thesis ищет моушн-дизайнера для трансляций и мероприятий.",
+      "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
+      "logo": null,
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T06:00:06.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://t.me/designwork_vacansii/9472",
+      "source": "Telegram @designwork_vacansii",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "habr-1000166881",
+      "title": "Golang-разработчик",
+      "company": "БЮРО 1440",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/437/3/logo/medium_443ed0f33e89acc137dfafe2b616e891.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T05:27:16.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000166881",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "habr-1000169651",
+      "title": "Scala-разработчик ",
+      "company": "SimbirSoft",
+      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/353/5/logo/medium_49225137efa51e45ae51cd067000e2c1.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T04:55:20.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://career.habr.com/vacancies/1000169651",
+      "source": "Habr Career",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Backend"
+      ]
+    },
+    {
+      "id": "tg-itworkkz-310",
+      "title": "MIDDLE FRONTEND-РАЗРАБОТЧИК",
+      "company": "IT вакансии Казахстан",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-27T04:12:00.000Z",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://t.me/itworkkz/310",
+      "source": "Telegram @itworkkz",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Frontend"
+      ]
+    },
+    {
+      "id": "jcy-154084",
+      "title": "Staff Engineer, Full Stack (Trust, Safety & Risk)",
+      "company": "Phantom",
+      "logo": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/3d0a3a49-221.png",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T03:35:16.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://jobicy.com/jobs/154084-staff-engineer-full-stack-trust-safety-risk",
+      "source": "Jobicy",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
     {
       "id": "tg-designwork_vacansii-9470",
       "title": "Junior Creative / Graphic Designer — Display Traffic & Performance Ads",
@@ -672,18 +974,200 @@
       ]
     },
     {
-      "id": "tg-itcom_kz-7756",
-      "title": "Graphic Designer",
-      "company": "Higgsfield AI",
+      "id": "dj-middle-graficheskii-dizainer-erzhan-k-0gqca63",
+      "title": "Графический дизайнер",
+      "company": "Ержан К.",
       "logo": null,
-      "city": "Almaty",
+      "city": "Atyrau",
       "region": "Kazakhstan",
-      "published_at": "2026-11-25T19:25:11.000Z",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
       "salary": null,
       "format": "Office",
       "tags": [],
-      "url": "https://t.me/itcom_kz/7756",
-      "source": "Telegram @itcom_kz",
+      "url": "https://designjobs.kz/jobs/middle-graficheskii-dizainer-erzhan-k-0gqca63",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-too-braves-digital-agency-0ke2f5q",
+      "title": "Графический дизайнер",
+      "company": "ТОО \"Braves Digital Agency\"",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": {
+        "from": 200000,
+        "to": 400000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-braves-digital-agency-0ke2f5q",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-ux-ui-dizainer-aml-academy-0li2kk2",
+      "title": "UI/UX-дизайнер",
+      "company": "AML ACADEMY",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-aml-academy-0li2kk2",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "dj-ux-ui-dizainer-chastnaya-kompaniya-pivot-limited-0mivg6d",
+      "title": "UI-UX дизайнер",
+      "company": "Частная компания Pivot Limited",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/ux-ui-dizainer-chastnaya-kompaniya-pivot-limited-0mivg6d",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "UX/UI & product"
+      ]
+    },
+    {
+      "id": "dj-veb-dizainer-too-homeittech-0rw2fha",
+      "title": "Дизайнер Web-сайтов",
+      "company": "ТОО \"HomeITTech\"",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/veb-dizainer-too-homeittech-0rw2fha",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-tomiris-skifskaya-0s1rbdn",
+      "title": "Графический дизайнер",
+      "company": "Томирис Скифская",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-tomiris-skifskaya-0s1rbdn",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-junior-graficheskii-dizainer-too-lioni-wood-industries-interiors-1dpjtpc",
+      "title": "ДИЗАЙНЕР",
+      "company": "ТОО \"Lioni Wood Industries & Interiors\"",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/junior-graficheskii-dizainer-too-lioni-wood-industries-interiors-1dpjtpc",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-promyshlennyi-dizainer-chastnaya-kompaniya-circle-limited-1kxxxos",
+      "title": "Промышленный дизайнер",
+      "company": "Частная компания Circle Limited",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/promyshlennyi-dizainer-chastnaya-kompaniya-circle-limited-1kxxxos",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-chastnaya-kompaniya-circle-limited-1n5ur8k",
+      "title": "Графический дизайнер",
+      "company": "Частная компания Circle Limited",
+      "logo": null,
+      "city": "Astana",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-26T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-chastnaya-kompaniya-circle-limited-1n5ur8k",
+      "source": "designjobs.kz",
+      "evergreen": true,
       "dirs": [
         "design"
       ],
@@ -1240,6 +1724,34 @@
       ],
       "roles": [
         "UX/UI & product"
+      ]
+    },
+    {
+      "id": "dj-junior-graficheskii-dizainer-asel-n-narlen-0h6ugou",
+      "title": "Младший дизайнер",
+      "company": "Асель Н. (Narlen)",
+      "logo": null,
+      "city": "Shymkent",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-25T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": {
+        "from": 250000,
+        "to": 250000,
+        "currency": "KZT"
+      },
+      "format": "Office",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://designjobs.kz/jobs/junior-graficheskii-dizainer-asel-n-narlen-0h6ugou",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
       ]
     },
     {
@@ -2382,28 +2894,6 @@
       ]
     },
     {
-      "id": "dj-graficheskii-dizainer-chastnaya-kompaniya-circle-limited-04f8vnl",
-      "title": "Графический дизайнер",
-      "company": "Частная компания Circle Limited",
-      "logo": null,
-      "city": "Astana",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-23T00:00:00.000Z",
-      "valid_through": "2026-12-15",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-chastnaya-kompaniya-circle-limited-04f8vnl",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "dj-graficheskii-dizainer-shimaster-0fvix7e",
       "title": "Дизайнер- проектировщик",
       "company": "ШиМастер",
@@ -2562,6 +3052,28 @@
       "format": "Office",
       "tags": [],
       "url": "https://designjobs.kz/jobs/ai-dizainer-neo-group-1l0ajq8",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-luiza-m-jasmine-studio-1v6ws2x",
+      "title": "Графический дизайнер в рекламном агентстве",
+      "company": "Луиза М. (Jasmine Studio)",
+      "logo": null,
+      "city": "Semey",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-luiza-m-jasmine-studio-1v6ws2x",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
@@ -3521,86 +4033,6 @@
       ]
     },
     {
-      "id": "habr-1000159611",
-      "title": "Python разработчик",
-      "company": "IRLIX",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/018/3/logo/medium_a223d337e2d17d88f95133dd0feaaeea.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T08:27:06.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000159611",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169979",
-      "title": "Коммуникационный дизайнер",
-      "company": "ВсеИнструменты.ру",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/336/7/logo/medium_3e1c58b00201266731d58cf6cf1e7811.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T08:26:32.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169979",
-      "source": "Habr Career",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "habr-1000169952",
-      "title": "Старший графический дизайнер",
-      "company": "ВсеИнструменты.ру",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/336/7/logo/medium_3e1c58b00201266731d58cf6cf1e7811.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T08:09:14.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169952",
-      "source": "Habr Career",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "habr-1000169947",
-      "title": "Senior Product Designer (B2B)",
-      "company": "ВсеИнструменты.ру",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/008/336/7/logo/medium_3e1c58b00201266731d58cf6cf1e7811.jpg",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T08:05:10.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169947",
-      "source": "Habr Career",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
-      ]
-    },
-    {
       "id": "tg-designwork_vacansii-9399",
       "title": "«Троеточие», приложение для работы с ответами в переписке, ищет продуктового дизайнера.",
       "company": "ВАКАНСИИ ДЛЯ ДИЗАЙНЕРА | РАБОТА",
@@ -3618,46 +4050,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "habr-1000165768",
-      "title": "Java-разработчик",
-      "company": "БФТ - Холдинг",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/776/272/539/logo/medium_4e44003fcd92bdf4c6a650f2d5cf2a6d.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T07:44:11.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000165768",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000164665",
-      "title": "Scala разработчик",
-      "company": "Т-Банк",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/379/4/logo/medium_0dcb3cbba9a132801d4507e1443f712f.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T07:27:16.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000164665",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -3722,46 +4114,6 @@
       ],
       "roles": [
         "Fullstack"
-      ]
-    },
-    {
-      "id": "habr-1000166881",
-      "title": "Golang-разработчик",
-      "company": "БЮРО 1440",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/007/437/3/logo/medium_443ed0f33e89acc137dfafe2b616e891.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T05:27:16.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000166881",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "habr-1000169651",
-      "title": "Scala-разработчик ",
-      "company": "SimbirSoft",
-      "logo": "https://habrastorage.org/getpro/moikrug/uploads/company/100/004/353/5/logo/medium_49225137efa51e45ae51cd067000e2c1.png",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-20T04:55:15.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://career.habr.com/vacancies/1000169651",
-      "source": "Habr Career",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
       ]
     },
     {
@@ -4437,28 +4789,6 @@
       ]
     },
     {
-      "id": "wwr-shirvano-graphic-design-intern-remote",
-      "title": "Graphic Design Intern (Remote)",
-      "company": "SHIRVANO",
-      "logo": null,
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-18T11:31:43.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Internship"
-      ],
-      "url": "https://weworkremotely.com/remote-jobs/shirvano-graphic-design-intern-remote",
-      "source": "We Work Remotely",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "tg-designkziskra-2594",
       "title": "Мы ищем Senior дизайнера в команду креативного агентства SEED.",
       "company": "Дизайн вакансии | Казахстан | Iskra Station",
@@ -4551,6 +4881,28 @@
       "format": "Office",
       "tags": [],
       "url": "https://designjobs.kz/jobs/ai-dizainer-tovarischestvo-s-ogranichennoi-otvetstvennostyu-itx-aitiks-06tv2vr",
+      "source": "designjobs.kz",
+      "evergreen": true,
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "dj-graficheskii-dizainer-too-ezs-ivents-1g9zwcx",
+      "title": "Дизайнер",
+      "company": "ТОО \"EZS ивентс\"",
+      "logo": null,
+      "city": "Almaty",
+      "region": "Kazakhstan",
+      "published_at": "2026-11-18T00:00:00.000Z",
+      "valid_through": "2026-12-18",
+      "salary": null,
+      "format": "Office",
+      "tags": [],
+      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-ezs-ivents-1g9zwcx",
       "source": "designjobs.kz",
       "evergreen": true,
       "dirs": [
@@ -4744,32 +5096,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-too-pca-group-1n5wbaf",
-      "title": "Дизайнер",
-      "company": "ТОО «PCA Group»",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-16T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": {
-        "from": 400000,
-        "to": 450000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-too-pca-group-1n5wbaf",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
@@ -5034,54 +5360,6 @@
       ]
     },
     {
-      "id": "dj-ai-dizainer-0ikdgwm",
-      "title": "ИИ Дизайнер",
-      "company": "Компания не указана",
-      "logo": null,
-      "city": "",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-13T00:00:00.000Z",
-      "valid_through": "2026-12-05",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/ai-dizainer-0ikdgwm",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-rgp-na-phv-respublikanskii-centr-elektronnogo-zdravoohrane-0knj7zx",
-      "title": "IT-дизайнер Управления развития ЕГМИС Департамента медицинских и фармацевтических информационных систем",
-      "company": "РГП на ПХВ \"Республиканский центр электронного здравоохранения\" Министерства здравоохранения Республики Казахстан",
-      "logo": null,
-      "city": "Astana",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-13T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": {
-        "from": 300000,
-        "to": 400000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-rgp-na-phv-respublikanskii-centr-elektronnogo-zdravoohrane-0knj7zx",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
       "id": "dj-intern-graficheskii-dizainer-1i7e75e",
       "title": "GRAPHIC DESIGNER",
       "company": "Компания не указана",
@@ -5270,32 +5548,6 @@
       ],
       "roles": [
         "UX/UI & product"
-      ]
-    },
-    {
-      "id": "dj-graficheskii-dizainer-vt-group-07xm8vd",
-      "title": "Дизайнер",
-      "company": "VT Group",
-      "logo": null,
-      "city": "Kostanay",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "valid_through": "2026-12-14",
-      "salary": {
-        "from": 150000,
-        "to": 250000,
-        "currency": "KZT"
-      },
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/graficheskii-dizainer-vt-group-07xm8vd",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
       ]
     },
     {
@@ -5521,28 +5773,6 @@
       ],
       "roles": [
         "Backend"
-      ]
-    },
-    {
-      "id": "dj-senior-product-designer-pragmatike-0c6ti5j",
-      "title": "Product Designer (Remote EMEA)",
-      "company": "Pragmatike",
-      "logo": null,
-      "city": "Almaty",
-      "region": "Kazakhstan",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "valid_through": "2026-12-15",
-      "salary": null,
-      "format": "Office",
-      "tags": [],
-      "url": "https://designjobs.kz/jobs/senior-product-designer-pragmatike-0c6ti5j",
-      "source": "designjobs.kz",
-      "evergreen": true,
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "UX/UI & product"
       ]
     },
     {
@@ -6359,26 +6589,6 @@
       "format": "Remote",
       "tags": [],
       "url": "https://himalayas.app/companies/emcd/jobs/go-developer-fintech-crypto?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Backend"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/hivex/jobs/php-developer-8222071015",
-      "title": "PHP developer",
-      "company": "Hivex",
-      "logo": "https://cdn-images.himalayas.app/tscbts3inxevaxnd6lj8tvl4xm7v",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-01T12:20:26.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/hivex/jobs/php-developer-8222071015?utm_source=api",
       "source": "Himalayas",
       "dirs": [
         "web"
