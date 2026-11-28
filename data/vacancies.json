@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-27T19:00:26.906Z",
+  "updated_at": "2026-11-28T02:01:35.952Z",
   "live": true,
-  "count": 404,
+  "count": 405,
   "sources": [
     {
       "name": "hh.kz",
@@ -62,7 +62,7 @@
     {
       "name": "Telegram @designwork_vacansii",
       "ok": true,
-      "count": 11
+      "count": 10
     },
     {
       "name": "Telegram @designbirzha",
@@ -97,12 +97,13 @@
     {
       "name": "Himalayas",
       "ok": true,
-      "count": 89
+      "count": 90
     },
     {
       "name": "We Work Remotely",
-      "ok": true,
-      "count": 42
+      "ok": false,
+      "note": "temporarily unavailable",
+      "count": 39
     },
     {
       "name": "Working Nomads",
@@ -141,6 +142,108 @@
     }
   ],
   "vacancies": [
+    {
+      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
+      "title": "Junior Full-Stack Developer",
+      "company": "Appetiser Apps",
+      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-28T00:35:30.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [
+        "Junior"
+      ],
+      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412",
+      "title": "Sr. Full-Stack Software Engineer, Remote",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-28T00:20:59.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract",
+      "title": "🌍 Sr. Full-Stack Software Engineer, Remote- Contract",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-28T00:20:32.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote",
+      "title": "Graphic and Editorial Design Expert, Remote",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-28T00:20:27.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "design"
+      ],
+      "roles": [
+        "Graphic & brand"
+      ]
+    },
+    {
+      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-global-remote-contract",
+      "title": "Sr. Full-Stack Software Engineer | Global, Remote - Contract",
+      "company": "Xperteez Technology",
+      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
+      "city": "",
+      "region": "Remote",
+      "published_at": "2026-11-27T20:26:58.000Z",
+      "salary": null,
+      "format": "Remote",
+      "tags": [],
+      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-global-remote-contract?utm_source=api",
+      "source": "Himalayas",
+      "dirs": [
+        "web"
+      ],
+      "roles": [
+        "Fullstack"
+      ]
+    },
     {
       "id": "wwr-customer-io-staff-software-engineer-backend",
       "title": "Staff Software Engineer, Backend",
@@ -805,28 +908,6 @@
       ],
       "roles": [
         "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer",
-      "title": "Junior Full-Stack Developer",
-      "company": "Appetiser Apps",
-      "logo": "https://cdn-images.himalayas.app/lvt4v5tu9lfrqyvdr2sz7nozul6i",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-26T16:53:09.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [
-        "Junior"
-      ],
-      "url": "https://himalayas.app/companies/appetiser-apps/jobs/junior-full-stack-developer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
       ]
     },
     {
@@ -2135,26 +2216,6 @@
       "tags": [],
       "url": "https://t.me/designwork_vacansii/9446",
       "source": "Telegram @designwork_vacansii",
-      "dirs": [
-        "design"
-      ],
-      "roles": [
-        "Graphic & brand"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote",
-      "title": "Graphic and Editorial Design Expert, Remote",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-24T16:43:58.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/graphic-and-editorial-design-expert-remote?utm_source=api",
-      "source": "Himalayas",
       "dirs": [
         "design"
       ],
@@ -4482,46 +4543,6 @@
       "format": "Remote",
       "tags": [],
       "url": "https://himalayas.app/companies/evb/jobs/sr-full-stack-software-engineer?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412",
-      "title": "Sr. Full-Stack Software Engineer, Remote",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T16:42:41.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-6677362412?utm_source=api",
-      "source": "Himalayas",
-      "dirs": [
-        "web"
-      ],
-      "roles": [
-        "Fullstack"
-      ]
-    },
-    {
-      "id": "him-https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract",
-      "title": "🌍 Sr. Full-Stack Software Engineer, Remote- Contract",
-      "company": "Xperteez Technology",
-      "logo": "https://cdn-images.himalayas.app/m68vtboghdo71fvod2gepzj5tyf1",
-      "city": "",
-      "region": "Remote",
-      "published_at": "2026-11-19T16:41:45.000Z",
-      "salary": null,
-      "format": "Remote",
-      "tags": [],
-      "url": "https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract?utm_source=api",
       "source": "Himalayas",
       "dirs": [
         "web"
